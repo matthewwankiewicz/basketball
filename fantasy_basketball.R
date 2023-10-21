@@ -120,3 +120,8 @@ test$pred_vif <- predict(fan_mod_vif, newdata = test)
 
 
 
+
+
+
+
+
