@@ -162,3 +162,6 @@ plot(fan_mod_vif_pg)
 write_csv(final_ranking, "rankings.csv")
 
 
+
+
+
