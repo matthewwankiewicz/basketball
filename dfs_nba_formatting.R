@@ -1,7 +1,7 @@
 library(zoo)
 library(tidyverse)
 
-read_csv('/users/matthew/Downloads/DKSalaries (1).csv') %>% 
+read_csv('/users/matthew/Downloads/DKSalaries.csv') %>% 
   select(Instructions) %>% 
   slice(-(1:5)) -> nba_lineups
 
@@ -11,31 +11,13 @@ separate(nba_lineups, Instructions, into = paste0("Column", 1:10), sep = ",", ex
   filter(`Roster Position` != 'CPT') -> nba_lineups
 
 ### filter for last month and get player averages
-gamelogs %>%
+gamelogs_ref %>%
   arrange(player_name, desc(game_date)) %>% 
   filter(player_name %in% nba_lineups$Name) %>%
   group_by(player_name) %>%
-  mutate(
-    rolling_pts = rollapply(dfs_points, 5, mean, fill = NA, align = "left"),
-    rolling_mins = rollapply(min, 5, mean, fill = NA, align = "left"),
-    rolling_usg = rollapply(usage_percentage, 5, mean, fill = NA, align = "left"),
-    ppm = rolling_pts / rolling_mins,
-    sd_pts = rollapply(dfs_points, width = 5, FUN = sd, align = "left", fill = NA),
-    player_rate = abs(rolling_pts / sd_pts),
-    days_rest = as.numeric(Sys.Date() - game_date) - 1
-  ) %>%
   filter(game_date == max(game_date),
          rolling_mins >= 15) %>%
-  ungroup() %>%
-  mutate(
-    avg_pts = as.vector(scale(rolling_pts, center = TRUE, scale = TRUE)),
-    mins = as.vector(scale(rolling_mins, center = TRUE, scale = TRUE)),
-    ppm = as.vector(scale(ppm, center = TRUE, scale = TRUE)),
-    sd_pts = as.vector(scale(sd_pts, center = TRUE, scale = TRUE)),
-    player_rate = as.vector(scale(player_rate, center = TRUE, scale = TRUE))
-  ) %>% 
-  select(player_name, avg_pts, mins, ppm, sd_pts,
-         player_rate, rolling_usg, game_date, days_rest) -> nba_l30_avgs
+  ungroup() -> nba_l30_avgs
 
 nba_lineups %>% 
   left_join(nba_l30_avgs,
@@ -103,8 +85,9 @@ gamelogs %>%
     rolling_reb = as.vector(scale(rolling_reb, center = TRUE, scale = TRUE)),
     rolling_fg3m = as.vector(scale(rolling_fg3m, center = TRUE, scale = TRUE))
   ) %>%
-  select(team, pos, "dfs_points" = rolling_dfs, rolling_mins, rolling_pts,
-         rolling_ast, rolling_reb, rolling_fg3m) %>%
+  select(team, pos, "opp_rolling_dfs" = rolling_dfs, "opp_rolling_mins" = rolling_mins, "opp_rolling_pts" = rolling_pts,
+         "opp_rolling_ast" =  rolling_ast, "opp_rolling_reb" = rolling_reb, 
+         "opp_rolling_fg3m" = rolling_fg3m) %>%
   drop_na() -> team_def_rankings
 
 # 2. Merge with Defense Rankings
@@ -116,13 +99,31 @@ merged_data %>%
               select(player, "pts_line" = pts),
             by = c('Name' = 'player')) -> merged_data
 
+
 #### take lowest value (some players have multiple positions - base results on toughest matchup)
 final_data <- merged_data %>% group_by(Name) %>% filter(game_date == max(game_date)) %>% slice(1)
 
-final_data %>% 
-  left_join(match_res.full %>% 
-              select(player_name, est_dfs),
-            by = c("Name" = "player_name")) -> final_data
+
+## make predictions
+final_data$est_dfs <- predict(dfs_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_dfs,
+                                                                         "stat_max_l5" = rolling_max_dfs,
+                                                                         "stat_min_l5" = rolling_min_dfs))
+
+final_data$est_pts <- predict(pts_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_pts,
+                                                                         "stat_max_l5" = rolling_max_pts,
+                                                                         "stat_min_l5" = rolling_min_pts))
+
+final_data$est_ast <- predict(ast_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_ast,
+                                                                         "stat_max_l5" = rolling_max_ast,
+                                                                         "stat_min_l5" = rolling_min_ast))
+
+final_data$est_reb <- predict(reb_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_reb,
+                                                                         "stat_max_l5" = rolling_max_reb,
+                                                                         "stat_min_l5" = rolling_min_reb))
+
+final_data$est_fg3m <- predict(fg3m_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_fg3m,
+                                                                           "stat_max_l5" = rolling_max_fg3m,
+                                                                           "stat_min_l5" = rolling_min_fg3m))
 
 
 write_csv(final_data, "dk_lines.csv")

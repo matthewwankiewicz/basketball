@@ -153,3 +153,56 @@ gamelogs %>%
   group_by(player_name, game_date) %>% 
   slice(1) %>% 
   write_csv("thedaily/gamelogs2023.csv")
+
+
+gamelogs %>%
+  group_by(player_name) %>%
+  arrange(game_date) %>%
+  mutate(
+    rolling_pts = rollapply(pts, 4, mean, fill = NA, align = "right"),
+    rolling_mins = rollapply(min, 4, mean, fill = NA, align = "right"),
+    rolling_ast = rollapply(ast, 4, mean, fill = NA, align = "right"),
+    rolling_reb = rollapply(reb, 4, mean, fill = NA, align = "right"),
+    rolling_fg3m = rollapply(fg3m, 4, mean, fill = NA, align = "right"),
+    rolling_dfs = rollapply(dfs_points, 4, mean, fill = NA, align = "right"), 
+    rolling_usg = rollapply(usage_percentage, 4, mean, fill = NA, align = "right"),
+    ppm = rolling_pts / rolling_mins,
+    sd_pts = rollapply(dfs_points, width = 4, FUN = sd, align = "right", fill = NA),
+    player_rate = abs(rolling_pts / sd_pts),
+    rolling_max_pts = rollapply(pts, 5, max, fill = NA, align = "right"),
+    rolling_max_ast = rollapply(ast, 5, max, fill = NA, align = "right"),
+    rolling_max_fg3m = rollapply(fg3m, 5, max, fill = NA, align = "right"),
+    rolling_max_reb = rollapply(reb, 5, max, fill = NA, align = "right"),
+    rolling_max_dfs = rollapply(dfs_points, 5, max, fill = NA, align = "right"),
+    rolling_min_dfs = rollapply(dfs_points, 5, min, fill = NA, align = "right"),
+    rolling_min_pts = rollapply(pts, 5, min, fill = NA, align = "right"),
+    rolling_min_ast = rollapply(ast, 5, min, fill = NA, align = "right"),
+    rolling_min_reb = rollapply(reb, 5, min, fill = NA, align = "right"),
+    rolling_min_fg3m = rollapply(fg3m, 5, min, fill = NA, align = "right"),
+    rolling_sd_dfs = rollapply(dfs_points, 5, sd, fill = NA, align = "right"),
+    rolling_sd_pts = rollapply(pts, 5, sd, fill = NA, align = "right"),
+    rolling_sd_ast = rollapply(ast, 5, sd, fill = NA, align = "right"),
+    rolling_sd_reb = rollapply(reb, 5, sd, fill = NA, align = "right"),
+    rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right")
+  ) %>%
+  select(game_date, player_name, pos, opp_team, rolling_mins, min,
+         pts, ast, reb, fg3m, usage_percentage,
+         rolling_pts, rolling_usg, rolling_ast,
+         rolling_reb, rolling_fg3m, rolling_dfs, dfs_points,
+         rolling_max_pts, rolling_min_pts, rolling_max_ast, rolling_min_ast,
+         rolling_max_dfs, rolling_min_dfs, rolling_max_reb, rolling_min_reb,
+         rolling_max_fg3m, rolling_min_fg3m,
+         rolling_sd_dfs, rolling_sd_pts, rolling_sd_ast, rolling_sd_reb,
+         rolling_sd_fg3m) %>% 
+  separate_rows(pos, sep = ",") %>% 
+  group_by(game_date, player_name) %>% 
+  slice(1) %>% 
+  arrange(desc(game_date), player_name) %>% 
+  group_by(player_name) %>% 
+  mutate(current_pts = lead(rolling_pts, 1),
+         current_usg = lead(rolling_usg, 1),
+         current_ast = lead(rolling_ast, 1),
+         current_reb = lead(rolling_reb, 1),
+         current_3s = lead(rolling_fg3m, 1),
+         current_dfs = lead(rolling_dfs, 1)) %>% 
+  ungroup() -> gamelogs_ref
