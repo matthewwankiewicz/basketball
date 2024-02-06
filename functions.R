@@ -3,6 +3,7 @@
 ## create matchup table --------
 create_matchup_table <- \(player){
   player_table <- gamelogs %>%
+    mutate(fg3_rate = fg3a/fga) %>% 
     filter(player_name == player) %>%
     group_by(player_name) %>%
     arrange(game_date) %>%
@@ -31,7 +32,8 @@ create_matchup_table <- \(player){
       rolling_sd_pts = rollapply(pts, 5, sd, fill = NA, align = "right"),
       rolling_sd_ast = rollapply(ast, 5, sd, fill = NA, align = "right"),
       rolling_sd_reb = rollapply(reb, 5, sd, fill = NA, align = "right"),
-      rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right")
+      rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right"),
+      rolling_fg3_rate = rollapply(fg3_rate, 4, mean, fill = NA, alight = "right")
     ) %>%
     filter(player_name == player) %>% 
     select(game_date, player_name, pos, opp_team, rolling_mins, min, pts, ast, reb, fg3m,
@@ -41,13 +43,14 @@ create_matchup_table <- \(player){
            rolling_max_dfs, rolling_min_dfs, rolling_max_reb, rolling_min_reb,
            rolling_max_fg3m, rolling_min_fg3m,
            rolling_sd_dfs, rolling_sd_pts, rolling_sd_ast, rolling_sd_reb,
-           rolling_sd_fg3m) %>% 
+           rolling_sd_fg3m, rolling_fg3_rate) %>% 
     separate_rows(pos, sep = ",") %>% 
     group_by(game_date, player_name) %>% 
     slice(1)
   
   
   team_table <- gamelogs %>%
+    mutate(fg3_rate = fg3a/fga) %>% 
     filter(min > 15) %>%
     separate_rows(pos, sep = ",") %>%
     group_by(game_date, opp_team, pos) %>%
@@ -58,6 +61,7 @@ create_matchup_table <- \(player){
               ast = mean(ast),
               reb = mean(reb),
               fg3m = mean(fg3m),
+              fg3_rate = mean(fg3_rate),
               .groups = 'drop') %>%
     arrange(game_date) %>% 
     group_by(opp_team, pos) %>%
@@ -67,7 +71,8 @@ create_matchup_table <- \(player){
       rolling_ast = rollapply(ast, 5, mean, fill = NA, align = "right"),
       rolling_reb = rollapply(reb, 5, mean, fill = NA, align = "right"),
       rolling_fg3m = rollapply(fg3m, 5, mean, fill = NA, align = "right"),
-      rolling_mins = rollapply(mins, 5, mean, fill = NA, align = "right")) %>%
+      rolling_mins = rollapply(mins, 5, mean, fill = NA, align = "right"),
+      rolling_fg3_rate = rollapply(fg3_rate, 5, mean, fill = NA, align = "right")) %>%
     ungroup() %>%
     group_by(opp_team) %>%
     mutate(
@@ -76,10 +81,11 @@ create_matchup_table <- \(player){
       scaled_rolling_reb = scale(rolling_reb),
       scaled_rolling_fg3m = scale(rolling_fg3m),
       scaled_rolling_mins = scale(rolling_mins),
-      scaled_rolling_dfs = scale(rolling_dfs)
+      scaled_rolling_dfs = scale(rolling_dfs),
+      scaled_rolling_fg3_rate = scale(rolling_fg3_rate)
     ) %>%
     select(game_date, opp_team, pos, scaled_rolling_pts, scaled_rolling_ast, scaled_rolling_reb,
-           scaled_rolling_fg3m, scaled_rolling_mins, scaled_rolling_dfs)
+           scaled_rolling_fg3m, scaled_rolling_mins, scaled_rolling_dfs, scaled_rolling_fg3_rate)
   
   
   
@@ -96,6 +102,7 @@ create_matchup_table <- \(player){
   player_table$current_reb <- lead(player_table$rolling_reb, 1)
   player_table$current_3s <- lead(player_table$rolling_3s, 1)
   player_table$current_dfs <- lead(player_table$rolling_dfs, 1)
+  player_table$current_mins <- lead(player_table$rolling_mins, 1)
   
   return(player_table)
   
@@ -182,14 +189,15 @@ get_rolling_stats <- \(player){
       rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right"),
       ppm = rolling_pts / rolling_mins,
       sd_pts = rollapply(dfs_points, width = 4, FUN = sd, align = "right", fill = NA),
-      player_rate = abs(rolling_pts / sd_pts)
+      player_rate = abs(rolling_pts / sd_pts),
+      rolling_fg3_rate = rollapply(fg3_rate, 4, mean, fill = NA, alight = "right")
     ) %>%
     filter(game_date == max(game_date)) %>% 
     ungroup() %>% 
     select(player_name, rolling_pts, rolling_ast, rolling_reb, rolling_3s, 
            rolling_usg, rolling_mins, rolling_sd_dfs, rolling_sd_pts,
            rolling_sd_fg3m, rolling_sd_reb, rolling_sd_ast,
-           rolling_dfs)
+           rolling_dfs, rolling_fg3_rate)
 }
 
 
@@ -214,7 +222,7 @@ find_matchups <- function(table, gamelogs, player_props) {
     table %>%
       ungroup() %>%
       select(Name, Opponent, "rolling_value" = !!sym(paste0("opp_rolling_", stat_name))) %>%
-      left_join(player_props %>% select(player, "stat_line" = !!sym(stat_name)), by = c("Name" = "player")) %>%
+      left_join(player_props %>% select(full_name, "stat_line" = !!sym(stat_name)), by = c("Name" = "full_name")) %>%
       group_by(Name) %>%
       mutate(stat_name = stat_name,
              hit_rate = map2_dbl(Name, stat_line, ~get_hit_rate(.x, stat_name, .y, gamelogs)),
@@ -235,6 +243,10 @@ find_matchups <- function(table, gamelogs, player_props) {
                                                 pull(!!sym(stat_name)), na.rm = TRUE)))
   }) %>%
     drop_na() -> result
+  
+  result <- result %>% 
+    left_join(table %>% select(Name, current_mins, days_rest),
+              by = c("Name"))
   
   # Incorporate the get_rolling_stats function
   rolling_stats <- map_dfr(unique(result$Name), ~get_rolling_stats(.x)) %>% 
@@ -257,6 +269,9 @@ find_matchups <- function(table, gamelogs, player_props) {
 
 ## make predictions
 make_predictions <- \(table){
+  table$est_mins <- predict(mins_model,
+                            newdata = table)
+  
   table %>% 
     filter(stat_name == "pts") -> pts_tab
   
@@ -268,6 +283,7 @@ make_predictions <- \(table){
   
   table %>% 
     filter(stat_name == "fg3m") -> fg3m_tab
+  
   
   pts_tab$predicted_stat <- predict(pts_model,
                                     newdata = pts_tab)

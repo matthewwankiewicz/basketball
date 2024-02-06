@@ -3,6 +3,7 @@
 library(tidyverse)
 library(janitor)
 library(rvest)
+library(zoo)
 
 link <- "https://www.fantasypros.com/nba/rankings/overall-points-espn.php"
 page <- read_html(link)
@@ -126,7 +127,8 @@ gamelogs %>%
            2*stl + 2*blk - 0.5*to + 1.5*double_double + 3*triple_double,
          ob_points = pts + 1.2*reb + 1.5*ast +
            2.5*stl + 3*blk - 1*to,
-         ppm = dfs_points/min) %>% 
+         ppm = dfs_points/min,
+         fg3_rate = fg3a/fga) %>% 
   separate(matchup, into = c("team1", "team2"),
            sep = " vs. | @ ") -> gamelogs
 
@@ -183,17 +185,20 @@ gamelogs %>%
     rolling_sd_pts = rollapply(pts, 5, sd, fill = NA, align = "right"),
     rolling_sd_ast = rollapply(ast, 5, sd, fill = NA, align = "right"),
     rolling_sd_reb = rollapply(reb, 5, sd, fill = NA, align = "right"),
-    rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right")
+    rolling_sd_fg3m = rollapply(fg3m, 5, sd, fill = NA, align = "right"),
+    rolling_fg3_rate = rollapply(fg3_rate, 4, mean, fill = NA, alight = "right"),
+    rolling_max_fg3_rate = rollapply(fg3_rate, 5, max, fill = NA, alight = "right"),
+    rolling_min_fg3_rate = rollapply(fg3_rate, 5, min, fill = NA, alight = "right")
   ) %>%
   select(game_date, player_name, pos, opp_team, rolling_mins, min,
-         pts, ast, reb, fg3m, usage_percentage,
+         pts, ast, reb, fg3m, fg3_rate, usage_percentage, 
          rolling_pts, rolling_usg, rolling_ast,
          rolling_reb, rolling_fg3m, rolling_dfs, dfs_points,
          rolling_max_pts, rolling_min_pts, rolling_max_ast, rolling_min_ast,
          rolling_max_dfs, rolling_min_dfs, rolling_max_reb, rolling_min_reb,
          rolling_max_fg3m, rolling_min_fg3m,
          rolling_sd_dfs, rolling_sd_pts, rolling_sd_ast, rolling_sd_reb,
-         rolling_sd_fg3m) %>% 
+         rolling_sd_fg3m, rolling_fg3_rate, rolling_max_fg3_rate, rolling_min_fg3_rate) %>% 
   separate_rows(pos, sep = ",") %>% 
   group_by(game_date, player_name) %>% 
   slice(1) %>% 
@@ -204,5 +209,55 @@ gamelogs %>%
          current_ast = lead(rolling_ast, 1),
          current_reb = lead(rolling_reb, 1),
          current_3s = lead(rolling_fg3m, 1),
-         current_dfs = lead(rolling_dfs, 1)) %>% 
+         current_dfs = lead(rolling_dfs, 1),
+         current_mins = lead(rolling_mins, 1),
+         current_fg3_rate = lead(rolling_fg3_rate, 1),
+         prev_game_date = lead(game_date, 1),
+         ppm = current_pts/current_mins,
+         days_rest = as.numeric(game_date - prev_game_date) - 1) %>% 
   ungroup() -> gamelogs_ref
+
+
+
+### team def rankings to merge with game logs
+gamelogs %>%
+  filter(min > 10) %>% 
+  separate_rows(pos, sep = ,) %>% 
+  group_by(game_date, opp_team, pos) %>% 
+  summarise(dfs_points = mean(dfs_points),
+            mins = mean(min),
+            ppm = dfs_points/mins,
+            pts = mean(pts),
+            ast = mean(ast),
+            reb = mean(reb),
+            fg3m = mean(fg3m)) %>%
+  arrange(game_date) %>%
+  group_by(opp_team, pos) %>%
+  mutate(
+    rolling_dfs = rollapply(dfs_points, 5, mean, fill = NA, align = "right"),
+    rolling_pts = rollapply(pts, 5, mean, fill = NA, align = "right"),
+    rolling_ast = rollapply(ast, 5, mean, fill = NA, align = "right"),
+    rolling_reb = rollapply(reb, 5, mean, fill = NA, align = "right"),
+    rolling_fg3m = rollapply(fg3m, 5, mean, fill = NA, align = "right"),
+    rolling_mins = rollapply(mins, 5, mean, fill = NA, align = "right")  # Replace 'mins' with your actual minutes column
+  ) %>%
+  rename("team" = opp_team) %>%
+  group_by(pos) %>% 
+  mutate(
+    rolling_dfs = as.vector(scale(rolling_dfs, center = TRUE, scale = TRUE)),
+    rolling_mins = as.vector(scale(rolling_mins, center = TRUE, scale = TRUE)),
+    rolling_pts = as.vector(scale(rolling_pts, center = TRUE, scale = TRUE)),
+    rolling_ast = as.vector(scale(rolling_ast, center = TRUE, scale = TRUE)),
+    rolling_reb = as.vector(scale(rolling_reb, center = TRUE, scale = TRUE)),
+    rolling_fg3m = as.vector(scale(rolling_fg3m, center = TRUE, scale = TRUE))
+  ) %>%
+  select(team, pos, "opp_rolling_dfs" = rolling_dfs, "opp_rolling_mins" = rolling_mins, "opp_rolling_pts" = rolling_pts,
+         "opp_rolling_ast" =  rolling_ast, "opp_rolling_reb" = rolling_reb, 
+         "opp_rolling_fg3m" = rolling_fg3m, game_date) %>%
+  drop_na() -> team_def_rankings_rolling
+
+
+
+gamelogs_montecarlo <- gamelogs_ref %>% 
+  left_join(team_def_rankings_rolling, 
+            by = c("opp_team" = "team", "pos", "game_date"))

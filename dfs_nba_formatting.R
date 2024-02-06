@@ -8,7 +8,48 @@ read_csv('/users/matthew/Downloads/DKSalaries.csv') %>%
 separate(nba_lineups, Instructions, into = paste0("Column", 1:10), sep = ",", extra = "merge") %>% 
   janitor::row_to_names(1) %>% 
   select(1:9) %>% 
-  filter(`Roster Position` != 'CPT') -> nba_lineups
+  filter(`Roster Position` != 'CPT') %>%
+  mutate(Position = case_when(
+    Name == "Larry Nance Jr." ~ "PF",
+    Name == "Cason Wallace" ~ "PG",
+    Name == "Cole Anthony" ~ "PG",
+    Name == "Marcus Smart" ~ "PG",
+    Name == "Talen Horton-Tucker" ~ "SF",
+    Name == "Klay Thompson" ~ "SG",
+    Name == "Bogdan Bogdanovic" ~ "SG",
+    Name == "Grayson Allen" ~ "SG",
+    Name == "Duncan Robinson" ~ "SG",
+    Name == "Norman Powell" ~ "SG",
+    Name == "Ochai Agbaji" ~ "SG",
+    Name == "Kris Dunn" ~ "SG",
+    Name == "Patrick Williams" ~ "PF",
+    Name == "Nickeil Alexander-Walker" ~ "SG",
+    Name == "Ausar Thompson" ~ "SG",
+    Name == "Anthony Davis" ~ "C",
+    Name == "Kyrie Irving" ~ "SG",
+    Name == "Austin Reaves" ~ "SG",
+    Name == "Josh Giddey" ~ "SG",
+    Name == "Anfernee Simons" ~ "SG",
+    Name == "Dominick Barlow" ~ "PF",
+    Name == "Lauri Markkanen" ~ "PF",
+    Name == "Devin Vassell" ~ "SG",
+    Name == "Keyonte George" ~ "SG",
+    Name == "Bradley Beal" ~ "SG",
+    Name == "Malik Monk" ~ "SG",
+    Name == "Bol Bol" ~ "C",
+    Name == "Kevin Love" ~ "PF",
+    Name == "Amir Coffey" ~ "PF",
+    Name == "Christian Wood" ~ "PF",
+    Name == "Mikal Bridges" ~ "SF",
+    Name == "Aaron Nesmith" ~ "SF",
+    Name == "Alex Caruso" ~ "SG",
+    Name == "Dejounte Murray" ~ "SG",
+    Name == "Brandin Podziemski" ~ "SG",
+    Name == "Aaron Wiggins" ~ "SG",
+    Name == "Anthony Edwards" ~ "SG",
+    Name == "Paul Reed" ~ "PF",
+    .default = Position
+  ))-> nba_lineups
 
 ### filter for last month and get player averages
 gamelogs_ref %>%
@@ -96,8 +137,8 @@ merged_data <- nba_lineups %>%
 
 merged_data %>% 
   left_join(player_props %>% 
-              select(player, "pts_line" = pts),
-            by = c('Name' = 'player')) -> merged_data
+              select(full_name, "pts_line" = pts),
+            by = c('Name' = 'full_name')) -> merged_data
 
 
 #### take lowest value (some players have multiple positions - base results on toughest matchup)
@@ -105,6 +146,8 @@ final_data <- merged_data %>% group_by(Name) %>% filter(game_date == max(game_da
 
 
 ## make predictions
+final_data$est_mins <- predict(mins_model, newdata = final_data)
+
 final_data$est_dfs <- predict(dfs_model, newdata = final_data %>% rename("rolling_value" = opp_rolling_dfs,
                                                                          "stat_max_l5" = rolling_max_dfs,
                                                                          "stat_min_l5" = rolling_min_dfs))
