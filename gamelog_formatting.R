@@ -4,36 +4,7 @@ library(tidyverse)
 library(janitor)
 library(rvest)
 library(zoo)
-
-link <- "https://www.fantasypros.com/nba/rankings/overall-points-espn.php"
-page <- read_html(link)
-
-page %>% 
-  html_table() %>% 
-  .[[1]] %>% 
-  clean_names() %>% 
-  select(player) -> data
-
-data %>% 
-  separate(player, sep = "\\(", into = c("player", "team_pos")) %>% 
-  mutate(team_pos = sub("\\).*", "", team_pos)) %>% 
-  separate(team_pos, sep = "-", into = c("team", "pos")) %>% 
-  mutate(player = sub(" Jr.", "", player)) %>% 
-  mutate(player = str_squish(player),
-         team = str_squish(team),
-         pos = str_squish(pos)) -> player_data
-
-player_data[player_data == "Jabari Smith"] <- "Jabari Smith Jr."
-player_data[player_data == "Michael Porter"] <- "Michael Porter Jr."
-player_data[player_data == "Jaren Jackson"] <- "Jaren Jackson Jr."
-player_data[player_data == "Kelly Oubre"] <- "Kelly Oubre Jr."
-player_data[player_data == "Gary Trent"] <- "Gary Trent Jr."
-player_data[player_data == "Tim Hardaway"] <- "Tim Hardaway Jr."
-player_data[player_data == "Dennis Smith"] <- "Dennis Smith Jr."
-player_data[player_data == "Larry Nance"] <- "Larry Nance Jr."
-player_data[player_data == "Jaime Jaquez"] <- "Jaime Jaquez Jr."
-player_data[player_data == "Kevin Porter"] <- "Kevin Porter Jr."
-player_data[player_data == "Russell Westbrook III"] <- "Russell Westbrook"
+library(data.table)
 
 ### Working on gamelogs ####
 
@@ -73,26 +44,25 @@ merged_nba_games <- merge(
 
 # Filter rows where team names are different
 nba_games <- merged_nba_games %>% 
-  filter(TEAM_ABBREVIATION != TEAM_ABBREVIATION_opp)
+  filter(TEAM_ABBREVIATION != TEAM_ABBREVIATION_opp) %>% 
+  data.table::data.table()
 
 
 
 nba_teams <- nba_games %>% 
-  filter(SEASON_ID == 22023,
-         TEAM_ID > 100) %>% 
+  # filter(SEASON_ID == 22024,
+  #        TEAM_ID > 100) %>% 
   pull(TEAM_ID) %>% unique()
 
+## merge gamelogs with nba games
 gamelogs %>% 
-  merge(nba_games %>% 
-          filter(WL == 'W') %>% 
-          select(GAME_ID, GAME_DATE, MATCHUP, "TEAM_MIN" = MIN,
-                 "TEAM_FGM" = FGM, "TEAM_REB" = REB, opp_REB,
-                 "TEAM_FGA" = FGA, "TEAM_FTA" = FTA, "TEAM_TO" = TOV),
-        by = "GAME_ID") -> gamelogs
+  merge(nba_games[WL=="W"] %>% unique()
+)
+
 
 gamelogs %>% 
   clean_names() %>% 
-  filter(game_date >= as.Date("2023-10-24"),
+  filter(game_date >= as.Date("2024-10-22"),
          team_id %in% nba_teams) %>%
   select(game_date, game_id, matchup, player_name, player_id,
          min, fgm, fga, fg_pct, fg3m, fg3a, fg3_pct, ftm, fta, ft_pct,
@@ -123,38 +93,12 @@ gamelogs %>%
                                   reb > 10 & blk > 10 & (pts > 10 | ast > 10 | stl > 10) |
                                   reb > 10 & stl > 10 & (pts > 10 | ast > 10 | blk > 10) |
                                   blk > 10 & stl > 10 & (pts > 10 | ast > 10 | reb > 10), 1, 0),
-         dfs_points = pts + 0.5*fg3m + 1.25*reb + 1.5*ast +
-           2*stl + 2*blk - 0.5*to + 1.5*double_double + 3*triple_double,
-         ob_points = pts + 1.2*reb + 1.5*ast +
-           2.5*stl + 3*blk - 1*to,
-         ppm = dfs_points/min,
+         ppm = fan_pts/min,
          fg3_rate = fg3a/fga) %>% 
   separate(matchup, into = c("team1", "team2"),
            sep = " vs. | @ ") -> gamelogs
 
 
-
-merge(gamelogs, 
-      player_data,
-      by.x = "player_name",
-      by.y = "player",
-      all.x = T) -> gamelogs
-
-## add in opponent
-gamelogs %>% 
-  mutate(opp_team = ifelse(team == team1, team2, team1)) %>% 
-  select(-c(team1, team2)) %>% 
-  distinct(player_name, game_date, game_id,
-           .keep_all = T) -> gamelogs
-
-gamelogs %>% 
-  write_csv("fantasybball/gamelogs2023.csv")
-
-gamelogs %>% 
-  separate_rows(pos, sep = ",") %>% 
-  group_by(player_name, game_date) %>% 
-  slice(1) %>% 
-  write_csv("thedaily/gamelogs2023.csv")
 
 
 gamelogs %>%
@@ -166,22 +110,22 @@ gamelogs %>%
     rolling_ast = rollapply(ast, 4, mean, fill = NA, align = "right"),
     rolling_reb = rollapply(reb, 4, mean, fill = NA, align = "right"),
     rolling_fg3m = rollapply(fg3m, 4, mean, fill = NA, align = "right"),
-    rolling_dfs = rollapply(dfs_points, 4, mean, fill = NA, align = "right"), 
+    rolling_dfs = rollapply(fan_pts, 4, mean, fill = NA, align = "right"), 
     rolling_usg = rollapply(usage_percentage, 4, mean, fill = NA, align = "right"),
     ppm = rolling_pts / rolling_mins,
-    sd_pts = rollapply(dfs_points, width = 4, FUN = sd, align = "right", fill = NA),
+    sd_pts = rollapply(fan_pts, width = 4, FUN = sd, align = "right", fill = NA),
     player_rate = abs(rolling_pts / sd_pts),
     rolling_max_pts = rollapply(pts, 5, max, fill = NA, align = "right"),
     rolling_max_ast = rollapply(ast, 5, max, fill = NA, align = "right"),
     rolling_max_fg3m = rollapply(fg3m, 5, max, fill = NA, align = "right"),
     rolling_max_reb = rollapply(reb, 5, max, fill = NA, align = "right"),
-    rolling_max_dfs = rollapply(dfs_points, 5, max, fill = NA, align = "right"),
-    rolling_min_dfs = rollapply(dfs_points, 5, min, fill = NA, align = "right"),
+    rolling_max_dfs = rollapply(fan_pts, 5, max, fill = NA, align = "right"),
+    rolling_min_dfs = rollapply(fan_pts, 5, min, fill = NA, align = "right"),
     rolling_min_pts = rollapply(pts, 5, min, fill = NA, align = "right"),
     rolling_min_ast = rollapply(ast, 5, min, fill = NA, align = "right"),
     rolling_min_reb = rollapply(reb, 5, min, fill = NA, align = "right"),
     rolling_min_fg3m = rollapply(fg3m, 5, min, fill = NA, align = "right"),
-    rolling_sd_dfs = rollapply(dfs_points, 5, sd, fill = NA, align = "right"),
+    rolling_sd_dfs = rollapply(fan_pts, 5, sd, fill = NA, align = "right"),
     rolling_sd_pts = rollapply(pts, 5, sd, fill = NA, align = "right"),
     rolling_sd_ast = rollapply(ast, 5, sd, fill = NA, align = "right"),
     rolling_sd_reb = rollapply(reb, 5, sd, fill = NA, align = "right"),
@@ -190,16 +134,15 @@ gamelogs %>%
     rolling_max_fg3_rate = rollapply(fg3_rate, 5, max, fill = NA, alight = "right"),
     rolling_min_fg3_rate = rollapply(fg3_rate, 5, min, fill = NA, alight = "right")
   ) %>%
-  select(game_date, player_name, pos, opp_team, rolling_mins, min,
+  select(game_date, player_name, rolling_mins, min,
          pts, ast, reb, fg3m, fg3_rate, usage_percentage, 
          rolling_pts, rolling_usg, rolling_ast,
-         rolling_reb, rolling_fg3m, rolling_dfs, dfs_points,
+         rolling_reb, rolling_fg3m, rolling_dfs, fan_pts,
          rolling_max_pts, rolling_min_pts, rolling_max_ast, rolling_min_ast,
          rolling_max_dfs, rolling_min_dfs, rolling_max_reb, rolling_min_reb,
          rolling_max_fg3m, rolling_min_fg3m,
          rolling_sd_dfs, rolling_sd_pts, rolling_sd_ast, rolling_sd_reb,
          rolling_sd_fg3m, rolling_fg3_rate, rolling_max_fg3_rate, rolling_min_fg3_rate) %>% 
-  separate_rows(pos, sep = ",") %>% 
   group_by(game_date, player_name) %>% 
   slice(1) %>% 
   arrange(desc(game_date), player_name) %>% 
@@ -219,45 +162,8 @@ gamelogs %>%
 
 
 
-### team def rankings to merge with game logs
-gamelogs %>%
-  filter(min > 10) %>% 
-  separate_rows(pos, sep = ,) %>% 
-  group_by(game_date, opp_team, pos) %>% 
-  summarise(dfs_points = mean(dfs_points),
-            mins = mean(min),
-            ppm = dfs_points/mins,
-            pts = mean(pts),
-            ast = mean(ast),
-            reb = mean(reb),
-            fg3m = mean(fg3m)) %>%
-  arrange(game_date) %>%
-  group_by(opp_team, pos) %>%
-  mutate(
-    rolling_dfs = rollapply(dfs_points, 5, mean, fill = NA, align = "right"),
-    rolling_pts = rollapply(pts, 5, mean, fill = NA, align = "right"),
-    rolling_ast = rollapply(ast, 5, mean, fill = NA, align = "right"),
-    rolling_reb = rollapply(reb, 5, mean, fill = NA, align = "right"),
-    rolling_fg3m = rollapply(fg3m, 5, mean, fill = NA, align = "right"),
-    rolling_mins = rollapply(mins, 5, mean, fill = NA, align = "right")  # Replace 'mins' with your actual minutes column
-  ) %>%
-  rename("team" = opp_team) %>%
-  group_by(pos) %>% 
-  mutate(
-    rolling_dfs = as.vector(scale(rolling_dfs, center = TRUE, scale = TRUE)),
-    rolling_mins = as.vector(scale(rolling_mins, center = TRUE, scale = TRUE)),
-    rolling_pts = as.vector(scale(rolling_pts, center = TRUE, scale = TRUE)),
-    rolling_ast = as.vector(scale(rolling_ast, center = TRUE, scale = TRUE)),
-    rolling_reb = as.vector(scale(rolling_reb, center = TRUE, scale = TRUE)),
-    rolling_fg3m = as.vector(scale(rolling_fg3m, center = TRUE, scale = TRUE))
-  ) %>%
-  select(team, pos, "opp_rolling_dfs" = rolling_dfs, "opp_rolling_mins" = rolling_mins, "opp_rolling_pts" = rolling_pts,
-         "opp_rolling_ast" =  rolling_ast, "opp_rolling_reb" = rolling_reb, 
-         "opp_rolling_fg3m" = rolling_fg3m, game_date) %>%
-  drop_na() -> team_def_rankings_rolling
 
-
-
-gamelogs_montecarlo <- gamelogs_ref %>% 
-  left_join(team_def_rankings_rolling, 
-            by = c("opp_team" = "team", "pos", "game_date"))
+gamelogs_ref %>% 
+  filter(player_name == "Scottie Barnes") %>% 
+  ggplot(aes(game_date, rolling_pts)) +
+  geom_line()
