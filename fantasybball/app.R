@@ -5,10 +5,15 @@ library(tidyverse)
 library(tidyr)
 
 # load game logs file
-gamelogs <- read_csv("gamelogs2023.csv")
+gamelogs <- read_csv("fantasybball/daily_app_data.csv")
 
 # Get unique player names
 unique_players <- unique(gamelogs$player_name)
+
+## get free agents
+free_agents=read_csv("fantasybball/free_agents.csv")
+
+free_agents$player_name = sub("Player\\((.*?)\\)", "\\1", free_agents$player_name)
 
 # Shiny App
 ui <- fluidPage(
@@ -33,15 +38,12 @@ server <- function(input, output) {
     if (nchar(player) > 0) {
       # Extract player data
       player_data <- gamelogs %>%
-        filter(player_name == player)
-      
-      # Separate rows for each position
-      player_data <- player_data %>%
-        separate_rows(pos, sep = ",")
+        filter(player_name == player) %>% 
+        mutate(pos = map_chr(pos, ~ str_split(.x, "-")[[1]][1])) 
+        
       
       # Summary statistics for the player
       report <- gamelogs %>%
-        separate_rows(pos, sep = ',') %>%
         group_by(player_name) %>%
         summarise(
           FanPts_per_game = mean(fan_pts, na.rm = TRUE),
@@ -79,7 +81,7 @@ server <- function(input, output) {
       
       # Calculate average points scored by position
       average_by_position <- gamelogs %>%
-        separate_rows(pos, sep = ",") %>% 
+        separate_rows(pos, sep = "-") %>% 
         filter(min >= 20) %>% 
         group_by(pos) %>%
         summarise(average_points_by_position = mean(fan_pts, na.rm = TRUE))

@@ -1,0 +1,214 @@
+---
+title: "NBA Player Performance Analysis"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: united
+    code_folding: hide
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(lubridate)
+library(tidyverse)
+library(DT)
+library(plotly)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+# Read in data
+df <- read_csv("daily_app_data.csv")
+
+# Function to calculate changes
+calculate_changes <- function(data, window_size) {
+  data %>%
+    arrange(player_name, game_date) %>%
+    group_by(player_name) %>%
+    mutate(
+      # Calculate changes between current and previous values
+      mins_change = rolling_mins - lag(rolling_mins),
+      pts_change = rolling_pts - lag(rolling_pts),
+      usg_change = rolling_usg - lag(rolling_usg),
+      ast_change = rolling_ast - lag(rolling_ast),
+      reb_change = rolling_reb - lag(rolling_reb),
+      fg3m_change = rolling_fg3m - lag(rolling_fg3m),
+      dfs_change = rolling_dfs - lag(rolling_dfs)
+    ) %>%
+    ungroup()
+}
+
+# Filter for recent games
+filtered_df <- df %>%
+  filter(game_date >= max(game_date) - days(45))
+
+# Parameters for analysis
+WINDOW_SIZES <- c(3, 5, 10)  # Different window sizes to analyze
+TOP_N <- 25  # Number of players to show in each category
+```
+
+## Data Overview
+```{r data-overview}
+# Display key data statistics
+stats_overview <- filtered_df %>%
+  group_by(player_name) %>%
+  summarise(
+    games_played = n(),
+    avg_minutes = mean(rolling_mins, na.rm = TRUE),
+    avg_points = mean(rolling_pts, na.rm = TRUE),
+    avg_fantasy = mean(rolling_dfs, na.rm = TRUE),
+    max_fantasy = max(rolling_max_dfs, na.rm = TRUE),
+    min_fantasy = min(rolling_min_dfs, na.rm = TRUE),
+    last_game = max(game_date)
+  ) %>%
+  arrange(desc(avg_fantasy)) %>%
+  head(10)
+
+DT::datatable(stats_overview,
+              caption = "Top 10 Players by Average Fantasy Points",
+              options = list(scrollX = TRUE)) %>%
+  formatRound(columns = c("avg_minutes", "avg_points", "avg_fantasy", 
+                         "max_fantasy", "min_fantasy"), digits = 1)
+```
+
+## Performance Changes {.tabset}
+
+```{r generate-tabs, results='asis'}
+for(window_size in WINDOW_SIZES) {
+  cat(sprintf("\n### %d Game Window {.tabset}\n", window_size))
+  
+  # Calculate changes
+  window_data <- calculate_changes(filtered_df, window_size)
+  
+  # Generate sub-sections for each metric
+  metrics <- list(
+    list(name = "Minutes", col = "mins", current = "rolling_mins"),
+    list(name = "Points", col = "pts", current = "rolling_pts"),
+    list(name = "Usage %", col = "usg", current = "rolling_usg"),
+    list(name = "Assists", col = "ast", current = "rolling_ast"),
+    list(name = "Rebounds", col = "reb", current = "rolling_reb"),
+    list(name = "3-Pointers", col = "fg3m", current = "rolling_fg3m"),
+    list(name = "Fantasy Points", col = "dfs", current = "rolling_dfs")
+  )
+  
+  for(metric in metrics) {
+    cat(sprintf("\n#### %s {.tabset}\n", metric$name))
+    
+    # Get column names
+    change_col <- paste0(metric$col, "_change")
+    current_col <- metric$current
+    
+    # Get the most recent change for each player
+    player_changes <- window_data %>%
+      group_by(player_name) %>%
+      arrange(desc(game_date)) %>%
+      slice(1) %>%
+      ungroup()
+    
+    # Generate risers table
+    cat("\n##### Risers\n")
+    risers_data <- player_changes %>%
+      select(player_name, game_date, pos,
+             all_of(change_col), 
+             all_of(current_col)) %>%
+      filter(!is.na(.[[change_col]])) %>%
+      arrange(desc(.[[change_col]])) %>%
+      slice_head(n = TOP_N) %>%
+      mutate(
+        change = round(.[[change_col]], 2),
+        current = round(.[[current_col]], 2),
+        game_date = as.Date(game_date)
+      ) %>%
+      select(Player = player_name,
+             Position = pos,
+             Date = game_date,
+             Change = change,
+             `Current Value` = current) %>%
+      filter(Change > 0)  # Only show positive changes
+    
+    print(DT::datatable(risers_data))
+    
+    # Generate fallers table
+    cat("\n##### Fallers\n")
+    fallers_data <- player_changes %>%
+      select(player_name, game_date, pos,
+             all_of(change_col), 
+             all_of(current_col)) %>%
+      filter(!is.na(.[[change_col]])) %>%
+      arrange(.[[change_col]]) %>%
+      slice_head(n = TOP_N) %>%
+      mutate(
+        change = round(.[[change_col]], 2),
+        current = round(.[[current_col]], 2),
+        game_date = as.Date(game_date)
+      ) %>%
+      select(Player = player_name,
+             Position = pos,
+             Date = game_date,
+             Change = change,
+             `Current Value` = current) %>%
+      filter(Change < 0)  # Only show negative changes
+    
+    print(DT::datatable(fallers_data))
+    
+    # Generate trend plot
+    cat("\n##### Trends\n")
+    
+    # Get top 10 players by absolute change for the trend plot
+    top_changers <- player_changes %>%
+      mutate(abs_change = abs(.[[change_col]])) %>%
+      arrange(desc(abs_change)) %>%
+      slice_head(n = 10) %>%
+      pull(player_name)
+    
+    trend_data <- window_data %>%
+      filter(player_name %in% top_changers) %>%
+      filter(!is.na(.[[current_col]]))
+    
+    p <- plot_ly(trend_data, 
+                 x = ~game_date, 
+                 y = as.formula(paste0("~", current_col)), 
+                 color = ~player_name, 
+                 type = 'scatter', 
+                 mode = 'lines+markers',
+                 hovertemplate = paste(
+                   "Player: %{text}<br>",
+                   "Date: %{x}<br>",
+                   "Value: %{y:.1f}<br>",
+                   "<extra></extra>"
+                 ),
+                 text = ~player_name) %>%
+      layout(title = paste("Trend Analysis -", metric$name, "(Top 10 Changers)"),
+             xaxis = list(title = "Date"),
+             yaxis = list(title = metric$name),
+             showlegend = TRUE)
+    
+    print(p)
+  }
+}
+```
+
+## Volatility Analysis
+```{r volatility}
+# Calculate player volatility metrics
+volatility <- filtered_df %>%
+  group_by(player_name) %>%
+  summarise(
+    games = n(),
+    avg_points = mean(rolling_pts, na.rm = TRUE),
+    pts_volatility = mean(rolling_sd_pts, na.rm = TRUE),
+    avg_fantasy = mean(rolling_dfs, na.rm = TRUE),
+    dfs_volatility = mean(rolling_sd_dfs, na.rm = TRUE),
+    position = first(pos)
+  ) %>%
+  filter(games >= 5) %>%  # Filter for players with enough games
+  arrange(desc(dfs_volatility))
+
+# Display top volatile players
+DT::datatable(head(volatility, 20),
+              caption = "Top 20 Most Volatile Players",
+              options = list(scrollX = TRUE)) %>%
+  formatRound(columns = c("avg_points", "pts_volatility", 
+                         "avg_fantasy", "dfs_volatility"), 
+              digits = 1)
+```

@@ -13,12 +13,13 @@ library(rvest)
 library(janitor)
 
 
-gamelogs <- read_csv("gamelogs2023.csv")
+gamelogs <- read_csv("fantasybball/gamelogs2024.csv")
 gamelogs$GAME_ID <- ifelse(nchar(gamelogs$GAME_ID) == 8, paste0("00", gamelogs$GAME_ID),
                            ifelse(nchar(gamelogs$GAME_ID) == 9, paste0("0", gamelogs$GAME_ID),
                                   gamelogs$GAME_ID))
-nba_games <- read_csv("games2023.csv")
-
+nba_games <- read_csv("fantasybball/games2024.csv")
+positions <- read_csv("fantasybball/nba_active_player_positions.csv") %>% 
+  clean_names()
 
 opp_data <- nba_games %>%
   select(-starts_with("opp_")) %>%
@@ -37,14 +38,14 @@ merged_nba_games <- merge(
   nba_games,
   nba_games_opponent,
   by = c("GAME_ID"),
-  suffixes = c("", "_opp"),
+  suffixes = c("_team", "_opp"),
   incomparables = NA,  # Handle non-matching teams by inserting NA values
   allow.cartesian = TRUE  # Allow the creation of a Cartesian product
 )
 
 # Filter rows where team names are different
 nba_games <- merged_nba_games %>% 
-  filter(TEAM_ABBREVIATION != TEAM_ABBREVIATION_opp) %>% 
+  filter(TEAM_ABBREVIATION_team != TEAM_ABBREVIATION_opp) %>% 
   data.table::data.table()
 
 
@@ -55,14 +56,22 @@ nba_teams <- nba_games %>%
   pull(TEAM_ID) %>% unique()
 
 ## merge gamelogs with nba games
-gamelogs %>% 
-  merge(nba_games[WL=="W"] %>% unique()
+gamelogs <- gamelogs %>% 
+  merge(nba_games %>% unique(),
+        by = c("TEAM_ID", "GAME_ID")
 )
 
 
+## remove ".x" from stats, change column with ".y" to "team_[COLNAME}"]
+gamelogs <- gamelogs %>% 
+  rename_at(vars(contains(".x")), ~ str_replace_all(., "\\.x$", "")) %>%
+  rename_at(vars(contains(".y")), ~ paste0("team_", str_replace_all(., "\\.y$", "")))
+
+
 gamelogs %>% 
-  clean_names() %>% 
-  filter(game_date >= as.Date("2024-10-22"),
+  clean_names() %>%
+  rename("team_to" = "tov") %>%
+  filter(game_date >= as.Date("2023-10-22"),
          team_id %in% nba_teams) %>%
   select(game_date, game_id, matchup, player_name, player_id,
          min, fgm, fga, fg_pct, fg3m, fg3a, fg3_pct, ftm, fta, ft_pct,
@@ -99,6 +108,9 @@ gamelogs %>%
            sep = " vs. | @ ") -> gamelogs
 
 
+## add in positions
+gamelogs <- gamelogs %>% 
+  merge(positions, by = "player_name")
 
 
 gamelogs %>%
@@ -134,8 +146,8 @@ gamelogs %>%
     rolling_max_fg3_rate = rollapply(fg3_rate, 5, max, fill = NA, alight = "right"),
     rolling_min_fg3_rate = rollapply(fg3_rate, 5, min, fill = NA, alight = "right")
   ) %>%
-  select(game_date, player_name, rolling_mins, min,
-         pts, ast, reb, fg3m, fg3_rate, usage_percentage, 
+  select(game_date, player_name, player_id, rolling_mins, min, "pos" = position,
+         pts, ast, reb, fg3m, ftr, reb_rate, ast_rate, fg3_rate, usage_percentage, 
          rolling_pts, rolling_usg, rolling_ast,
          rolling_reb, rolling_fg3m, rolling_dfs, fan_pts,
          rolling_max_pts, rolling_min_pts, rolling_max_ast, rolling_min_ast,
@@ -162,8 +174,5 @@ gamelogs %>%
 
 
 
-
 gamelogs_ref %>% 
-  filter(player_name == "Scottie Barnes") %>% 
-  ggplot(aes(game_date, rolling_pts)) +
-  geom_line()
+  fwrite("fantasybball/daily_app_data.csv")
