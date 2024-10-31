@@ -21,11 +21,14 @@ def get_player_position(player_id):
 # Get the list of all NBA players
 all_players = players.get_players()
 
+# Filter for active players only
+active_players = [player for player in all_players if player['is_active']]
+
 # List to store player data
 player_data = []
 
-# Loop through all players and get position data
-for player in all_players:
+# Loop through all active players and get position data
+for player in active_players:
     player_id = player['id']
     player_name = player['full_name']
     position = get_player_position(player_id)
@@ -35,6 +38,9 @@ for player in all_players:
 df = pd.DataFrame(player_data)
 
 # Save to CSV
-df.to_csv('fantasybball/nba_player_positions.csv', index=False)
+df.to_csv('nba_active_player_positions.csv', index=False)
+
+
+
 
 
