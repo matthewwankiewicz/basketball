@@ -300,3 +300,30 @@ make_predictions <- \(table){
   return(rbind(pts_tab, ast_tab, reb_tab, fg3m_tab))
 }
 
+#### get schedule #####
+data <- fread("fantasybball/fantasybball/daily_app_data.csv") # formatted gamelogs file
+schedule <- fread("~/Documents/basketball/fantasybball/nba_final_schedule.csv") # formatted schedule
+
+## create function to pull player's schedule for a given week
+get_schedule <- function(player, start_date = Sys.Date()-7, end_date = Sys.Date(),
+                         game_data = data, full_schedule = schedule){
+  ## get each player's most recent team + position
+  position_data <- game_data %>% 
+    slice_max(game_date, by = player_name) %>% 
+    select(player_name, position, "team" = team_abbreviation, is_free_agent) %>% 
+    filter(player_name == player)
+  
+  ## pull the player's team
+  player_team <- position_data$team
+  
+  ## filter schedule for that team return
+  team_schedule <- full_schedule %>% 
+    filter(game_date >= start_date & game_date <= end_date &
+             team == player_team)
+  
+  ## output the schedule
+  return(team_schedule)
+}
+
+get_schedule("Scottie Barnes")
+
