@@ -1,0 +1,1202 @@
+2024-12-14 02:46:04,348 - INFO - Starting data processing
+2024-12-14 02:46:04,448 - INFO - Successfully read in files
+2024-12-14 02:46:04,448 - INFO - Initial number of records: 25154
+2024-12-14 02:46:04,466 - INFO - Removed 12665 duplicate records
+2024-12-14 02:46:04,466 - INFO - Final number of records: 12489
+2024-12-14 02:46:04,477 - INFO - Merging gamelogs with games data
+2024-12-14 02:46:04,488 - INFO - Calculating statistical metrics
+2024-12-14 02:46:04,639 - INFO - Calculating rolling statistics
+2024-12-14 02:46:05,716 - INFO - Adding position data
+2024-12-14 02:46:05,720 - INFO - Saving processed data
+2024-12-14 02:46:05,895 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-14 02:46:05,896 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 02:46:07,611 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 03:10:17,346 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 03:10:18,978 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 03:11:44,137 - INFO - Starting data processing
+2024-12-14 03:11:44,198 - INFO - Successfully read in files
+2024-12-14 03:11:44,198 - INFO - Initial number of records: 25154
+2024-12-14 03:11:44,208 - INFO - Removed 12665 duplicate records
+2024-12-14 03:11:44,208 - INFO - Final number of records: 12489
+2024-12-14 03:11:44,216 - INFO - Merging gamelogs with games data
+2024-12-14 03:11:44,223 - INFO - Calculating statistical metrics
+2024-12-14 03:11:44,369 - INFO - Calculating rolling statistics
+2024-12-14 03:11:45,311 - INFO - Adding position data
+2024-12-14 03:11:45,316 - INFO - Saving processed data
+2024-12-14 03:11:45,492 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-14 03:11:45,493 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 03:11:47,647 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 03:11:52,139 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 03:11:53,744 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 19:01:04,841 - INFO - Starting data processing
+2024-12-14 19:01:04,905 - INFO - Successfully read in files
+2024-12-14 19:01:04,905 - INFO - Initial number of records: 25154
+2024-12-14 19:01:04,915 - INFO - Removed 12665 duplicate records
+2024-12-14 19:01:04,915 - INFO - Final number of records: 12489
+2024-12-14 19:01:04,929 - INFO - Merging gamelogs with games data
+2024-12-14 19:01:04,939 - INFO - Calculating statistical metrics
+2024-12-14 19:01:05,090 - INFO - Calculating rolling statistics
+2024-12-14 19:01:06,294 - INFO - Adding position data
+2024-12-14 19:01:06,299 - INFO - Saving processed data
+2024-12-14 19:01:06,553 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-14 19:01:06,555 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 19:01:08,349 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 19:01:14,550 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 19:01:16,205 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-14 19:01:29,191 - INFO - Collecting 200 free agents from ESPN league 9844077
+2024-12-14 19:01:30,923 - INFO - Successfully saved 200 free agents to fantasybball/free_agents.csv
+2024-12-15 00:36:30,435 - INFO - Starting data processing
+2024-12-15 00:36:30,503 - INFO - Successfully read in files
+2024-12-15 00:36:30,504 - INFO - Initial number of records: 25154
+2024-12-15 00:36:30,516 - INFO - Removed 12665 duplicate records
+2024-12-15 00:36:30,516 - INFO - Final number of records: 12489
+2024-12-15 00:36:30,534 - INFO - Merging gamelogs with games data
+2024-12-15 00:36:30,543 - INFO - Calculating statistical metrics
+2024-12-15 00:36:30,736 - INFO - Calculating rolling statistics
+2024-12-15 00:36:31,794 - INFO - Adding position data
+2024-12-15 00:36:31,799 - INFO - Saving processed data
+2024-12-15 00:36:31,981 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 00:38:14,263 - INFO - Starting data processing
+2024-12-15 00:38:14,313 - INFO - Successfully read in files
+2024-12-15 00:38:14,314 - INFO - Initial number of records: 25154
+2024-12-15 00:38:14,318 - INFO - Removed 12665 duplicate records
+2024-12-15 00:38:14,318 - INFO - Final number of records: 12489
+2024-12-15 00:38:14,325 - INFO - Merging gamelogs with games data
+2024-12-15 00:38:14,329 - INFO - Calculating statistical metrics
+2024-12-15 00:38:14,468 - ERROR - Error processing data: name 'positions' is not defined
+2024-12-15 00:38:14,468 - ERROR - Error details: 
+Traceback (most recent call last):
+  File "/Users/matthew/Documents/basketball/fantasybball/gamelog_pipeline.py", line 328, in process_data
+    positions['Player Name'] = positions['Player Name'].astype(str)
+                               ^^^^^^^^^
+NameError: name 'positions' is not defined
+2024-12-15 00:40:54,861 - INFO - Starting data processing
+2024-12-15 00:40:54,909 - INFO - Successfully read in files
+2024-12-15 00:40:54,909 - INFO - Initial number of records: 25154
+2024-12-15 00:40:54,922 - INFO - Removed 12665 duplicate records
+2024-12-15 00:40:54,922 - INFO - Final number of records: 12489
+2024-12-15 00:40:54,932 - INFO - Merging gamelogs with games data
+2024-12-15 00:40:54,938 - INFO - Calculating statistical metrics
+2024-12-15 00:40:55,092 - INFO - Calculating rolling statistics
+2024-12-15 00:40:56,066 - INFO - Adding league player data
+2024-12-15 00:40:56,066 - INFO - Collecting league players data
+2024-12-15 00:40:57,957 - INFO - Collected data for 160 players (50 free agents)
+2024-12-15 00:40:57,963 - INFO - Saving processed data
+2024-12-15 00:40:58,145 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 00:41:36,392 - INFO - Collecting league players data
+2024-12-15 00:41:38,037 - INFO - Collected data for 160 players (50 free agents)
+2024-12-15 00:41:50,930 - INFO - Collecting league players data
+2024-12-15 00:41:52,322 - INFO - Collected data for 160 players (50 free agents)
+2024-12-15 00:45:41,398 - INFO - Starting data processing
+2024-12-15 00:45:41,455 - INFO - Successfully read in files
+2024-12-15 00:45:41,455 - INFO - Initial number of records: 25154
+2024-12-15 00:45:41,465 - INFO - Removed 12665 duplicate records
+2024-12-15 00:45:41,465 - INFO - Final number of records: 12489
+2024-12-15 00:45:41,473 - INFO - Merging gamelogs with games data
+2024-12-15 00:45:41,480 - INFO - Calculating statistical metrics
+2024-12-15 00:45:41,635 - INFO - Calculating rolling statistics
+2024-12-15 00:45:42,616 - INFO - Adding league player data
+2024-12-15 00:45:42,616 - INFO - Collecting league players data
+2024-12-15 00:45:44,688 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 00:45:44,695 - INFO - Saving processed data
+2024-12-15 00:45:44,880 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 00:49:10,527 - INFO - Starting data processing
+2024-12-15 00:49:10,585 - INFO - Successfully read in files
+2024-12-15 00:49:10,586 - INFO - Initial number of records: 25154
+2024-12-15 00:49:10,595 - INFO - Removed 12665 duplicate records
+2024-12-15 00:49:10,596 - INFO - Final number of records: 12489
+2024-12-15 00:49:10,604 - INFO - Merging gamelogs with games data
+2024-12-15 00:49:10,610 - INFO - Calculating statistical metrics
+2024-12-15 00:49:10,763 - INFO - Calculating rolling statistics
+2024-12-15 00:49:11,709 - INFO - Adding league player data
+2024-12-15 00:49:11,709 - INFO - Collecting league players data
+2024-12-15 00:49:13,833 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 00:49:13,845 - INFO - Saving processed data
+2024-12-15 00:49:14,040 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 00:50:44,793 - INFO - Starting daily collection for 2024-12-15
+2024-12-15 00:50:44,797 - INFO - Created backup: fantasybball/backups/20241215_005044/gamelogs2024.csv
+2024-12-15 00:50:44,799 - INFO - Created backup: fantasybball/backups/20241215_005044/games2024.csv
+2024-12-15 00:50:44,799 - INFO - Starting game data collection
+2024-12-15 00:50:44,846 - INFO - Loaded 25154 existing records
+2024-12-15 00:50:45,141 - INFO - Collecting game 0022401229
+2024-12-15 00:50:45,902 - INFO - Collecting game 0022401230
+2024-12-15 00:50:46,757 - INFO - Collecting game 0022401212
+2024-12-15 00:50:47,487 - INFO - Collecting game 0022401209
+2024-12-15 00:50:48,219 - INFO - Collecting game 0022401214
+2024-12-15 00:50:48,938 - INFO - Collecting game 0022401213
+2024-12-15 00:50:49,709 - INFO - Collecting game 0022401211
+2024-12-15 00:50:50,448 - INFO - Collecting game 0022401210
+2024-12-15 00:50:51,196 - INFO - Collecting game 0022401208
+2024-12-15 00:50:51,968 - INFO - Collecting game 0022401215
+2024-12-15 00:50:52,701 - INFO - Collecting game 0022401207
+2024-12-15 00:50:53,440 - INFO - Collecting game 0022401206
+2024-12-15 00:50:54,179 - INFO - Collecting game 0022401205
+2024-12-15 00:50:54,906 - INFO - Collecting game 0022401204
+2024-12-15 00:50:55,642 - INFO - Collecting game 0022401202
+2024-12-15 00:50:56,376 - INFO - Collecting game 0022401201
+2024-12-15 00:50:57,125 - INFO - Collecting game 0022401203
+2024-12-15 00:50:57,890 - INFO - Collecting game 0022400359
+2024-12-15 00:50:58,622 - INFO - Collecting game 0022400353
+2024-12-15 00:50:59,350 - INFO - Collecting game 0022400352
+2024-12-15 00:51:00,079 - INFO - Collecting game 0022400357
+2024-12-15 00:51:00,858 - INFO - Collecting game 0022400356
+2024-12-15 00:51:01,708 - INFO - Collecting game 0022400349
+2024-12-15 00:51:02,432 - INFO - Collecting game 0022400348
+2024-12-15 00:51:03,162 - INFO - Collecting game 0022400350
+2024-12-15 00:51:03,905 - INFO - Collecting game 0022400347
+2024-12-15 00:51:04,637 - INFO - Collecting game 0022400351
+2024-12-15 00:51:05,384 - INFO - Collecting game 0022400355
+2024-12-15 00:51:06,127 - INFO - Collecting game 0022400358
+2024-12-15 00:51:06,871 - INFO - Collecting game 0022400354
+2024-12-15 00:51:07,596 - INFO - Collecting game 0022400345
+2024-12-15 00:51:08,325 - INFO - Collecting game 0022400343
+2024-12-15 00:51:09,056 - INFO - Collecting game 0022400346
+2024-12-15 00:51:09,773 - INFO - Collecting game 0022400340
+2024-12-15 00:51:10,504 - INFO - Collecting game 0022400342
+2024-12-15 00:51:11,232 - INFO - Collecting game 0022400344
+2024-12-15 00:51:11,968 - INFO - Collecting game 0022400341
+2024-12-15 00:51:12,703 - INFO - Collecting game 0022400339
+2024-12-15 00:51:13,430 - INFO - Collecting game 0022400336
+2024-12-15 00:51:14,180 - INFO - Collecting game 0022400337
+2024-12-15 00:51:14,935 - INFO - Collecting game 0022400334
+2024-12-15 00:51:15,652 - INFO - Collecting game 0022400338
+2024-12-15 00:51:16,391 - INFO - Collecting game 0022400333
+2024-12-15 00:51:17,114 - INFO - Collecting game 0022400335
+2024-12-15 00:51:17,854 - INFO - Collecting game 0022400331
+2024-12-15 00:51:18,572 - INFO - Collecting game 0022400329
+2024-12-15 00:51:19,354 - INFO - Collecting game 0022400332
+2024-12-15 00:51:20,118 - INFO - Collecting game 0022400328
+2024-12-15 00:51:20,870 - INFO - Collecting game 0022400326
+2024-12-15 00:51:21,598 - INFO - Collecting game 0022400327
+2024-12-15 00:51:22,385 - INFO - Collecting game 0022400325
+2024-12-15 00:51:23,112 - INFO - Collecting game 0022400330
+2024-12-15 00:51:23,841 - INFO - Collecting game 0022400322
+2024-12-15 00:51:24,588 - INFO - Collecting game 0022400321
+2024-12-15 00:51:25,320 - INFO - Collecting game 0022400323
+2024-12-15 00:51:26,042 - INFO - Collecting game 0022400319
+2024-12-15 00:51:26,772 - INFO - Collecting game 0022400320
+2024-12-15 00:51:27,523 - INFO - Collecting game 0022400324
+2024-12-15 00:51:28,273 - INFO - Collecting game 0022400057
+2024-12-15 00:51:28,999 - INFO - Collecting game 0022400060
+2024-12-15 00:51:29,736 - INFO - Collecting game 0022400058
+2024-12-15 00:51:30,467 - INFO - Collecting game 0022400059
+2024-12-15 00:51:31,207 - INFO - Collecting game 0022400054
+2024-12-15 00:51:31,946 - INFO - Collecting game 0022400052
+2024-12-15 00:51:32,687 - INFO - Collecting game 0022400051
+2024-12-15 00:51:33,420 - INFO - Collecting game 0022400056
+2024-12-15 00:51:34,175 - INFO - Collecting game 0022400055
+2024-12-15 00:51:34,901 - INFO - Collecting game 0022400053
+2024-12-15 00:51:35,690 - INFO - Collecting game 0022400050
+2024-12-15 00:51:36,439 - INFO - Collecting game 0022400318
+2024-12-15 00:51:37,170 - INFO - Collecting game 0022400316
+2024-12-15 00:51:37,896 - INFO - Collecting game 0022400315
+2024-12-15 00:51:38,661 - INFO - Collecting game 0022400317
+2024-12-15 00:51:39,421 - INFO - Collecting game 0022400314
+2024-12-15 00:51:40,182 - INFO - Collecting game 0022400309
+2024-12-15 00:51:40,935 - INFO - Collecting game 0022400306
+2024-12-15 00:51:41,698 - INFO - Collecting game 0022400311
+2024-12-15 00:51:42,450 - INFO - Collecting game 0022400308
+2024-12-15 00:51:43,210 - INFO - Collecting game 0022400313
+2024-12-15 00:51:43,968 - INFO - Collecting game 0022400307
+2024-12-15 00:51:44,735 - INFO - Collecting game 0022400312
+2024-12-15 00:51:45,485 - INFO - Collecting game 0022400310
+2024-12-15 00:51:46,247 - INFO - Collecting game 0022400305
+2024-12-15 00:51:47,013 - INFO - Collecting game 0022400303
+2024-12-15 00:51:47,781 - INFO - Collecting game 0022400301
+2024-12-15 00:51:48,534 - INFO - Collecting game 0022400304
+2024-12-15 00:51:49,281 - INFO - Collecting game 0022400302
+2024-12-15 00:51:50,039 - INFO - Collecting game 0022400300
+2024-12-15 00:51:50,791 - INFO - Collecting game 0022400048
+2024-12-15 00:51:51,564 - INFO - Collecting game 0022400049
+2024-12-15 00:51:52,319 - INFO - Collecting game 0022400041
+2024-12-15 00:51:53,073 - INFO - Collecting game 0022400045
+2024-12-15 00:51:53,851 - INFO - Collecting game 0022400042
+2024-12-15 00:51:54,616 - INFO - Collecting game 0022400044
+2024-12-15 00:51:55,379 - INFO - Collecting game 0022400043
+2024-12-15 00:51:56,148 - INFO - Collecting game 0022400047
+2024-12-15 00:51:56,903 - INFO - Collecting game 0022400046
+2024-12-15 00:51:57,664 - INFO - Collecting game 0022400040
+2024-12-15 00:51:58,415 - INFO - Collecting game 0022400287
+2024-12-15 00:51:59,164 - INFO - Collecting game 0022400291
+2024-12-15 00:51:59,905 - INFO - Collecting game 0022400294
+2024-12-15 00:52:00,662 - INFO - Collecting game 0022400290
+2024-12-15 00:52:01,415 - INFO - Collecting game 0022400295
+2024-12-15 00:52:02,162 - INFO - Collecting game 0022400288
+2024-12-15 00:52:02,926 - INFO - Collecting game 0022400289
+2024-12-15 00:52:03,726 - INFO - Collecting game 0022400296
+2024-12-15 00:52:04,485 - INFO - Collecting game 0022400286
+2024-12-15 00:52:05,234 - INFO - Collecting game 0022400298
+2024-12-15 00:52:05,999 - INFO - Collecting game 0022400297
+2024-12-15 00:52:06,744 - INFO - Collecting game 0022400299
+2024-12-15 00:52:07,495 - INFO - Collecting game 0022400292
+2024-12-15 00:52:08,267 - INFO - Collecting game 0022400293
+2024-12-15 00:52:09,033 - INFO - Collecting game 0022400037
+2024-12-15 00:52:09,783 - INFO - Collecting game 0022400036
+2024-12-15 00:52:10,542 - INFO - Collecting game 0022400038
+2024-12-15 00:52:11,304 - INFO - Collecting game 0022400039
+2024-12-15 00:52:12,082 - INFO - Collecting game 0022400035
+2024-12-15 00:52:12,855 - INFO - Collecting game 0022400279
+2024-12-15 00:52:13,609 - INFO - Collecting game 0022400281
+2024-12-15 00:52:14,369 - INFO - Collecting game 0022400285
+2024-12-15 00:52:15,114 - INFO - Collecting game 0022400283
+2024-12-15 00:52:15,867 - INFO - Collecting game 0022400277
+2024-12-15 00:52:16,617 - INFO - Collecting game 0022400280
+2024-12-15 00:52:17,369 - INFO - Collecting game 0022400282
+2024-12-15 00:52:18,128 - INFO - Collecting game 0022400278
+2024-12-15 00:52:18,906 - INFO - Collecting game 0022400284
+2024-12-15 00:52:19,666 - INFO - Collecting game 0022400271
+2024-12-15 00:52:20,430 - INFO - Collecting game 0022400276
+2024-12-15 00:52:21,206 - INFO - Collecting game 0022400274
+2024-12-15 00:52:21,967 - INFO - Collecting game 0022400272
+2024-12-15 00:52:22,732 - INFO - Collecting game 0022400275
+2024-12-15 00:52:23,496 - INFO - Collecting game 0022400273
+2024-12-15 00:52:24,248 - INFO - Collecting game 0022400266
+2024-12-15 00:52:25,003 - INFO - Collecting game 0022400267
+2024-12-15 00:52:25,756 - INFO - Collecting game 0022400268
+2024-12-15 00:52:26,502 - INFO - Collecting game 0022400264
+2024-12-15 00:52:27,269 - INFO - Collecting game 0022400269
+2024-12-15 00:52:28,017 - INFO - Collecting game 0022400265
+2024-12-15 00:52:28,772 - INFO - Collecting game 0022400270
+2024-12-15 00:52:29,522 - INFO - Collecting game 0022400027
+2024-12-15 00:52:30,272 - INFO - Collecting game 0022400028
+2024-12-15 00:52:31,039 - INFO - Collecting game 0022400033
+2024-12-15 00:52:31,796 - INFO - Collecting game 0022400031
+2024-12-15 00:52:32,543 - INFO - Collecting game 0022400029
+2024-12-15 00:52:33,297 - INFO - Collecting game 0022400032
+2024-12-15 00:52:34,042 - INFO - Collecting game 0022400034
+2024-12-15 00:52:34,787 - INFO - Collecting game 0022400030
+2024-12-15 00:52:35,560 - INFO - Collecting game 0022400261
+2024-12-15 00:52:36,316 - INFO - Collecting game 0022400262
+2024-12-15 00:52:37,068 - INFO - Collecting game 0022400263
+2024-12-15 00:52:37,827 - INFO - Collecting game 0022400260
+2024-12-15 00:52:38,583 - INFO - Collecting game 0022400257
+2024-12-15 00:52:39,340 - INFO - Collecting game 0022400254
+2024-12-15 00:52:40,088 - INFO - Collecting game 0022400252
+2024-12-15 00:52:40,843 - INFO - Collecting game 0022400253
+2024-12-15 00:52:41,610 - INFO - Collecting game 0022400258
+2024-12-15 00:52:42,390 - INFO - Collecting game 0022400259
+2024-12-15 00:52:43,238 - INFO - Collecting game 0022400256
+2024-12-15 00:52:43,991 - INFO - Collecting game 0022400255
+2024-12-15 00:52:44,749 - INFO - Collecting game 0022400025
+2024-12-15 00:52:45,503 - INFO - Collecting game 0022400021
+2024-12-15 00:52:46,251 - INFO - Collecting game 0022400026
+2024-12-15 00:52:46,994 - INFO - Collecting game 0022400023
+2024-12-15 00:52:47,750 - INFO - Collecting game 0022400024
+2024-12-15 00:52:48,522 - INFO - Collecting game 0022400022
+2024-12-15 00:52:49,272 - INFO - Collecting game 0022400247
+2024-12-15 00:52:50,033 - INFO - Collecting game 0022400251
+2024-12-15 00:52:50,797 - INFO - Collecting game 0022400245
+2024-12-15 00:52:51,550 - INFO - Collecting game 0022400244
+2024-12-15 00:52:52,305 - INFO - Collecting game 0022400246
+2024-12-15 00:52:53,053 - INFO - Collecting game 0022400248
+2024-12-15 00:52:53,799 - INFO - Collecting game 0022400250
+2024-12-15 00:52:54,539 - INFO - Collecting game 0022400249
+2024-12-15 00:52:55,285 - INFO - Collecting game 0022400240
+2024-12-15 00:52:56,033 - INFO - Collecting game 0022400242
+2024-12-15 00:52:56,780 - INFO - Collecting game 0022400241
+2024-12-15 00:52:57,548 - INFO - Collecting game 0022400234
+2024-12-15 00:52:58,323 - INFO - Collecting game 0022400237
+2024-12-15 00:52:59,049 - INFO - Collecting game 0022400239
+2024-12-15 00:52:59,787 - INFO - Collecting game 0022400243
+2024-12-15 00:53:00,516 - INFO - Collecting game 0022400238
+2024-12-15 00:53:01,278 - INFO - Collecting game 0022400236
+2024-12-15 00:53:02,003 - INFO - Collecting game 0022400235
+2024-12-15 00:53:02,728 - INFO - Collecting game 0022400229
+2024-12-15 00:53:03,466 - INFO - Collecting game 0022400230
+2024-12-15 00:53:04,228 - INFO - Collecting game 0022400233
+2024-12-15 00:53:04,955 - INFO - Collecting game 0022400231
+2024-12-15 00:53:05,728 - INFO - Collecting game 0022400232
+2024-12-15 00:53:06,513 - INFO - Collecting game 0022400010
+2024-12-15 00:53:07,245 - INFO - Collecting game 0022400020
+2024-12-15 00:53:07,966 - INFO - Collecting game 0022400013
+2024-12-15 00:53:08,721 - INFO - Collecting game 0022400019
+2024-12-15 00:53:09,456 - INFO - Collecting game 0022400012
+2024-12-15 00:53:10,179 - INFO - Collecting game 0022400017
+2024-12-15 00:53:10,955 - INFO - Collecting game 0022400014
+2024-12-15 00:53:11,717 - INFO - Collecting game 0022400015
+2024-12-15 00:53:12,454 - INFO - Collecting game 0022400016
+2024-12-15 00:53:13,186 - INFO - Collecting game 0022400009
+2024-12-15 00:53:13,917 - INFO - Collecting game 0022400018
+2024-12-15 00:53:14,731 - INFO - Collecting game 0022400011
+2024-12-15 00:53:15,463 - INFO - Collecting game 0022400228
+2024-12-15 00:53:16,211 - INFO - Collecting game 0022400222
+2024-12-15 00:53:16,952 - INFO - Collecting game 0022400221
+2024-12-15 00:53:17,681 - INFO - Collecting game 0022400227
+2024-12-15 00:53:18,433 - INFO - Collecting game 0022400226
+2024-12-15 00:53:19,163 - INFO - Collecting game 0022400224
+2024-12-15 00:53:19,901 - INFO - Collecting game 0022400218
+2024-12-15 00:53:20,654 - INFO - Collecting game 0022400219
+2024-12-15 00:53:21,392 - INFO - Collecting game 0022400225
+2024-12-15 00:53:22,146 - INFO - Collecting game 0022400217
+2024-12-15 00:53:22,893 - INFO - Collecting game 0022400220
+2024-12-15 00:53:23,638 - INFO - Collecting game 0022400223
+2024-12-15 00:53:24,367 - INFO - Collecting game 0022400002
+2024-12-15 00:53:25,101 - INFO - Collecting game 0022400008
+2024-12-15 00:53:25,832 - INFO - Collecting game 0022400005
+2024-12-15 00:53:26,561 - INFO - Collecting game 0022400004
+2024-12-15 00:53:27,304 - INFO - Collecting game 0022400001
+2024-12-15 00:53:28,052 - INFO - Collecting game 0022400003
+2024-12-15 00:53:28,807 - INFO - Collecting game 0022400007
+2024-12-15 00:53:29,542 - INFO - Collecting game 0022400006
+2024-12-15 00:53:30,306 - INFO - Collecting game 0022400213
+2024-12-15 00:53:31,032 - INFO - Collecting game 0022400212
+2024-12-15 00:53:31,799 - INFO - Collecting game 0022400215
+2024-12-15 00:53:32,559 - INFO - Collecting game 0022400214
+2024-12-15 00:53:33,295 - INFO - Collecting game 0022400216
+2024-12-15 00:53:34,028 - INFO - Collecting game 0022400210
+2024-12-15 00:53:34,754 - INFO - Collecting game 0022400206
+2024-12-15 00:53:35,499 - INFO - Collecting game 0022400211
+2024-12-15 00:53:36,250 - INFO - Collecting game 0022400203
+2024-12-15 00:53:36,987 - INFO - Collecting game 0022400205
+2024-12-15 00:53:37,720 - INFO - Collecting game 0022400201
+2024-12-15 00:53:38,529 - INFO - Collecting game 0022400202
+2024-12-15 00:53:39,279 - INFO - Collecting game 0022400207
+2024-12-15 00:53:40,006 - INFO - Collecting game 0022400209
+2024-12-15 00:53:40,815 - INFO - Collecting game 0022400204
+2024-12-15 00:53:41,605 - INFO - Collecting game 0022400208
+2024-12-15 00:53:42,325 - INFO - Collecting game 0022400199
+2024-12-15 00:53:43,089 - INFO - Collecting game 0022400197
+2024-12-15 00:53:43,838 - INFO - Collecting game 0022400198
+2024-12-15 00:53:44,602 - INFO - Collecting game 0022400200
+2024-12-15 00:53:45,337 - INFO - Collecting game 0022400190
+2024-12-15 00:53:47,071 - INFO - Collecting game 0022400186
+2024-12-15 00:53:47,805 - INFO - Collecting game 0022400192
+2024-12-15 00:53:49,429 - INFO - Collecting game 0022400196
+2024-12-15 00:53:51,067 - INFO - Collecting game 0022400189
+2024-12-15 00:53:53,014 - INFO - Collecting game 0022400184
+2024-12-15 00:53:53,744 - INFO - Collecting game 0022400194
+2024-12-15 00:53:55,471 - INFO - Collecting game 0022400185
+2024-12-15 00:53:56,220 - INFO - Collecting game 0022400187
+2024-12-15 00:53:56,968 - INFO - Collecting game 0022400195
+2024-12-15 00:53:58,647 - INFO - Collecting game 0022400193
+2024-12-15 00:53:59,387 - INFO - Collecting game 0022400191
+2024-12-15 00:54:00,131 - INFO - Collecting game 0022400188
+2024-12-15 00:54:00,906 - INFO - Collecting game 0022400183
+2024-12-15 00:54:01,807 - INFO - Collecting game 0022400182
+2024-12-15 00:54:03,390 - INFO - Collecting game 0022400181
+2024-12-15 00:54:04,117 - INFO - Collecting game 0022400175
+2024-12-15 00:54:05,710 - INFO - Collecting game 0022400177
+2024-12-15 00:54:07,452 - INFO - Collecting game 0022400176
+2024-12-15 00:54:09,090 - INFO - Collecting game 0022400172
+2024-12-15 00:54:09,882 - INFO - Collecting game 0022400179
+2024-12-15 00:54:11,754 - INFO - Collecting game 0022400169
+2024-12-15 00:54:12,506 - INFO - Collecting game 0022400178
+2024-12-15 00:54:14,307 - INFO - Collecting game 0022400173
+2024-12-15 00:54:15,042 - INFO - Collecting game 0022400174
+2024-12-15 00:54:16,828 - INFO - Collecting game 0022400180
+2024-12-15 00:54:18,714 - INFO - Collecting game 0022400171
+2024-12-15 00:54:19,546 - INFO - Collecting game 0022400170
+2024-12-15 00:54:20,303 - INFO - Collecting game 0022400167
+2024-12-15 00:54:22,197 - INFO - Collecting game 0022400156
+2024-12-15 00:54:23,836 - INFO - Collecting game 0022400159
+2024-12-15 00:54:25,722 - INFO - Collecting game 0022400155
+2024-12-15 00:54:26,479 - INFO - Collecting game 0022400158
+2024-12-15 00:54:28,140 - INFO - Collecting game 0022400154
+2024-12-15 00:54:28,888 - INFO - Collecting game 0022400163
+2024-12-15 00:54:30,593 - INFO - Collecting game 0022400162
+2024-12-15 00:54:31,353 - INFO - Collecting game 0022400166
+2024-12-15 00:54:33,770 - INFO - Collecting game 0022400165
+2024-12-15 00:54:35,509 - INFO - Collecting game 0022400161
+2024-12-15 00:54:37,477 - INFO - Collecting game 0022400160
+2024-12-15 00:54:38,236 - INFO - Collecting game 0022400164
+2024-12-15 00:54:39,899 - INFO - Collecting game 0022400157
+2024-12-15 00:54:40,644 - INFO - Collecting game 0022400168
+2024-12-15 00:54:41,395 - INFO - Collecting game 0022400151
+2024-12-15 00:54:43,086 - INFO - Collecting game 0022400152
+2024-12-15 00:54:44,724 - INFO - Collecting game 0022400153
+2024-12-15 00:54:46,462 - INFO - Collecting game 0022400141
+2024-12-15 00:54:48,340 - INFO - Collecting game 0022400144
+2024-12-15 00:54:50,049 - INFO - Collecting game 0022400148
+2024-12-15 00:54:51,684 - INFO - Collecting game 0022400143
+2024-12-15 00:54:53,327 - INFO - Collecting game 0022400147
+2024-12-15 00:54:54,086 - INFO - Collecting game 0022400142
+2024-12-15 00:54:54,851 - INFO - Collecting game 0022400149
+2024-12-15 00:54:56,813 - INFO - Collecting game 0022400145
+2024-12-15 00:54:58,754 - INFO - Collecting game 0022400150
+2024-12-15 00:55:00,389 - INFO - Collecting game 0022400146
+2024-12-15 00:55:01,140 - INFO - Collecting game 0022400135
+2024-12-15 00:55:02,851 - INFO - Collecting game 0022400139
+2024-12-15 00:55:03,640 - INFO - Collecting game 0022400136
+2024-12-15 00:55:05,312 - INFO - Collecting game 0022400140
+2024-12-15 00:55:07,048 - INFO - Collecting game 0022400132
+2024-12-15 00:55:07,812 - INFO - Collecting game 0022400138
+2024-12-15 00:55:09,673 - INFO - Collecting game 0022400134
+2024-12-15 00:55:11,448 - INFO - Collecting game 0022400137
+2024-12-15 00:55:13,296 - INFO - Collecting game 0022400133
+2024-12-15 00:55:14,072 - INFO - Collecting game 0022400128
+2024-12-15 00:55:15,952 - INFO - Collecting game 0022400129
+2024-12-15 00:55:17,599 - INFO - Collecting game 0022400131
+2024-12-15 00:55:19,247 - INFO - Collecting game 0022400130
+2024-12-15 00:55:19,981 - INFO - Collecting game 0022400121
+2024-12-15 00:55:20,728 - INFO - Collecting game 0022400117
+2024-12-15 00:55:22,407 - INFO - Collecting game 0022400126
+2024-12-15 00:55:24,048 - INFO - Collecting game 0022400119
+2024-12-15 00:55:24,766 - INFO - Collecting game 0022400122
+2024-12-15 00:55:26,508 - INFO - Collecting game 0022400120
+2024-12-15 00:55:28,343 - INFO - Collecting game 0022400125
+2024-12-15 00:55:29,080 - INFO - Collecting game 0022400118
+2024-12-15 00:55:29,833 - INFO - Collecting game 0022400123
+2024-12-15 00:55:31,523 - INFO - Collecting game 0022400127
+2024-12-15 00:55:33,352 - INFO - Collecting game 0022400124
+2024-12-15 00:55:35,005 - INFO - Collecting game 0022400113
+2024-12-15 00:55:36,642 - INFO - Collecting game 0022400116
+2024-12-15 00:55:38,282 - INFO - Collecting game 0022400114
+2024-12-15 00:55:39,013 - INFO - Collecting game 0022400115
+2024-12-15 00:55:40,636 - INFO - Collecting game 0022400107
+2024-12-15 00:55:42,271 - INFO - Collecting game 0022400102
+2024-12-15 00:55:43,869 - INFO - Collecting game 0022400106
+2024-12-15 00:55:45,651 - INFO - Collecting game 0022400103
+2024-12-15 00:55:46,409 - INFO - Collecting game 0022400111
+2024-12-15 00:55:48,319 - INFO - Collecting game 0022400112
+2024-12-15 00:55:50,174 - INFO - Collecting game 0022400109
+2024-12-15 00:55:50,931 - INFO - Collecting game 0022400104
+2024-12-15 00:55:51,700 - INFO - Collecting game 0022400108
+2024-12-15 00:55:53,337 - INFO - Collecting game 0022400110
+2024-12-15 00:55:55,179 - INFO - Collecting game 0022400105
+2024-12-15 00:55:55,943 - INFO - Collecting game 0022400101
+2024-12-15 00:55:57,552 - INFO - Collecting game 0022400098
+2024-12-15 00:55:59,460 - INFO - Collecting game 0022400099
+2024-12-15 00:56:01,119 - INFO - Collecting game 0022400097
+2024-12-15 00:56:02,784 - INFO - Collecting game 0022400100
+2024-12-15 00:56:04,621 - INFO - Collecting game 0022400095
+2024-12-15 00:56:06,238 - INFO - Collecting game 0022400087
+2024-12-15 00:56:08,188 - INFO - Collecting game 0022400088
+2024-12-15 00:56:10,235 - INFO - Collecting game 0022400092
+2024-12-15 00:56:11,997 - INFO - Collecting game 0022400091
+2024-12-15 00:56:13,718 - INFO - Collecting game 0022400089
+2024-12-15 00:56:14,473 - INFO - Collecting game 0022400093
+2024-12-15 00:56:15,226 - INFO - Collecting game 0022400096
+2024-12-15 00:56:17,198 - INFO - Collecting game 0022400094
+2024-12-15 00:56:17,981 - INFO - Collecting game 0022400090
+2024-12-15 00:56:18,736 - INFO - Collecting game 0022400086
+2024-12-15 00:56:20,622 - INFO - Collecting game 0022400085
+2024-12-15 00:56:22,417 - INFO - Collecting game 0022400083
+2024-12-15 00:56:24,156 - INFO - Collecting game 0022400081
+2024-12-15 00:56:25,797 - INFO - Collecting game 0022400084
+2024-12-15 00:56:27,777 - INFO - Collecting game 0022400078
+2024-12-15 00:56:28,534 - INFO - Collecting game 0022400079
+2024-12-15 00:56:29,690 - INFO - Collecting game 0022400080
+2024-12-15 00:56:31,632 - INFO - Collecting game 0022400082
+2024-12-15 00:56:33,479 - INFO - Collecting game 0022400077
+2024-12-15 00:56:34,241 - INFO - Collecting game 0022400073
+2024-12-15 00:56:35,013 - INFO - Collecting game 0022400076
+2024-12-15 00:56:35,755 - INFO - Collecting game 0022400075
+2024-12-15 00:56:37,881 - INFO - Collecting game 0022400074
+2024-12-15 00:56:38,606 - INFO - Collecting game 0022400070
+2024-12-15 00:56:40,553 - INFO - Collecting game 0022400064
+2024-12-15 00:56:42,182 - INFO - Collecting game 0022400067
+2024-12-15 00:56:43,824 - INFO - Collecting game 0022400066
+2024-12-15 00:56:45,662 - INFO - Collecting game 0022400071
+2024-12-15 00:56:47,301 - INFO - Collecting game 0022400065
+2024-12-15 00:56:53,151 - INFO - Collecting game 0022400068
+2024-12-15 00:56:55,101 - INFO - Collecting game 0022400069
+2024-12-15 00:56:56,716 - INFO - Collecting game 0022400063
+2024-12-15 00:56:57,502 - INFO - Collecting game 0022400072
+2024-12-15 00:56:59,182 - INFO - Collecting game 0022400061
+2024-12-15 00:57:00,024 - INFO - Collecting game 0022400062
+2024-12-15 00:57:00,808 - INFO - Collecting game 0012400068
+2024-12-15 00:57:02,458 - INFO - Collecting game 0012400067
+2024-12-15 00:57:04,202 - INFO - Collecting game 0012400071
+2024-12-15 00:57:06,151 - INFO - Collecting game 0012400073
+2024-12-15 00:57:07,814 - INFO - Collecting game 0012400069
+2024-12-15 00:57:09,728 - INFO - Collecting game 0012400074
+2024-12-15 00:57:11,413 - INFO - Collecting game 0012400070
+2024-12-15 00:57:13,315 - INFO - Collecting game 0012400072
+2024-12-15 00:57:14,947 - INFO - Collecting game 0012400063
+2024-12-15 00:57:16,598 - INFO - Collecting game 0012400061
+2024-12-15 00:57:18,842 - INFO - Collecting game 0012400066
+2024-12-15 00:57:20,479 - INFO - Collecting game 0012400062
+2024-12-15 00:57:22,119 - INFO - Collecting game 0012400064
+2024-12-15 00:57:23,753 - INFO - Collecting game 0012400065
+2024-12-15 00:57:25,807 - INFO - Collecting game 0012400060
+2024-12-15 00:57:27,436 - INFO - Collecting game 0012400058
+2024-12-15 00:57:29,056 - INFO - Collecting game 0012400057
+2024-12-15 00:57:31,021 - INFO - Collecting game 0012400059
+2024-12-15 00:57:32,661 - INFO - Collecting game 0012400025
+2024-12-15 00:57:34,603 - INFO - Collecting game 0012400050
+2024-12-15 00:57:36,663 - INFO - Collecting game 0012400055
+2024-12-15 00:57:38,728 - INFO - Collecting game 0012400053
+2024-12-15 00:57:40,640 - INFO - Collecting game 0012400056
+2024-12-15 00:57:42,612 - INFO - Collecting game 0012400052
+2024-12-15 00:57:44,212 - INFO - Collecting game 0012400051
+2024-12-15 00:57:45,837 - INFO - Collecting game 0012400054
+2024-12-15 00:57:47,833 - INFO - Collecting game 0012400046
+2024-12-15 00:57:49,461 - INFO - Collecting game 0012400049
+2024-12-15 00:57:51,134 - INFO - Collecting game 0012400048
+2024-12-15 00:57:52,840 - INFO - Collecting game 0012400047
+2024-12-15 00:57:54,577 - INFO - Collecting game 0012400045
+2024-12-15 00:57:56,331 - INFO - Collecting game 0012400043
+2024-12-15 00:57:58,031 - INFO - Collecting game 0012400040
+2024-12-15 00:57:59,696 - INFO - Collecting game 0012400044
+2024-12-15 00:58:01,644 - INFO - Collecting game 0012400039
+2024-12-15 00:58:03,692 - INFO - Collecting game 0012400042
+2024-12-15 00:58:05,697 - INFO - Collecting game 0012400041
+2024-12-15 00:58:07,329 - INFO - Collecting game 0012400038
+2024-12-15 00:58:09,014 - INFO - Collecting game 0012400036
+2024-12-15 00:58:10,759 - INFO - Collecting game 0012400037
+2024-12-15 00:58:12,333 - INFO - Collecting game 0012400035
+2024-12-15 00:58:14,236 - INFO - Collecting game 0012400033
+2024-12-15 00:58:15,973 - INFO - Collecting game 0012400031
+2024-12-15 00:58:17,816 - INFO - Collecting game 0012400034
+2024-12-15 00:58:19,463 - INFO - Collecting game 0012400032
+2024-12-15 00:58:21,405 - INFO - Collecting game 0012400028
+2024-12-15 00:58:23,052 - INFO - Collecting game 0012400024
+2024-12-15 00:58:24,687 - INFO - Collecting game 0012400029
+2024-12-15 00:58:26,369 - INFO - Collecting game 0012400026
+2024-12-15 00:58:28,367 - INFO - Collecting game 0012400027
+2024-12-15 00:58:30,025 - INFO - Collecting game 0012400020
+2024-12-15 00:58:31,754 - INFO - Collecting game 0012400021
+2024-12-15 00:58:33,799 - INFO - Collecting game 0012400023
+2024-12-15 00:58:35,534 - INFO - Collecting game 0012400022
+2024-12-15 00:58:37,484 - INFO - Collecting game 0012400017
+2024-12-15 00:58:39,118 - INFO - Collecting game 0012400015
+2024-12-15 00:58:40,800 - INFO - Collecting game 0012400016
+2024-12-15 00:58:42,410 - INFO - Collecting game 0012400019
+2024-12-15 00:58:44,348 - INFO - Collecting game 0012400018
+2024-12-15 00:58:46,390 - INFO - Collecting game 0012400010
+2024-12-15 00:58:48,136 - INFO - Collecting game 0012400014
+2024-12-15 00:58:49,773 - INFO - Collecting game 0012400011
+2024-12-15 00:58:51,510 - INFO - Collecting game 0012400013
+2024-12-15 00:58:53,462 - INFO - Collecting game 0012400012
+2024-12-15 00:58:55,199 - INFO - Collecting game 0012400008
+2024-12-15 00:58:57,168 - INFO - Collecting game 0012400007
+2024-12-15 00:58:59,191 - INFO - Collecting game 0012400005
+2024-12-15 00:59:00,833 - INFO - Collecting game 0012400009
+2024-12-15 00:59:02,797 - INFO - Collecting game 0012400006
+2024-12-15 00:59:04,521 - INFO - Collecting game 0012400004
+2024-12-15 00:59:06,488 - INFO - Collecting game 0012400001
+2024-12-15 00:59:08,202 - INFO - Collecting game 0012400003
+2024-12-15 00:59:10,116 - INFO - Collecting game 0012400002
+2024-12-15 00:59:12,136 - INFO - Successfully collected 12743 new records
+2024-12-15 00:59:12,141 - INFO - Starting data processing
+2024-12-15 00:59:12,196 - INFO - Successfully read in files
+2024-12-15 00:59:12,196 - INFO - Initial number of records: 37897
+2024-12-15 00:59:12,203 - INFO - Removed 25071 duplicate records
+2024-12-15 00:59:12,203 - INFO - Final number of records: 12826
+2024-12-15 00:59:12,210 - INFO - Merging gamelogs with games data
+2024-12-15 00:59:12,217 - INFO - Calculating statistical metrics
+2024-12-15 00:59:12,364 - INFO - Calculating rolling statistics
+2024-12-15 00:59:13,333 - INFO - Adding league player data
+2024-12-15 00:59:13,333 - INFO - Collecting league players data
+2024-12-15 00:59:15,419 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 00:59:15,430 - INFO - Saving processed data
+2024-12-15 00:59:15,615 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 00:59:15,617 - INFO - Daily collection completed successfully
+2024-12-15 01:04:13,583 - INFO - Collecting league players data
+2024-12-15 01:04:15,663 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 01:04:20,458 - INFO - Starting data processing
+2024-12-15 01:04:20,533 - INFO - Successfully read in files
+2024-12-15 01:04:20,533 - INFO - Initial number of records: 37897
+2024-12-15 01:04:20,543 - INFO - Removed 25071 duplicate records
+2024-12-15 01:04:20,543 - INFO - Final number of records: 12826
+2024-12-15 01:04:20,551 - INFO - Merging gamelogs with games data
+2024-12-15 01:04:20,557 - INFO - Calculating statistical metrics
+2024-12-15 01:04:20,709 - INFO - Calculating rolling statistics
+2024-12-15 01:04:21,761 - INFO - Adding league player data
+2024-12-15 01:04:21,762 - INFO - Collecting league players data
+2024-12-15 01:04:23,871 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 01:04:23,886 - INFO - Saving processed data
+2024-12-15 01:04:24,074 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 01:09:36,535 - INFO - Starting data processing
+2024-12-15 01:09:36,611 - INFO - Successfully read in files
+2024-12-15 01:09:36,611 - INFO - Initial number of records: 37897
+2024-12-15 01:09:36,622 - INFO - Removed 25071 duplicate records
+2024-12-15 01:09:36,622 - INFO - Final number of records: 12826
+2024-12-15 01:09:36,629 - INFO - Merging gamelogs with games data
+2024-12-15 01:09:36,635 - INFO - Calculating statistical metrics
+2024-12-15 01:09:36,786 - INFO - Calculating rolling statistics
+2024-12-15 01:09:37,763 - INFO - Adding league player data
+2024-12-15 01:09:37,764 - INFO - Collecting league players data
+2024-12-15 01:09:40,313 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-15 01:09:40,325 - INFO - Saving processed data
+2024-12-15 01:09:40,532 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-15 02:06:47,830 - INFO - Collecting future schedule data
+2024-12-16 18:29:39,930 - INFO - Starting daily collection for 2024-12-16
+2024-12-16 18:29:39,940 - INFO - Created backup: fantasybball/backups/20241216_182939/gamelogs2024.csv
+2024-12-16 18:29:39,942 - INFO - Created backup: fantasybball/backups/20241216_182939/games2024.csv
+2024-12-16 18:29:39,942 - INFO - Starting game data collection
+2024-12-16 18:29:40,056 - INFO - Loaded 37897 existing records
+2024-12-16 18:29:40,435 - INFO - Collecting game 0022401219
+2024-12-16 18:29:41,173 - INFO - Collecting game 0022401216
+2024-12-16 18:29:41,933 - INFO - Collecting game 0022401218
+2024-12-16 18:29:42,638 - INFO - Collecting game 0022401220
+2024-12-16 18:29:43,351 - INFO - Collecting game 0022401227
+2024-12-16 18:29:44,088 - INFO - Collecting game 0022401228
+2024-12-16 18:29:44,806 - INFO - Collecting game 0022401217
+2024-12-16 18:29:45,526 - INFO - Collecting game 0022401230
+2024-12-16 18:29:46,259 - INFO - Collecting game 0022401229
+2024-12-16 18:29:46,997 - INFO - Collecting game 0022401209
+2024-12-16 18:29:47,715 - INFO - Collecting game 0022401213
+2024-12-16 18:29:48,450 - INFO - Collecting game 0022401210
+2024-12-16 18:29:49,172 - INFO - Collecting game 0022401214
+2024-12-16 18:29:49,909 - INFO - Collecting game 0022401212
+2024-12-16 18:29:50,624 - INFO - Collecting game 0022401211
+2024-12-16 18:29:51,403 - INFO - Collecting game 0022401208
+2024-12-16 18:29:52,126 - INFO - Collecting game 0022401215
+2024-12-16 18:29:52,870 - INFO - Collecting game 0022401206
+2024-12-16 18:29:53,589 - INFO - Collecting game 0022401207
+2024-12-16 18:29:54,306 - INFO - Collecting game 0022401205
+2024-12-16 18:29:55,013 - INFO - Collecting game 0022401204
+2024-12-16 18:29:55,727 - INFO - Collecting game 0022401202
+2024-12-16 18:29:56,432 - INFO - Collecting game 0022401201
+2024-12-16 18:29:57,195 - INFO - Collecting game 0022401203
+2024-12-16 18:29:57,924 - INFO - Collecting game 0022400359
+2024-12-16 18:29:58,640 - INFO - Collecting game 0022400356
+2024-12-16 18:29:59,379 - INFO - Collecting game 0022400349
+2024-12-16 18:30:00,096 - INFO - Collecting game 0022400353
+2024-12-16 18:30:00,827 - INFO - Collecting game 0022400357
+2024-12-16 18:30:01,551 - INFO - Collecting game 0022400352
+2024-12-16 18:30:02,415 - INFO - Collecting game 0022400347
+2024-12-16 18:30:03,141 - INFO - Collecting game 0022400348
+2024-12-16 18:30:03,867 - INFO - Collecting game 0022400354
+2024-12-16 18:30:04,588 - INFO - Collecting game 0022400350
+2024-12-16 18:30:05,307 - INFO - Collecting game 0022400358
+2024-12-16 18:30:06,026 - INFO - Collecting game 0022400355
+2024-12-16 18:30:06,740 - INFO - Collecting game 0022400351
+2024-12-16 18:30:07,469 - INFO - Collecting game 0022400346
+2024-12-16 18:30:08,212 - INFO - Collecting game 0022400341
+2024-12-16 18:30:08,960 - INFO - Collecting game 0022400342
+2024-12-16 18:30:09,719 - INFO - Collecting game 0022400340
+2024-12-16 18:30:10,460 - INFO - Collecting game 0022400344
+2024-12-16 18:30:11,190 - INFO - Collecting game 0022400343
+2024-12-16 18:30:12,032 - INFO - Collecting game 0022400345
+2024-12-16 18:30:12,743 - INFO - Collecting game 0022400338
+2024-12-16 18:30:13,476 - INFO - Collecting game 0022400337
+2024-12-16 18:30:14,194 - INFO - Collecting game 0022400334
+2024-12-16 18:30:14,928 - INFO - Collecting game 0022400339
+2024-12-16 18:30:15,657 - INFO - Collecting game 0022400333
+2024-12-16 18:30:16,401 - INFO - Collecting game 0022400336
+2024-12-16 18:30:17,126 - INFO - Collecting game 0022400335
+2024-12-16 18:30:17,873 - INFO - Collecting game 0022400327
+2024-12-16 18:30:18,589 - INFO - Collecting game 0022400330
+2024-12-16 18:30:19,400 - INFO - Collecting game 0022400331
+2024-12-16 18:30:20,432 - INFO - Collecting game 0022400332
+2024-12-16 18:30:21,458 - INFO - Collecting game 0022400325
+2024-12-16 18:30:22,494 - INFO - Collecting game 0022400326
+2024-12-16 18:30:23,214 - INFO - Collecting game 0022400329
+2024-12-16 18:30:23,930 - INFO - Collecting game 0022400328
+2024-12-16 18:30:24,659 - INFO - Collecting game 0022400324
+2024-12-16 18:30:25,390 - INFO - Collecting game 0022400319
+2024-12-16 18:30:26,154 - INFO - Collecting game 0022400321
+2024-12-16 18:30:26,884 - INFO - Collecting game 0022400323
+2024-12-16 18:30:27,607 - INFO - Collecting game 0022400322
+2024-12-16 18:30:28,314 - INFO - Collecting game 0022400320
+2024-12-16 18:30:29,039 - INFO - Collecting game 0022400056
+2024-12-16 18:30:29,796 - INFO - Collecting game 0022400057
+2024-12-16 18:30:30,523 - INFO - Collecting game 0022400054
+2024-12-16 18:30:31,250 - INFO - Collecting game 0022400051
+2024-12-16 18:30:31,979 - INFO - Collecting game 0022400053
+2024-12-16 18:30:32,726 - INFO - Collecting game 0022400059
+2024-12-16 18:30:33,484 - INFO - Collecting game 0022400050
+2024-12-16 18:30:34,202 - INFO - Collecting game 0022400052
+2024-12-16 18:30:34,931 - INFO - Collecting game 0022400060
+2024-12-16 18:30:35,667 - INFO - Collecting game 0022400058
+2024-12-16 18:30:36,400 - INFO - Collecting game 0022400055
+2024-12-16 18:30:37,123 - INFO - Collecting game 0022400315
+2024-12-16 18:30:37,847 - INFO - Collecting game 0022400318
+2024-12-16 18:30:38,578 - INFO - Collecting game 0022400317
+2024-12-16 18:30:39,317 - INFO - Collecting game 0022400316
+2024-12-16 18:30:40,073 - INFO - Collecting game 0022400311
+2024-12-16 18:30:40,817 - INFO - Collecting game 0022400306
+2024-12-16 18:30:41,541 - INFO - Collecting game 0022400307
+2024-12-16 18:30:42,259 - INFO - Collecting game 0022400312
+2024-12-16 18:30:42,982 - INFO - Collecting game 0022400313
+2024-12-16 18:30:43,691 - INFO - Collecting game 0022400314
+2024-12-16 18:30:44,424 - INFO - Collecting game 0022400310
+2024-12-16 18:30:45,154 - INFO - Collecting game 0022400308
+2024-12-16 18:30:45,869 - INFO - Collecting game 0022400305
+2024-12-16 18:30:46,586 - INFO - Collecting game 0022400309
+2024-12-16 18:30:47,312 - INFO - Collecting game 0022400304
+2024-12-16 18:30:48,096 - INFO - Collecting game 0022400300
+2024-12-16 18:30:48,907 - INFO - Collecting game 0022400303
+2024-12-16 18:30:49,620 - INFO - Collecting game 0022400302
+2024-12-16 18:30:50,372 - INFO - Collecting game 0022400301
+2024-12-16 18:30:51,091 - INFO - Collecting game 0022400040
+2024-12-16 18:30:51,831 - INFO - Collecting game 0022400048
+2024-12-16 18:30:52,567 - INFO - Collecting game 0022400042
+2024-12-16 18:30:53,313 - INFO - Collecting game 0022400041
+2024-12-16 18:30:54,034 - INFO - Collecting game 0022400046
+2024-12-16 18:30:54,756 - INFO - Collecting game 0022400045
+2024-12-16 18:30:55,490 - INFO - Collecting game 0022400049
+2024-12-16 18:30:56,200 - INFO - Collecting game 0022400043
+2024-12-16 18:30:56,923 - INFO - Collecting game 0022400047
+2024-12-16 18:30:57,656 - INFO - Collecting game 0022400044
+2024-12-16 18:30:58,383 - INFO - Collecting game 0022400291
+2024-12-16 18:30:59,133 - INFO - Collecting game 0022400296
+2024-12-16 18:30:59,865 - INFO - Collecting game 0022400289
+2024-12-16 18:31:00,589 - INFO - Collecting game 0022400292
+2024-12-16 18:31:01,311 - INFO - Collecting game 0022400295
+2024-12-16 18:31:02,058 - INFO - Collecting game 0022400288
+2024-12-16 18:31:02,777 - INFO - Collecting game 0022400299
+2024-12-16 18:31:03,500 - INFO - Collecting game 0022400293
+2024-12-16 18:31:04,220 - INFO - Collecting game 0022400294
+2024-12-16 18:31:04,941 - INFO - Collecting game 0022400298
+2024-12-16 18:31:05,669 - INFO - Collecting game 0022400287
+2024-12-16 18:31:06,410 - INFO - Collecting game 0022400286
+2024-12-16 18:31:07,121 - INFO - Collecting game 0022400290
+2024-12-16 18:31:07,862 - INFO - Collecting game 0022400297
+2024-12-16 18:31:08,586 - INFO - Collecting game 0022400035
+2024-12-16 18:31:09,305 - INFO - Collecting game 0022400039
+2024-12-16 18:31:10,073 - INFO - Collecting game 0022400037
+2024-12-16 18:31:10,790 - INFO - Collecting game 0022400038
+2024-12-16 18:31:11,511 - INFO - Collecting game 0022400036
+2024-12-16 18:31:12,233 - INFO - Collecting game 0022400277
+2024-12-16 18:31:12,956 - INFO - Collecting game 0022400285
+2024-12-16 18:31:13,686 - INFO - Collecting game 0022400282
+2024-12-16 18:31:14,617 - INFO - Collecting game 0022400280
+2024-12-16 18:31:15,364 - INFO - Collecting game 0022400284
+2024-12-16 18:31:16,101 - INFO - Collecting game 0022400279
+2024-12-16 18:31:16,823 - INFO - Collecting game 0022400281
+2024-12-16 18:31:17,568 - INFO - Collecting game 0022400283
+2024-12-16 18:31:18,303 - INFO - Collecting game 0022400278
+2024-12-16 18:31:19,101 - INFO - Collecting game 0022400273
+2024-12-16 18:31:20,068 - INFO - Collecting game 0022400271
+2024-12-16 18:31:20,780 - INFO - Collecting game 0022400275
+2024-12-16 18:31:21,626 - INFO - Collecting game 0022400274
+2024-12-16 18:31:22,352 - INFO - Collecting game 0022400272
+2024-12-16 18:31:23,304 - INFO - Collecting game 0022400276
+2024-12-16 18:31:24,058 - INFO - Collecting game 0022400269
+2024-12-16 18:31:24,849 - INFO - Collecting game 0022400266
+2024-12-16 18:31:25,580 - INFO - Collecting game 0022400264
+2024-12-16 18:31:26,401 - INFO - Collecting game 0022400270
+2024-12-16 18:31:27,161 - INFO - Collecting game 0022400268
+2024-12-16 18:31:27,914 - INFO - Collecting game 0022400265
+2024-12-16 18:31:28,636 - INFO - Collecting game 0022400267
+2024-12-16 18:31:29,393 - INFO - Collecting game 0022400030
+2024-12-16 18:31:30,175 - INFO - Collecting game 0022400033
+2024-12-16 18:31:30,923 - INFO - Collecting game 0022400031
+2024-12-16 18:31:31,712 - INFO - Collecting game 0022400032
+2024-12-16 18:31:32,449 - INFO - Collecting game 0022400028
+2024-12-16 18:31:33,246 - INFO - Collecting game 0022400029
+2024-12-16 18:31:33,984 - INFO - Collecting game 0022400027
+2024-12-16 18:31:34,801 - INFO - Collecting game 0022400034
+2024-12-16 18:31:35,538 - INFO - Collecting game 0022400262
+2024-12-16 18:31:36,306 - INFO - Collecting game 0022400261
+2024-12-16 18:31:37,036 - INFO - Collecting game 0022400260
+2024-12-16 18:31:37,950 - INFO - Collecting game 0022400263
+2024-12-16 18:31:38,687 - INFO - Collecting game 0022400259
+2024-12-16 18:31:39,446 - INFO - Collecting game 0022400252
+2024-12-16 18:31:40,176 - INFO - Collecting game 0022400255
+2024-12-16 18:31:40,911 - INFO - Collecting game 0022400257
+2024-12-16 18:31:41,811 - INFO - Collecting game 0022400254
+2024-12-16 18:31:42,588 - INFO - Collecting game 0022400253
+2024-12-16 18:31:43,299 - INFO - Collecting game 0022400258
+2024-12-16 18:31:44,041 - INFO - Collecting game 0022400256
+2024-12-16 18:31:44,784 - INFO - Collecting game 0022400026
+2024-12-16 18:31:45,530 - INFO - Collecting game 0022400024
+2024-12-16 18:31:46,433 - INFO - Collecting game 0022400022
+2024-12-16 18:31:47,212 - INFO - Collecting game 0022400021
+2024-12-16 18:31:47,938 - INFO - Collecting game 0022400025
+2024-12-16 18:31:48,662 - INFO - Collecting game 0022400023
+2024-12-16 18:31:49,409 - INFO - Collecting game 0022400250
+2024-12-16 18:31:50,138 - INFO - Collecting game 0022400247
+2024-12-16 18:31:50,867 - INFO - Collecting game 0022400244
+2024-12-16 18:31:51,644 - INFO - Collecting game 0022400251
+2024-12-16 18:31:52,355 - INFO - Collecting game 0022400249
+2024-12-16 18:31:53,073 - INFO - Collecting game 0022400245
+2024-12-16 18:31:53,793 - INFO - Collecting game 0022400246
+2024-12-16 18:31:54,535 - INFO - Collecting game 0022400248
+2024-12-16 18:31:55,272 - INFO - Collecting game 0022400236
+2024-12-16 18:31:55,983 - INFO - Collecting game 0022400242
+2024-12-16 18:31:56,709 - INFO - Collecting game 0022400241
+2024-12-16 18:31:57,427 - INFO - Collecting game 0022400238
+2024-12-16 18:31:58,167 - INFO - Collecting game 0022400240
+2024-12-16 18:31:58,966 - INFO - Collecting game 0022400235
+2024-12-16 18:31:59,682 - INFO - Collecting game 0022400243
+2024-12-16 18:32:00,407 - INFO - Collecting game 0022400237
+2024-12-16 18:32:01,155 - INFO - Collecting game 0022400239
+2024-12-16 18:32:01,872 - INFO - Collecting game 0022400234
+2024-12-16 18:32:02,618 - INFO - Collecting game 0022400230
+2024-12-16 18:32:03,345 - INFO - Collecting game 0022400231
+2024-12-16 18:32:04,060 - INFO - Collecting game 0022400232
+2024-12-16 18:32:04,793 - INFO - Collecting game 0022400229
+2024-12-16 18:32:05,512 - INFO - Collecting game 0022400233
+2024-12-16 18:32:06,235 - INFO - Collecting game 0022400020
+2024-12-16 18:32:06,994 - INFO - Collecting game 0022400016
+2024-12-16 18:32:07,704 - INFO - Collecting game 0022400010
+2024-12-16 18:32:08,413 - INFO - Collecting game 0022400013
+2024-12-16 18:32:09,132 - INFO - Collecting game 0022400009
+2024-12-16 18:32:09,853 - INFO - Collecting game 0022400015
+2024-12-16 18:32:10,575 - INFO - Collecting game 0022400019
+2024-12-16 18:32:11,295 - INFO - Collecting game 0022400018
+2024-12-16 18:32:12,014 - INFO - Collecting game 0022400012
+2024-12-16 18:32:12,746 - INFO - Collecting game 0022400017
+2024-12-16 18:32:13,499 - INFO - Collecting game 0022400014
+2024-12-16 18:32:14,247 - INFO - Collecting game 0022400011
+2024-12-16 18:32:14,963 - INFO - Collecting game 0022400228
+2024-12-16 18:32:15,699 - INFO - Collecting game 0022400224
+2024-12-16 18:32:16,421 - INFO - Collecting game 0022400217
+2024-12-16 18:32:17,144 - INFO - Collecting game 0022400221
+2024-12-16 18:32:17,871 - INFO - Collecting game 0022400223
+2024-12-16 18:32:18,605 - INFO - Collecting game 0022400225
+2024-12-16 18:32:19,336 - INFO - Collecting game 0022400222
+2024-12-16 18:32:20,089 - INFO - Collecting game 0022400218
+2024-12-16 18:32:20,816 - INFO - Collecting game 0022400227
+2024-12-16 18:32:21,542 - INFO - Collecting game 0022400226
+2024-12-16 18:32:22,272 - INFO - Collecting game 0022400220
+2024-12-16 18:32:22,996 - INFO - Collecting game 0022400219
+2024-12-16 18:32:23,719 - INFO - Collecting game 0022400008
+2024-12-16 18:32:24,444 - INFO - Collecting game 0022400005
+2024-12-16 18:32:25,169 - INFO - Collecting game 0022400003
+2024-12-16 18:32:25,895 - INFO - Collecting game 0022400007
+2024-12-16 18:32:26,604 - INFO - Collecting game 0022400004
+2024-12-16 18:32:27,342 - INFO - Collecting game 0022400001
+2024-12-16 18:32:28,080 - INFO - Collecting game 0022400002
+2024-12-16 18:32:28,800 - INFO - Collecting game 0022400006
+2024-12-16 18:32:29,528 - INFO - Collecting game 0022400214
+2024-12-16 18:32:30,241 - INFO - Collecting game 0022400216
+2024-12-16 18:32:30,978 - INFO - Collecting game 0022400215
+2024-12-16 18:32:31,693 - INFO - Collecting game 0022400213
+2024-12-16 18:32:32,449 - INFO - Collecting game 0022400212
+2024-12-16 18:32:33,188 - INFO - Collecting game 0022400205
+2024-12-16 18:32:33,924 - INFO - Collecting game 0022400201
+2024-12-16 18:32:34,661 - INFO - Collecting game 0022400207
+2024-12-16 18:32:35,370 - INFO - Collecting game 0022400203
+2024-12-16 18:32:36,092 - INFO - Collecting game 0022400204
+2024-12-16 18:32:36,819 - INFO - Collecting game 0022400208
+2024-12-16 18:32:37,549 - INFO - Collecting game 0022400210
+2024-12-16 18:32:38,309 - INFO - Collecting game 0022400211
+2024-12-16 18:32:39,043 - INFO - Collecting game 0022400206
+2024-12-16 18:32:39,784 - INFO - Collecting game 0022400209
+2024-12-16 18:32:40,504 - INFO - Collecting game 0022400202
+2024-12-16 18:32:41,230 - INFO - Collecting game 0022400197
+2024-12-16 18:32:41,955 - INFO - Collecting game 0022400198
+2024-12-16 18:32:42,664 - INFO - Collecting game 0022400200
+2024-12-16 18:32:43,383 - INFO - Collecting game 0022400199
+2024-12-16 18:32:44,115 - INFO - Collecting game 0022400194
+2024-12-16 18:32:44,839 - INFO - Collecting game 0022400190
+2024-12-16 18:32:45,563 - INFO - Collecting game 0022400196
+2024-12-16 18:32:46,287 - INFO - Collecting game 0022400188
+2024-12-16 18:32:47,015 - INFO - Collecting game 0022400195
+2024-12-16 18:32:47,730 - INFO - Collecting game 0022400187
+2024-12-16 18:32:48,465 - INFO - Collecting game 0022400186
+2024-12-16 18:32:49,186 - INFO - Collecting game 0022400193
+2024-12-16 18:32:49,904 - INFO - Collecting game 0022400184
+2024-12-16 18:32:50,641 - INFO - Collecting game 0022400192
+2024-12-16 18:32:51,363 - INFO - Collecting game 0022400191
+2024-12-16 18:32:52,092 - INFO - Collecting game 0022400185
+2024-12-16 18:32:52,807 - INFO - Collecting game 0022400189
+2024-12-16 18:32:53,528 - INFO - Collecting game 0022400183
+2024-12-16 18:32:54,246 - INFO - Collecting game 0022400182
+2024-12-16 18:32:54,964 - INFO - Collecting game 0022400181
+2024-12-16 18:32:55,703 - INFO - Collecting game 0022400172
+2024-12-16 18:32:56,422 - INFO - Collecting game 0022400174
+2024-12-16 18:32:57,143 - INFO - Collecting game 0022400180
+2024-12-16 18:32:57,869 - INFO - Collecting game 0022400178
+2024-12-16 18:32:58,593 - INFO - Collecting game 0022400169
+2024-12-16 18:32:59,312 - INFO - Collecting game 0022400179
+2024-12-16 18:33:00,066 - INFO - Collecting game 0022400171
+2024-12-16 18:33:00,786 - INFO - Collecting game 0022400173
+2024-12-16 18:33:01,512 - INFO - Collecting game 0022400170
+2024-12-16 18:33:02,250 - INFO - Collecting game 0022400176
+2024-12-16 18:33:02,974 - INFO - Collecting game 0022400177
+2024-12-16 18:33:03,696 - INFO - Collecting game 0022400175
+2024-12-16 18:33:04,417 - INFO - Collecting game 0022400160
+2024-12-16 18:33:05,153 - INFO - Collecting game 0022400162
+2024-12-16 18:33:05,891 - INFO - Collecting game 0022400161
+2024-12-16 18:33:06,603 - INFO - Collecting game 0022400163
+2024-12-16 18:33:07,331 - INFO - Collecting game 0022400154
+2024-12-16 18:33:08,040 - INFO - Collecting game 0022400165
+2024-12-16 18:33:08,755 - INFO - Collecting game 0022400168
+2024-12-16 18:33:09,476 - INFO - Collecting game 0022400157
+2024-12-16 18:33:10,207 - INFO - Collecting game 0022400164
+2024-12-16 18:33:10,931 - INFO - Collecting game 0022400159
+2024-12-16 18:33:11,650 - INFO - Collecting game 0022400166
+2024-12-16 18:33:12,379 - INFO - Collecting game 0022400156
+2024-12-16 18:33:13,143 - INFO - Collecting game 0022400158
+2024-12-16 18:33:13,881 - INFO - Collecting game 0022400155
+2024-12-16 18:33:14,597 - INFO - Collecting game 0022400167
+2024-12-16 18:33:15,305 - INFO - Collecting game 0022400152
+2024-12-16 18:33:16,029 - INFO - Collecting game 0022400151
+2024-12-16 18:33:16,759 - INFO - Collecting game 0022400153
+2024-12-16 18:33:17,507 - INFO - Collecting game 0022400145
+2024-12-16 18:33:18,252 - INFO - Collecting game 0022400149
+2024-12-16 18:33:18,996 - INFO - Collecting game 0022400146
+2024-12-16 18:33:19,749 - INFO - Collecting game 0022400148
+2024-12-16 18:33:20,568 - INFO - Collecting game 0022400143
+2024-12-16 18:33:21,588 - INFO - Collecting game 0022400150
+2024-12-16 18:33:22,636 - INFO - Collecting game 0022400147
+2024-12-16 18:33:23,560 - INFO - Collecting game 0022400144
+2024-12-16 18:33:24,287 - INFO - Collecting game 0022400142
+2024-12-16 18:33:25,008 - INFO - Collecting game 0022400141
+2024-12-16 18:33:25,766 - INFO - Collecting game 0022400132
+2024-12-16 18:33:26,475 - INFO - Collecting game 0022400139
+2024-12-16 18:33:27,220 - INFO - Collecting game 0022400138
+2024-12-16 18:33:27,964 - INFO - Collecting game 0022400140
+2024-12-16 18:33:28,707 - INFO - Collecting game 0022400136
+2024-12-16 18:33:29,451 - INFO - Collecting game 0022400137
+2024-12-16 18:33:30,210 - INFO - Collecting game 0022400133
+2024-12-16 18:33:30,935 - INFO - Collecting game 0022400135
+2024-12-16 18:33:31,665 - INFO - Collecting game 0022400134
+2024-12-16 18:33:32,391 - INFO - Collecting game 0022400130
+2024-12-16 18:33:33,113 - INFO - Collecting game 0022400131
+2024-12-16 18:33:33,832 - INFO - Collecting game 0022400128
+2024-12-16 18:33:34,561 - INFO - Collecting game 0022400129
+2024-12-16 18:33:35,272 - INFO - Collecting game 0022400120
+2024-12-16 18:33:35,998 - INFO - Collecting game 0022400123
+2024-12-16 18:33:36,749 - INFO - Collecting game 0022400118
+2024-12-16 18:33:37,497 - INFO - Collecting game 0022400122
+2024-12-16 18:33:38,223 - INFO - Collecting game 0022400121
+2024-12-16 18:33:38,945 - INFO - Collecting game 0022400127
+2024-12-16 18:33:39,673 - INFO - Collecting game 0022400125
+2024-12-16 18:33:40,391 - INFO - Collecting game 0022400124
+2024-12-16 18:33:41,128 - INFO - Collecting game 0022400117
+2024-12-16 18:33:41,940 - INFO - Collecting game 0022400119
+2024-12-16 18:33:42,733 - INFO - Collecting game 0022400126
+2024-12-16 18:33:43,520 - INFO - Collecting game 0022400114
+2024-12-16 18:33:44,249 - INFO - Collecting game 0022400116
+2024-12-16 18:33:44,972 - INFO - Collecting game 0022400113
+2024-12-16 18:33:45,707 - INFO - Collecting game 0022400115
+2024-12-16 18:33:46,433 - INFO - Collecting game 0022400105
+2024-12-16 18:33:47,153 - INFO - Collecting game 0022400103
+2024-12-16 18:33:47,894 - INFO - Collecting game 0022400102
+2024-12-16 18:33:48,622 - INFO - Collecting game 0022400106
+2024-12-16 18:33:49,358 - INFO - Collecting game 0022400111
+2024-12-16 18:33:50,106 - INFO - Collecting game 0022400107
+2024-12-16 18:33:50,856 - INFO - Collecting game 0022400104
+2024-12-16 18:33:51,598 - INFO - Collecting game 0022400109
+2024-12-16 18:33:52,344 - INFO - Collecting game 0022400110
+2024-12-16 18:33:53,061 - INFO - Collecting game 0022400112
+2024-12-16 18:33:53,773 - INFO - Collecting game 0022400108
+2024-12-16 18:33:54,539 - INFO - Collecting game 0022400098
+2024-12-16 18:33:55,289 - INFO - Collecting game 0022400097
+2024-12-16 18:33:56,010 - INFO - Collecting game 0022400100
+2024-12-16 18:33:56,733 - INFO - Collecting game 0022400099
+2024-12-16 18:33:57,471 - INFO - Collecting game 0022400101
+2024-12-16 18:33:58,212 - INFO - Collecting game 0022400096
+2024-12-16 18:33:58,986 - INFO - Collecting game 0022400089
+2024-12-16 18:33:59,714 - INFO - Collecting game 0022400091
+2024-12-16 18:34:00,450 - INFO - Collecting game 0022400088
+2024-12-16 18:34:01,221 - INFO - Collecting game 0022400095
+2024-12-16 18:34:01,959 - INFO - Collecting game 0022400090
+2024-12-16 18:34:02,707 - INFO - Collecting game 0022400094
+2024-12-16 18:34:03,429 - INFO - Collecting game 0022400087
+2024-12-16 18:34:04,165 - INFO - Collecting game 0022400092
+2024-12-16 18:34:04,912 - INFO - Collecting game 0022400093
+2024-12-16 18:34:05,655 - INFO - Collecting game 0022400080
+2024-12-16 18:34:06,396 - INFO - Collecting game 0022400077
+2024-12-16 18:34:07,110 - INFO - Collecting game 0022400081
+2024-12-16 18:34:07,838 - INFO - Collecting game 0022400086
+2024-12-16 18:34:08,566 - INFO - Collecting game 0022400084
+2024-12-16 18:34:09,283 - INFO - Collecting game 0022400085
+2024-12-16 18:34:10,012 - INFO - Collecting game 0022400082
+2024-12-16 18:34:10,744 - INFO - Collecting game 0022400083
+2024-12-16 18:34:11,604 - INFO - Collecting game 0022400079
+2024-12-16 18:34:12,328 - INFO - Collecting game 0022400078
+2024-12-16 18:34:13,051 - INFO - Collecting game 0022400073
+2024-12-16 18:34:13,770 - INFO - Collecting game 0022400076
+2024-12-16 18:34:14,491 - INFO - Collecting game 0022400075
+2024-12-16 18:34:15,221 - INFO - Collecting game 0022400074
+2024-12-16 18:34:15,954 - INFO - Collecting game 0022400067
+2024-12-16 18:34:16,687 - INFO - Collecting game 0022400072
+2024-12-16 18:34:17,410 - INFO - Collecting game 0022400068
+2024-12-16 18:34:18,143 - INFO - Collecting game 0022400065
+2024-12-16 18:34:18,891 - INFO - Collecting game 0022400064
+2024-12-16 18:34:19,646 - INFO - Collecting game 0022400063
+2024-12-16 18:34:20,376 - INFO - Collecting game 0022400069
+2024-12-16 18:34:21,092 - INFO - Collecting game 0022400071
+2024-12-16 18:34:21,832 - INFO - Collecting game 0022400066
+2024-12-16 18:34:22,649 - INFO - Collecting game 0022400070
+2024-12-16 18:34:23,361 - INFO - Collecting game 0022400062
+2024-12-16 18:34:24,077 - INFO - Collecting game 0022400061
+2024-12-16 18:34:24,827 - INFO - Collecting game 0012400071
+2024-12-16 18:34:26,431 - INFO - Collecting game 0012400074
+2024-12-16 18:34:28,110 - INFO - Collecting game 0012400073
+2024-12-16 18:34:29,748 - INFO - Collecting game 0012400069
+2024-12-16 18:34:31,605 - INFO - Collecting game 0012400070
+2024-12-16 18:34:33,245 - INFO - Collecting game 0012400067
+2024-12-16 18:34:35,144 - INFO - Collecting game 0012400068
+2024-12-16 18:34:36,917 - INFO - Collecting game 0012400063
+2024-12-16 18:34:39,851 - INFO - Collecting game 0012400072
+2024-12-16 18:34:41,726 - INFO - Collecting game 0012400061
+2024-12-16 18:34:43,309 - INFO - Collecting game 0012400062
+2024-12-16 18:34:45,014 - INFO - Collecting game 0012400064
+2024-12-16 18:34:46,876 - INFO - Collecting game 0012400065
+2024-12-16 18:34:48,495 - INFO - Collecting game 0012400066
+2024-12-16 18:34:50,437 - INFO - Collecting game 0012400057
+2024-12-16 18:34:52,047 - INFO - Collecting game 0012400058
+2024-12-16 18:34:53,914 - INFO - Collecting game 0012400025
+2024-12-16 18:34:55,862 - INFO - Collecting game 0012400059
+2024-12-16 18:34:57,504 - INFO - Collecting game 0012400060
+2024-12-16 18:34:59,107 - INFO - Collecting game 0012400055
+2024-12-16 18:35:00,771 - INFO - Collecting game 0012400053
+2024-12-16 18:35:02,729 - INFO - Collecting game 0012400050
+2024-12-16 18:35:04,769 - INFO - Collecting game 0012400052
+2024-12-16 18:35:06,898 - INFO - Collecting game 0012400056
+2024-12-16 18:35:08,792 - INFO - Collecting game 0012400051
+2024-12-16 18:35:10,920 - INFO - Collecting game 0012400054
+2024-12-16 18:35:12,860 - INFO - Collecting game 0012400046
+2024-12-16 18:35:14,494 - INFO - Collecting game 0012400049
+2024-12-16 18:35:16,363 - INFO - Collecting game 0012400047
+2024-12-16 18:35:17,964 - INFO - Collecting game 0012400048
+2024-12-16 18:35:19,621 - INFO - Collecting game 0012400045
+2024-12-16 18:35:21,999 - INFO - Collecting game 0012400041
+2024-12-16 18:35:23,604 - INFO - Collecting game 0012400040
+2024-12-16 18:35:25,510 - INFO - Collecting game 0012400044
+2024-12-16 18:35:27,125 - INFO - Collecting game 0012400039
+2024-12-16 18:35:28,833 - INFO - Collecting game 0012400043
+2024-12-16 18:35:30,478 - INFO - Collecting game 0012400042
+2024-12-16 18:35:32,033 - INFO - Collecting game 0012400038
+2024-12-16 18:35:33,849 - INFO - Collecting game 0012400037
+2024-12-16 18:35:35,765 - INFO - Collecting game 0012400036
+2024-12-16 18:35:37,736 - INFO - Collecting game 0012400034
+2024-12-16 18:35:39,619 - INFO - Collecting game 0012400035
+2024-12-16 18:35:41,236 - INFO - Collecting game 0012400031
+2024-12-16 18:35:42,883 - INFO - Collecting game 0012400033
+2024-12-16 18:35:44,702 - INFO - Collecting game 0012400032
+2024-12-16 18:35:46,749 - INFO - Collecting game 0012400027
+2024-12-16 18:35:49,084 - INFO - Collecting game 0012400029
+2024-12-16 18:35:51,027 - INFO - Collecting game 0012400028
+2024-12-16 18:35:53,113 - INFO - Collecting game 0012400024
+2024-12-16 18:35:54,842 - INFO - Collecting game 0012400026
+2024-12-16 18:35:56,494 - INFO - Collecting game 0012400020
+2024-12-16 18:35:59,419 - INFO - Collecting game 0012400022
+2024-12-16 18:36:01,147 - INFO - Collecting game 0012400023
+2024-12-16 18:36:02,965 - INFO - Collecting game 0012400021
+2024-12-16 18:36:04,669 - INFO - Collecting game 0012400015
+2024-12-16 18:36:06,337 - INFO - Collecting game 0012400017
+2024-12-16 18:36:08,392 - INFO - Collecting game 0012400016
+2024-12-16 18:36:10,263 - INFO - Collecting game 0012400019
+2024-12-16 18:36:12,084 - INFO - Collecting game 0012400018
+2024-12-16 18:36:13,725 - INFO - Collecting game 0012400010
+2024-12-16 18:36:15,625 - INFO - Collecting game 0012400012
+2024-12-16 18:36:17,369 - INFO - Collecting game 0012400013
+2024-12-16 18:36:19,201 - INFO - Collecting game 0012400011
+2024-12-16 18:36:20,955 - INFO - Collecting game 0012400014
+2024-12-16 18:36:22,895 - INFO - Collecting game 0012400005
+2024-12-16 18:36:24,842 - INFO - Collecting game 0012400009
+2024-12-16 18:36:26,734 - INFO - Collecting game 0012400008
+2024-12-16 18:36:28,337 - INFO - Collecting game 0012400006
+2024-12-16 18:36:29,932 - INFO - Collecting game 0012400007
+2024-12-16 18:36:31,602 - INFO - Collecting game 0012400004
+2024-12-16 18:36:33,218 - INFO - Collecting game 0012400002
+2024-12-16 18:36:34,964 - INFO - Collecting game 0012400001
+2024-12-16 18:36:36,595 - INFO - Collecting game 0012400003
+2024-12-16 18:36:39,190 - INFO - Successfully collected 12926 new records
+2024-12-16 18:36:39,196 - INFO - Starting data processing
+2024-12-16 18:36:39,296 - INFO - Successfully read in files
+2024-12-16 18:36:39,297 - INFO - Initial number of records: 50823
+2024-12-16 18:36:39,305 - INFO - Removed 37810 duplicate records
+2024-12-16 18:36:39,305 - INFO - Final number of records: 13013
+2024-12-16 18:36:39,313 - INFO - Merging gamelogs with games data
+2024-12-16 18:36:39,319 - INFO - Calculating statistical metrics
+2024-12-16 18:36:39,488 - INFO - Calculating rolling statistics
+2024-12-16 18:36:40,511 - INFO - Adding league player data
+2024-12-16 18:36:40,511 - INFO - Collecting league players data
+2024-12-16 18:36:42,883 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-16 18:36:42,903 - INFO - Saving processed data
+2024-12-16 18:36:43,239 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-16 18:36:43,241 - INFO - Daily collection completed successfully
+2024-12-17 12:01:12,161 - INFO - Starting daily collection for 2024-12-17
+2024-12-17 12:01:12,169 - INFO - Created backup: fantasybball/backups/20241217_120112/gamelogs2024.csv
+2024-12-17 12:01:12,170 - INFO - Created backup: fantasybball/backups/20241217_120112/games2024.csv
+2024-12-17 12:01:12,171 - INFO - Starting game data collection
+2024-12-17 12:01:12,264 - INFO - Loaded 50823 existing records
+2024-12-17 12:01:13,057 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-17 12:01:13,057 - INFO - Sample recent IDs: ['0022401225', '0022401224', '0022401221', '0022401223', '0022401226']
+2024-12-17 12:01:13,094 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400019']
+2024-12-17 12:01:13,094 - INFO - Sample formatted recent IDs: ['0022401225', '0022401224', '0022401221', '0022401223', '0022401226']
+2024-12-17 12:01:13,095 - INFO - Found 6 new games out of 462 total games
+2024-12-17 12:01:13,095 - INFO - Collecting game 0022401225
+2024-12-17 12:01:13,805 - INFO - Collecting game 0022401224
+2024-12-17 12:01:14,533 - INFO - Collecting game 0022401221
+2024-12-17 12:01:15,253 - INFO - Collecting game 0022401223
+2024-12-17 12:01:15,968 - INFO - Collecting game 0022401226
+2024-12-17 12:01:16,693 - INFO - Collecting game 0022401222
+2024-12-17 12:01:17,675 - INFO - Successfully collected 153 new records
+2024-12-17 12:01:17,678 - INFO - Starting data processing
+2024-12-17 12:01:17,743 - INFO - Successfully read in files
+2024-12-17 12:01:17,744 - INFO - Initial number of records: 50976
+2024-12-17 12:01:17,751 - INFO - Removed 37810 duplicate records
+2024-12-17 12:01:17,751 - INFO - Final number of records: 13166
+2024-12-17 12:01:17,758 - INFO - Merging gamelogs with games data
+2024-12-17 12:01:17,764 - INFO - Calculating statistical metrics
+2024-12-17 12:01:17,930 - INFO - Calculating rolling statistics
+2024-12-17 12:01:18,911 - INFO - Adding league player data
+2024-12-17 12:01:18,911 - INFO - Collecting league players data
+2024-12-17 12:01:21,199 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-17 12:01:21,212 - INFO - Saving processed data
+2024-12-17 12:01:21,398 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-17 12:01:21,399 - INFO - Daily collection completed successfully
+2024-12-22 09:31:31,244 - INFO - Starting daily collection for 2024-12-22
+2024-12-22 09:31:31,251 - INFO - Created backup: fantasybball/backups/20241222_093131/gamelogs2024.csv
+2024-12-22 09:31:31,254 - INFO - Created backup: fantasybball/backups/20241222_093131/games2024.csv
+2024-12-22 09:31:31,254 - INFO - Starting game data collection
+2024-12-22 09:31:31,356 - INFO - Loaded 50976 existing records
+2024-12-22 09:31:32,316 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-22 09:31:32,316 - INFO - Sample recent IDs: ['0022400386', '0022400379', '0022400385', '0022400387', '0022400377']
+2024-12-22 09:31:32,343 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400019']
+2024-12-22 09:31:32,344 - INFO - Sample formatted recent IDs: ['0022400386', '0022400379', '0022400385', '0022400387', '0022400377']
+2024-12-22 09:31:32,345 - INFO - Found 29 new games out of 491 total games
+2024-12-22 09:31:32,345 - INFO - Collecting game 0022400386
+2024-12-22 09:31:33,448 - INFO - Collecting game 0022400379
+2024-12-22 09:31:34,475 - INFO - Collecting game 0022400385
+2024-12-22 09:31:35,418 - INFO - Collecting game 0022400387
+2024-12-22 09:31:36,376 - INFO - Collecting game 0022400377
+2024-12-22 09:31:37,262 - INFO - Collecting game 0022400382
+2024-12-22 09:31:38,285 - INFO - Collecting game 0022400378
+2024-12-22 09:31:39,222 - INFO - Collecting game 0022400380
+2024-12-22 09:31:40,232 - INFO - Collecting game 0022400381
+2024-12-22 09:31:41,222 - INFO - Collecting game 0022400383
+2024-12-22 09:31:42,138 - INFO - Collecting game 0022400384
+2024-12-22 09:31:43,059 - INFO - Collecting game 0022400376
+2024-12-22 09:31:44,005 - INFO - Collecting game 0022400373
+2024-12-22 09:31:44,946 - INFO - Collecting game 0022400374
+2024-12-22 09:31:45,900 - INFO - Collecting game 0022400375
+2024-12-22 09:31:46,862 - INFO - Collecting game 0022400365
+2024-12-22 09:31:47,684 - INFO - Collecting game 0022400369
+2024-12-22 09:31:48,960 - INFO - Collecting game 0022400363
+2024-12-22 09:31:49,813 - INFO - Collecting game 0022400371
+2024-12-22 09:31:50,670 - INFO - Collecting game 0022400360
+2024-12-22 09:31:51,719 - INFO - Collecting game 0022400368
+2024-12-22 09:31:52,813 - INFO - Collecting game 0022400364
+2024-12-22 09:31:53,925 - INFO - Collecting game 0022400361
+2024-12-22 09:31:55,091 - INFO - Collecting game 0022400362
+2024-12-22 09:31:55,996 - INFO - Collecting game 0022400370
+2024-12-22 09:31:57,083 - INFO - Collecting game 0022400366
+2024-12-22 09:31:58,103 - INFO - Collecting game 0022400372
+2024-12-22 09:31:59,145 - INFO - Collecting game 0022400367
+2024-12-22 09:32:00,231 - INFO - Collecting game 0062400001
+2024-12-22 09:32:01,464 - INFO - Successfully collected 751 new records
+2024-12-22 09:32:01,468 - INFO - Starting data processing
+2024-12-22 09:32:01,536 - INFO - Successfully read in files
+2024-12-22 09:32:01,536 - INFO - Initial number of records: 51727
+2024-12-22 09:32:01,544 - INFO - Removed 37810 duplicate records
+2024-12-22 09:32:01,545 - INFO - Final number of records: 13917
+2024-12-22 09:32:01,552 - INFO - Merging gamelogs with games data
+2024-12-22 09:32:01,559 - INFO - Calculating statistical metrics
+2024-12-22 09:32:01,724 - INFO - Calculating rolling statistics
+2024-12-22 09:32:02,822 - INFO - Adding league player data
+2024-12-22 09:32:02,822 - INFO - Collecting league players data
+2024-12-22 09:32:07,549 - INFO - Collected data for 1047 players (938 free agents)
+2024-12-22 09:32:07,563 - INFO - Saving processed data
+2024-12-22 09:32:07,783 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-22 09:32:07,786 - INFO - Daily collection completed successfully
+2024-12-22 22:53:24,343 - INFO - Starting daily collection for 2024-12-22
+2024-12-22 22:53:24,352 - INFO - Created backup: fantasybball/backups/20241222_225324/gamelogs2024.csv
+2024-12-22 22:53:24,355 - INFO - Created backup: fantasybball/backups/20241222_225324/games2024.csv
+2024-12-22 22:53:24,356 - INFO - Starting game data collection
+2024-12-22 22:53:24,459 - INFO - Loaded 51727 existing records
+2024-12-22 22:53:24,939 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-22 22:53:24,940 - INFO - Sample recent IDs: ['0022400388', '0022400390', '0022400389', '0022400379', '0022400378']
+2024-12-22 22:53:24,966 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-22 22:53:24,967 - INFO - Sample formatted recent IDs: ['0022400388', '0022400390', '0022400389', '0022400379', '0022400378']
+2024-12-22 22:53:24,967 - INFO - Found 3 new games out of 494 total games
+2024-12-22 22:53:24,967 - INFO - Collecting game 0022400388
+2024-12-22 22:53:25,728 - INFO - Collecting game 0022400390
+2024-12-22 22:53:26,737 - INFO - Collecting game 0022400389
+2024-12-22 22:53:27,908 - INFO - Successfully collected 84 new records
+2024-12-22 22:53:27,910 - INFO - Starting data processing
+2024-12-22 22:53:27,982 - INFO - Successfully read in files
+2024-12-22 22:53:27,982 - INFO - Initial number of records: 51811
+2024-12-22 22:53:27,991 - INFO - Removed 37810 duplicate records
+2024-12-22 22:53:27,991 - INFO - Final number of records: 14001
+2024-12-22 22:53:27,999 - INFO - Merging gamelogs with games data
+2024-12-22 22:53:28,005 - INFO - Calculating statistical metrics
+2024-12-22 22:53:28,173 - INFO - Calculating rolling statistics
+2024-12-22 22:53:29,455 - INFO - Adding league player data
+2024-12-22 22:53:29,455 - INFO - Collecting league players data
+2024-12-22 22:53:34,157 - INFO - Collected data for 1047 players (938 free agents)
+2024-12-22 22:53:34,170 - INFO - Saving processed data
+2024-12-22 22:53:34,384 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-22 22:53:34,387 - INFO - Daily collection completed successfully

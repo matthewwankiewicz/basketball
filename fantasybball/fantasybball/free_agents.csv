@@ -1,0 +1,201 @@
+player_name,pro_team,position,injured,injury_status,acquisition_type,percent_owned,projected_points,points_scored
+Zion Williamson,NOP,PF,True,OUT,[],,3204.0,257.0
+Jordan Poole,WAS,SG,False,ACTIVE,[],,2203.0,729.0
+Cam Thomas,BKN,SG,True,OUT,[],,2756.0,598.0
+Austin Reaves,LAL,SG,False,ACTIVE,[],,2757.0,664.0
+Jrue Holiday,BOS,PG,False,ACTIVE,[],,2778.0,666.0
+D'Angelo Russell,LAL,PG,False,ACTIVE,[],,2862.0,652.0
+Keegan Murray,SAC,PF,False,ACTIVE,[],,2578.0,862.0
+Jalen Suggs,ORL,PG,False,ACTIVE,[],,1925.0,881.0
+Brook Lopez,MIL,C,False,ACTIVE,[],,2476.0,805.0
+Jonas Valanciunas,WAS,C,False,ACTIVE,[],,3375.0,768.0
+Buddy Hield,GSW,SG,False,ACTIVE,[],,2625.0,667.0
+Jaden Ivey,DET,SG,False,ACTIVE,[],,2302.0,771.0
+Collin Sexton,UTA,SG,False,ACTIVE,[],,2497.0,620.0
+Jerami Grant,POR,PF,False,ACTIVE,[],,2252.0,685.0
+Naz Reid,MIN,C,False,ACTIVE,[],,2528.0,704.0
+Kyle Kuzma,WAS,PF,True,OUT,[],,3035.0,313.0
+Immanuel Quickley,TOR,PG,True,OUT,[],,2903.0,75.0
+Jabari Smith Jr.,HOU,PF,False,ACTIVE,[],,2711.0,742.0
+Jonathan Kuminga,GSW,PF,False,ACTIVE,[],,2528.0,605.0
+Khris Middleton,MIL,SF,False,ACTIVE,[],,2334.0,99.0
+Terry Rozier,MIA,PG,False,ACTIVE,[],,2521.0,524.0
+Jusuf Nurkic,PHO,C,False,ACTIVE,[],,2912.0,522.0
+Deni Avdija,POR,SF,False,ACTIVE,[],,2675.0,760.0
+Bennedict Mathurin,IND,SF,False,ACTIVE,[],,2061.0,850.0
+Caris LeVert,CLE,SG,False,ACTIVE,[],,2303.0,577.0
+Trey Murphy III,NOP,SF,False,ACTIVE,[],,2119.0,444.0
+Bogdan Bogdanovic,ATL,SG,False,ACTIVE,[],,2502.0,281.0
+Zach Edey,MEM,C,True,OUT,[],,2387.0,422.0
+Mark Williams,CHA,C,False,ACTIVE,[],,2828.0,102.0
+Malcolm Brogdon,WAS,PG,True,OUT,[],,2492.0,242.0
+Donte DiVincenzo,MIN,SG,False,ACTIVE,[],,2484.0,530.0
+Jared McCain,PHL,SG,True,OUT,[],,1182.0,577.0
+Grayson Allen,PHO,SG,False,ACTIVE,[],,2351.0,446.0
+Gradey Dick,TOR,SG,False,ACTIVE,[],,1538.0,590.0
+Trayce Jackson-Davis,GSW,PF,False,ACTIVE,[],,2666.0,519.0
+Jaime Jaquez Jr.,MIA,SF,False,ACTIVE,[],,2439.0,418.0
+Rui Hachimura,LAL,PF,False,ACTIVE,[],,1961.0,626.0
+Kelly Oubre Jr.,PHL,SF,False,ACTIVE,[],,2197.0,669.0
+Mike Conley,MIN,PG,False,ACTIVE,[],,2220.0,513.0
+Scotty Pippen Jr.,MEM,PG,False,ACTIVE,[],,1605.0,748.0
+Onyeka Okongwu,ATL,C,False,ACTIVE,[],,2243.0,754.0
+Shaedon Sharpe,POR,SG,False,ACTIVE,[],,2108.0,451.0
+Stephon Castle,SAS,PG,False,DAY_TO_DAY,[],,2108.0,555.0
+Dalton Knecht,LAL,SG,False,ACTIVE,[],,1579.0,560.0
+Reed Sheppard,HOU,SG,False,ACTIVE,[],,2266.0,224.0
+Bilal Coulibaly,WAS,SF,False,ACTIVE,[],,1739.0,697.0
+Scoot Henderson,POR,PG,False,ACTIVE,[],,2125.0,412.0
+Herbert Jones,NOP,SF,False,ACTIVE,[],,2082.0,207.0
+Keyonte George,UTA,PG,False,ACTIVE,[],,1866.0,687.0
+Ochai Agbaji,TOR,SF,False,ACTIVE,[],,1070.0,740.0
+Luguentz Dort,OKC,SG,False,ACTIVE,[],,1860.0,676.0
+Keldon Johnson,SAS,SF,True,OUT,[],,2310.0,629.0
+Ausar Thompson,DET,SF,False,ACTIVE,[],,2452.0,87.0
+Jordan Clarkson,UTA,SG,False,ACTIVE,[],,2027.0,395.0
+Goga Bitadze,ORL,C,False,ACTIVE,[],,1352.0,737.0
+Brandin Podziemski,GSW,SG,False,ACTIVE,[],,2484.0,550.0
+Al Horford,BOS,C,True,OUT,[],,2036.0,552.0
+Alex Caruso,OKC,SG,False,ACTIVE,[],,1874.0,349.0
+T.J. McConnell,IND,PG,False,ACTIVE,[],,1937.0,691.0
+Yves Missi,NOP,C,False,ACTIVE,[],,1535.0,783.0
+Zaccharie Risacher,ATL,SF,False,ACTIVE,[],,1870.0,556.0
+Donovan Clingan,POR,C,False,ACTIVE,[],,2187.0,460.0
+Royce O'Neale,PHO,SF,False,ACTIVE,[],,2016.0,756.0
+Ben Simmons,BKN,PG,False,ACTIVE,[],,1500.0,554.0
+Julian Champagnie,SAS,SF,False,ACTIVE,[],,1199.0,734.0
+Marcus Smart,MEM,SG,False,ACTIVE,[],,1854.0,361.0
+Moritz Wagner,ORL,C,False,ACTIVE,[],,1704.0,742.0
+Kevin Huerter,SAC,SG,False,DAY_TO_DAY,[],,1788.0,558.0
+Jaden McDaniels,MIN,SF,False,ACTIVE,[],,1763.0,613.0
+Brandon Boston,NOP,SG,False,ACTIVE,[],,0.0,641.0
+Cason Wallace,OKC,SG,False,ACTIVE,[],,1406.0,597.0
+Andre Drummond,PHL,C,False,ACTIVE,[],,2530.0,526.0
+Robert Williams III,POR,C,True,OUT,[],,1846.0,236.0
+Wendell Carter Jr.,ORL,C,False,ACTIVE,[],,2245.0,423.0
+Kentavious Caldwell-Pope,ORL,SG,False,ACTIVE,[],,1879.0,541.0
+Bronny James,LAL,PG,False,ACTIVE,[],,482.0,10.0
+Harrison Barnes,SAS,PF,False,ACTIVE,[],,2064.0,588.0
+Ty Jerome,CLE,PG,False,ACTIVE,[],,0.0,625.0
+Tre Mann,CHA,PG,True,OUT,[],,1687.0,321.0
+Dillon Brooks,HOU,SF,False,DAY_TO_DAY,[],,1533.0,604.0
+Spencer Dinwiddie,DAL,PG,False,ACTIVE,[],,1920.0,438.0
+Rob Dillingham,MIN,PG,False,ACTIVE,[],,1172.0,86.0
+Obi Toppin,IND,PF,False,ACTIVE,[],,1852.0,641.0
+Miles McBride,NYK,PG,False,ACTIVE,[],,1380.0,477.0
+Kelly Olynyk,TOR,C,False,ACTIVE,[],,2263.0,59.0
+Justin Champagnie,WAS,SF,False,ACTIVE,[],,0.0,167.0
+Lonzo Ball,CHI,PG,False,ACTIVE,[],,0.0,197.0
+Vasilije Micic,CHA,PG,False,ACTIVE,[],,1160.0,247.0
+Max Strus,CLE,SF,True,OUT,[],,2133.0,0.0
+Jarred Vanderbilt,LAL,PF,True,OUT,[],,1496.0,0.0
+Jake LaRavia,MEM,PF,False,ACTIVE,[],,1169.0,686.0
+Isaiah Stewart,DET,C,False,ACTIVE,[],,1962.0,666.0
+Toumani Camara,POR,PF,False,ACTIVE,[],,1532.0,640.0
+Carlton Carrington,WAS,PG,False,ACTIVE,[],,1609.0,562.0
+Gary Trent Jr.,MIL,SG,False,ACTIVE,[],,1882.0,382.0
+Naji Marshall,DAL,SF,True,OUT,[],,0.0,526.0
+Tre Jones,SAS,PG,True,OUT,[],,2023.0,123.0
+Brandon Clarke,MEM,PF,False,ACTIVE,[],,1798.0,583.0
+Dorian Finney-Smith,BKN,PF,False,ACTIVE,[],,1715.0,469.0
+Anthony Black,ORL,PG,False,ACTIVE,[],,830.0,568.0
+De'Anthony Melton,GSW,PG,True,OUT,[],,1893.0,143.0
+Bojan Bogdanovic,BKN,PF,True,OUT,[],,1966.0,0.0
+Jalen Smith,CHI,PF,False,ACTIVE,[],,2207.0,526.0
+Duncan Robinson,MIA,SF,False,ACTIVE,[],,1774.0,464.0
+Andrew Nembhard,IND,PG,False,ACTIVE,[],,1738.0,256.0
+Tim Hardaway Jr.,DET,SG,False,ACTIVE,[],,1731.0,385.0
+Kevon Looney,GSW,C,False,ACTIVE,[],,1845.0,567.0
+Kevin Porter Jr.,LAC,SG,False,ACTIVE,[],,1596.0,462.0
+Davion Mitchell,TOR,PG,False,ACTIVE,[],,1239.0,524.0
+Guerschon Yabusele,PHL,PF,False,ACTIVE,[],,1488.0,581.0
+Cody Martin,CHA,SG,False,ACTIVE,[],,1474.0,641.0
+Jose Alvarado,NOP,PG,True,OUT,[],,1258.0,296.0
+Patrick Williams,CHI,PF,False,ACTIVE,[],,1719.0,374.0
+Matas Buzelis,CHI,SF,False,ACTIVE,[],,1988.0,325.0
+Taurean Prince,MIL,SF,False,ACTIVE,[],,1364.0,553.0
+Cole Anthony,ORL,PG,False,ACTIVE,[],,2013.0,269.0
+Precious Achiuwa,NYK,PF,False,ACTIVE,[],,1443.0,88.0
+Derrick Jones Jr.,LAC,SF,True,OUT,[],,1706.0,551.0
+Terance Mann,LAC,SG,True,OUT,[],,2089.0,413.0
+Nickeil Alexander-Walker,MIN,SG,False,ACTIVE,[],,1442.0,524.0
+Caleb Martin,PHL,SG,False,DAY_TO_DAY,[],,1698.0,428.0
+Corey Kispert,WAS,SF,True,OUT,[],,1986.0,395.0
+Jay Huff,MEM,C,False,ACTIVE,[],,0.0,556.0
+Jordan Hawkins,NOP,SG,True,OUT,[],,1022.0,236.0
+Aaron Wiggins,OKC,SG,False,ACTIVE,[],,0.0,523.0
+Kyle Lowry,PHL,PG,False,ACTIVE,[],,1413.0,280.0
+Kyle Anderson,GSW,SF,False,ACTIVE,[],,1942.0,393.0
+Aaron Nesmith,IND,SF,True,OUT,[],,1929.0,129.0
+Chris Boucher,TOR,PF,False,ACTIVE,[],,1244.0,513.0
+Kel'el Ware,MIA,C,False,ACTIVE,[],,2017.0,71.0
+Jaylen Wells,MEM,SG,False,ACTIVE,[],,0.0,567.0
+Larry Nance Jr.,ATL,PF,False,ACTIVE,[],,1405.0,224.0
+Jonathan Isaac,ORL,PF,True,OUT,[],,1346.0,465.0
+Peyton Watson,DEN,SF,False,ACTIVE,[],,1573.0,516.0
+Dalano Banton,POR,PG,False,ACTIVE,[],,1260.0,461.0
+Mitchell Robinson,NYK,C,True,OUT,[],,1367.0,0.0
+Kris Dunn,LAC,PG,False,ACTIVE,[],,1436.0,597.0
+Grant Williams,CHA,PF,True,OUT,[],,2019.0,447.0
+Isaiah Joe,OKC,SG,False,ACTIVE,[],,1286.0,456.0
+Taylor Hendricks,UTA,PF,True,OUT,[],,1954.0,63.0
+Kevin Love,MIA,PF,False,ACTIVE,[],,1790.0,261.0
+Seth Curry,CHA,SG,False,ACTIVE,[],,984.0,231.0
+Elfrid Payton,FA,PG,False,ACTIVE,[],,0.0,189.0
+Steven Adams,HOU,C,False,ACTIVE,[],,2182.0,119.0
+Ronald Holland II,DET,SF,False,ACTIVE,[],,1837.0,352.0
+Quentin Grimes,DAL,SG,False,ACTIVE,[],,1121.0,450.0
+Nikola Jovic,MIA,PF,False,DAY_TO_DAY,[],,1307.0,306.0
+Bol Bol,PHO,PF,False,ACTIVE,[],,1161.0,43.0
+Sam Hauser,BOS,SF,False,ACTIVE,[],,0.0,418.0
+Bruce Brown,TOR,SG,True,OUT,[],,1810.0,0.0
+Jonathan Mogbo,TOR,PF,False,ACTIVE,[],,0.0,519.0
+Vince Williams Jr.,MEM,SG,True,OUT,[],,1830.0,41.0
+Cam Whitmore,HOU,SF,False,ACTIVE,[],,1744.0,60.0
+AJ Green,MIL,SG,False,ACTIVE,[],,0.0,402.0
+Mason Plumlee,PHO,C,False,ACTIVE,[],,1648.0,492.0
+Cameron Payne,NYK,PG,False,ACTIVE,[],,1340.0,392.0
+Amir Coffey,LAC,SG,False,ACTIVE,[],,987.0,488.0
+Josh Green,CHA,SG,False,ACTIVE,[],,1278.0,417.0
+GG Jackson II,MEM,PF,True,OUT,[],,1075.0,0.0
+Marvin Bagley III,WAS,PF,False,ACTIVE,[],,1729.0,198.0
+Kyle Filipowski,UTA,PF,False,ACTIVE,[],,1420.0,309.0
+Zach Collins,SAS,C,False,DAY_TO_DAY,[],,1695.0,414.0
+Kyshawn George,WAS,SG,True,OUT,[],,0.0,407.0
+Bones Hyland,LAC,PG,False,ACTIVE,[],,1435.0,151.0
+Paul Reed,DET,C,False,ACTIVE,[],,1849.0,154.0
+Haywood Highsmith,MIA,SF,False,ACTIVE,[],,0.0,435.0
+Moussa Diabate,CHA,PF,False,ACTIVE,[],,0.0,521.0
+Luke Kornet,BOS,C,False,ACTIVE,[],,1281.0,406.0
+Moses Moody,GSW,SG,True,OUT,[],,1233.0,295.0
+Ziaire Williams,BKN,SF,True,OUT,[],,1054.0,434.0
+Georges Niang,CLE,PF,False,ACTIVE,[],,1528.0,506.0
+Isaac Okoro,CLE,SF,False,ACTIVE,[],,1498.0,397.0
+Kenrich Williams,OKC,SF,False,ACTIVE,[],,1221.0,245.0
+Cody Williams,UTA,SG,False,ACTIVE,[],,1589.0,147.0
+Neemias Queta,BOS,C,False,ACTIVE,[],,0.0,434.0
+Jeremiah Robinson-Earl,NOP,PF,True,OUT,[],,773.0,513.0
+Tristan da Silva,ORL,SF,False,ACTIVE,[],,0.0,392.0
+Gary Payton II,GSW,SG,False,ACTIVE,[],,1080.0,368.0
+Luke Kennard,MEM,SG,False,ACTIVE,[],,1632.0,262.0
+Julian Strawther,DEN,SF,False,ACTIVE,[],,814.0,421.0
+Thanasis Antetokounmpo,FA,SF,True,OUT,[],,0.0,0.0
+KJ Martin,PHL,SF,False,ACTIVE,[],,1125.0,357.0
+Jalen Wilson,BKN,PF,False,ACTIVE,[],,906.0,461.0
+Tidjane Salaun,CHA,PF,False,ACTIVE,[],,0.0,313.0
+Mo Bamba,LAC,C,False,ACTIVE,[],,1341.0,191.0
+Dean Wade,CLE,PF,False,ACTIVE,[],,1173.0,363.0
+Keon Ellis,SAC,SG,False,ACTIVE,[],,987.0,430.0
+Reggie Jackson,PHL,PG,False,ACTIVE,[],,1582.0,126.0
+Ja'Kobe Walter,TOR,SG,False,ACTIVE,[],,1387.0,184.0
+Rudy Gay,GSW,PF,False,[],[],,983.0,0.0
+Saddiq Bey,WAS,SF,True,OUT,[],,1608.0,0.0
+Xavier Tillman,BOS,PF,False,ACTIVE,[],,1306.0,93.0
+Eric Gordon,PHL,SG,False,ACTIVE,[],,1373.0,146.0
+Shake Milton,BKN,SG,False,ACTIVE,[],,925.0,302.0
+Jarace Walker,IND,PF,False,ACTIVE,[],,741.0,442.0
+Garrison Mathews,ATL,SG,False,ACTIVE,[],,804.0,292.0
+Ryan Dunn,PHO,SF,False,ACTIVE,[],,0.0,309.0
+Christian Wood,LAL,PF,True,OUT,[],,1602.0,0.0
+Terrence Shannon Jr.,MIN,SG,False,ACTIVE,[],,917.0,22.0
+Jordan Walsh,BOS,SF,False,ACTIVE,[],,439.0,89.0

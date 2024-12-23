@@ -507,7 +507,7 @@ server <- function(input, output, session) {
     df <- read_csv("fantasybball/daily_app_data.csv") %>%
       filter(game_date >= "2024-10-22")
     
-    free_agents <- read_csv("free_agents.csv") %>%
+    free_agents <- read_csv("fantasybball/free_agents.csv") %>%
       mutate(
         player_name = sub("Player\\((.*?)\\)", "\\1", player_name),
         std_name = standardize_name(player_name)
