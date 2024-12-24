@@ -35,6 +35,7 @@ class NBADataCollector:
         self.gamelogs_file = os.path.join(output_dir, f"gamelogs{season[:4]}.csv")
         self.games_file = os.path.join(output_dir, f"games{season[:4]}.csv")
         self.processed_file = os.path.join(output_dir, "daily_app_data.csv")
+        self.roster_file = os.path.join(output_dir, "player_info.csv")
         
         # Create necessary directories
         os.makedirs(output_dir, exist_ok=True)
@@ -110,6 +111,8 @@ class NBADataCollector:
             
             df = pd.DataFrame(players)
             logging.info(f"Collected data for {len(df)} players ({df['is_free_agent'].sum()} free agents)")
+            logging.info("Saving player info...")
+            df.to_csv(self.roster_file, index=False)
             return df
             
         except Exception as e:
@@ -134,7 +137,7 @@ class NBADataCollector:
     def collect_game_data(self) -> bool:
         """Collect recent game data."""
         try:
-            logging.info("Starting game data collection")
+            logging.info("Starting game data collection...")
             
             # Load existing data if available
             existing_data = None
@@ -214,7 +217,7 @@ class NBADataCollector:
     def process_data(self) -> Optional[pd.DataFrame]:
         """Process collected data and calculate statistics."""
         try:
-            logging.info("Starting data processing")
+            logging.info("Starting data processing...")
             
             # Read data files
             gamelogs = pd.read_csv(self.gamelogs_file)
@@ -253,7 +256,7 @@ class NBADataCollector:
             )
 
             # Merge gamelogs with games data
-            logging.info("Merging gamelogs with games data")
+            logging.info("Merging gamelogs with games data...")
             gamelogs = pd.merge(
                 gamelogs,
                 nba_games[['GAME_ID', 'TEAM_ID', 'TEAM_NAME', 'GAME_DATE']],
@@ -261,7 +264,7 @@ class NBADataCollector:
                 how='left'
             )
 
-            logging.info("Calculating statistical metrics")
+            logging.info("Calculating statistical metrics...")
             # Convert MIN to numeric, handling time format
             gamelogs['MIN'] = gamelogs['MIN'].astype(str).apply(
                 lambda x: float(x.split(':')[0]) + float(x.split(':')[1])/60 if ':' in str(x) else float(x)
