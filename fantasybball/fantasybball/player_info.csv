@@ -1,0 +1,1048 @@
+player_name,fantasy_team,pro_team,position,injured,injury_status,is_free_agent
+Victor Wembanyama,Dixon Suburbmans,SAS,C,False,ACTIVE,False
+Karl-Anthony Towns,Dixon Suburbmans,NYK,C,False,ACTIVE,False
+Scottie Barnes,Dixon Suburbmans,TOR,SF,False,ACTIVE,False
+Rudy Gobert,Dixon Suburbmans,MIN,C,False,ACTIVE,False
+Nikola Vucevic,Dixon Suburbmans,CHI,C,False,ACTIVE,False
+Paul George,Dixon Suburbmans,PHL,SF,False,ACTIVE,False
+Josh Hart,Dixon Suburbmans,NYK,SF,False,ACTIVE,False
+John Collins,Dixon Suburbmans,UTA,PF,True,OUT,False
+Dyson Daniels,Dixon Suburbmans,ATL,SG,False,DAY_TO_DAY,False
+CJ McCollum,Dixon Suburbmans,NOP,SG,False,ACTIVE,False
+Chris Paul,Dixon Suburbmans,SAS,PG,False,ACTIVE,False
+P.J. Washington,Dixon Suburbmans,DAL,PF,False,ACTIVE,False
+Trey Murphy III,Dixon Suburbmans,NOP,SF,False,ACTIVE,False
+Cam Thomas,Dixon Suburbmans,BKN,SG,True,OUT,False
+Domantas Sabonis,WaRrIoRsInFiVe,SAC,C,False,ACTIVE,False
+Jayson Tatum,WaRrIoRsInFiVe,BOS,PF,False,ACTIVE,False
+De'Aaron Fox,WaRrIoRsInFiVe,SAC,PG,False,ACTIVE,False
+Dejounte Murray,WaRrIoRsInFiVe,NOP,SG,False,ACTIVE,False
+Jamal Murray,WaRrIoRsInFiVe,DEN,PG,False,ACTIVE,False
+Tobias Harris,WaRrIoRsInFiVe,DET,PF,False,ACTIVE,False
+Ivica Zubac,WaRrIoRsInFiVe,LAC,C,False,ACTIVE,False
+Tyus Jones,WaRrIoRsInFiVe,PHO,PG,False,ACTIVE,False
+Aaron Gordon,WaRrIoRsInFiVe,DEN,PF,True,OUT,False
+Kawhi Leonard,WaRrIoRsInFiVe,LAC,SF,True,OUT,False
+Bobby Portis,WaRrIoRsInFiVe,MIL,PF,False,ACTIVE,False
+Amen Thompson,WaRrIoRsInFiVe,HOU,SF,False,SUSPENSION,False
+Yves Missi,WaRrIoRsInFiVe,NOP,C,False,ACTIVE,False
+Collin Sexton,WaRrIoRsInFiVe,UTA,SG,False,ACTIVE,False
+Luka Doncic,Toronto Purebloods,DAL,PG,True,OUT,False
+LeBron James,Toronto Purebloods,LAL,SF,False,ACTIVE,False
+Bam Adebayo,Toronto Purebloods,MIA,C,False,ACTIVE,False
+LaMelo Ball,Toronto Purebloods,CHA,PG,True,OUT,False
+Jarrett Allen,Toronto Purebloods,CLE,C,False,ACTIVE,False
+Coby White,Toronto Purebloods,CHI,PG,False,ACTIVE,False
+Zach LaVine,Toronto Purebloods,CHI,SG,False,ACTIVE,False
+Dereck Lively II,Toronto Purebloods,DAL,C,True,OUT,False
+Clint Capela,Toronto Purebloods,ATL,C,False,ACTIVE,False
+Bradley Beal,Toronto Purebloods,PHO,SF,False,DAY_TO_DAY,False
+Christian Braun,Toronto Purebloods,DEN,SG,False,ACTIVE,False
+Andrew Wiggins,Toronto Purebloods,GSW,SF,False,ACTIVE,False
+Jeremy Sochan,Toronto Purebloods,SAS,PF,False,DAY_TO_DAY,False
+Nikola Jokic,You Got Serbed,DEN,C,False,ACTIVE,False
+Devin Booker,You Got Serbed,PHO,PG,False,ACTIVE,False
+Alperen Sengun,You Got Serbed,HOU,C,False,ACTIVE,False
+Lauri Markkanen,You Got Serbed,UTA,PF,False,ACTIVE,False
+Stephen Curry,You Got Serbed,GSW,PG,False,DAY_TO_DAY,False
+Desmond Bane,You Got Serbed,MEM,SG,False,ACTIVE,False
+Mikal Bridges,You Got Serbed,NYK,SF,False,ACTIVE,False
+Brandon Miller,You Got Serbed,CHA,SF,True,OUT,False
+Deandre Ayton,You Got Serbed,POR,C,False,ACTIVE,False
+Norman Powell,You Got Serbed,LAC,SG,False,ACTIVE,False
+OG Anunoby,You Got Serbed,NYK,SF,False,ACTIVE,False
+Anfernee Simons,You Got Serbed,POR,SG,False,ACTIVE,False
+Khris Middleton,You Got Serbed,MIL,SF,False,ACTIVE,False
+Jonas Valanciunas,You Got Serbed,WAS,C,False,ACTIVE,False
+Giannis Antetokounmpo,IG live menaces,MIL,PF,False,ACTIVE,False
+Ja Morant,IG live menaces,MEM,PG,True,OUT,False
+Kevin Durant,IG live menaces,PHO,PF,False,ACTIVE,False
+James Harden,IG live menaces,LAC,PG,False,ACTIVE,False
+DeMar DeRozan,IG live menaces,SAC,SF,False,ACTIVE,False
+Evan Mobley,IG live menaces,CLE,PF,False,ACTIVE,False
+Jalen Johnson,IG live menaces,ATL,PF,False,DAY_TO_DAY,False
+Fred VanVleet,IG live menaces,HOU,PG,False,ACTIVE,False
+Michael Porter Jr.,IG live menaces,DEN,SF,False,ACTIVE,False
+Tyler Herro,IG live menaces,MIA,SG,False,ACTIVE,False
+Walker Kessler,IG live menaces,UTA,C,False,ACTIVE,False
+Jordan Poole,IG live menaces,WAS,SG,False,DAY_TO_DAY,False
+Austin Reaves,IG live menaces,LAL,SG,False,ACTIVE,False
+Payton Pritchard,IG live menaces,BOS,PG,False,ACTIVE,False
+Joel Embiid,Team Wankiewicz,PHL,C,True,OUT,False
+Jalen Brunson,Team Wankiewicz,NYK,PG,False,DAY_TO_DAY,False
+Donovan Mitchell,Team Wankiewicz,CLE,SG,False,ACTIVE,False
+Trae Young,Team Wankiewicz,ATL,PG,False,DAY_TO_DAY,False
+Kyrie Irving,Team Wankiewicz,DAL,PG,False,ACTIVE,False
+Jimmy Butler,Team Wankiewicz,MIA,SF,False,ACTIVE,False
+Jaren Jackson Jr.,Team Wankiewicz,MEM,C,False,ACTIVE,False
+Jalen Williams,Team Wankiewicz,OKC,PF,False,ACTIVE,False
+Darius Garland,Team Wankiewicz,CLE,PG,False,ACTIVE,False
+Miles Bridges,Team Wankiewicz,CHA,SF,False,ACTIVE,False
+Isaiah Hartenstein,Team Wankiewicz,OKC,C,False,ACTIVE,False
+Mark Williams,Team Wankiewicz,CHA,C,False,ACTIVE,False
+Dillon Brooks,Team Wankiewicz,HOU,SF,False,ACTIVE,False
+Trayce Jackson-Davis,Team Wankiewicz,GSW,PF,False,ACTIVE,False
+Tyrese Haliburton,Wades Grooming,IND,PG,False,ACTIVE,False
+Anthony Edwards,Wades Grooming,MIN,SG,False,ACTIVE,False
+Paolo Banchero,Wades Grooming,ORL,PF,True,OUT,False
+Chet Holmgren,Wades Grooming,OKC,C,True,OUT,False
+Cade Cunningham,Wades Grooming,DET,PG,False,DAY_TO_DAY,False
+Damian Lillard,Wades Grooming,MIL,PG,False,ACTIVE,False
+Myles Turner,Wades Grooming,IND,C,False,ACTIVE,False
+Jalen Duren,Wades Grooming,DET,C,False,ACTIVE,False
+Derrick White,Wades Grooming,BOS,SG,False,ACTIVE,False
+Russell Westbrook,Wades Grooming,DEN,PG,False,ACTIVE,False
+Alexandre Sarr,Wades Grooming,WAS,C,False,ACTIVE,False
+Cameron Johnson,Wades Grooming,BKN,SF,False,ACTIVE,False
+Jalen Green,Wades Grooming,HOU,SG,False,ACTIVE,False
+Malik Beasley,Wades Grooming,DET,SG,False,ACTIVE,False
+Shai Gilgeous-Alexander,Team Glen,OKC,PG,False,ACTIVE,False
+Anthony Davis,Team Glen,LAL,C,False,ACTIVE,False
+Pascal Siakam,Team Glen,IND,PF,False,ACTIVE,False
+Tyrese Maxey,Team Glen,PHL,PG,False,ACTIVE,False
+Julius Randle,Team Glen,MIN,PF,False,ACTIVE,False
+Jaylen Brown,Team Glen,BOS,SF,False,DAY_TO_DAY,False
+Franz Wagner,Team Glen,ORL,SF,True,OUT,False
+Brandon Ingram,Team Glen,NOP,SF,True,OUT,False
+Jakob Poeltl,Team Glen,TOR,C,False,ACTIVE,False
+Josh Giddey,Team Glen,CHI,SG,False,ACTIVE,False
+RJ Barrett,Team Glen,TOR,SF,True,OUT,False
+Kristaps Porzingis,Team Glen,BOS,C,True,OUT,False
+Goga Bitadze,Team Glen,ORL,C,False,ACTIVE,False
+De'Andre Hunter,Team Glen,ATL,SF,False,ACTIVE,False
+Zion Williamson,Free Agent,NOP,PF,True,OUT,True
+Jrue Holiday,Free Agent,BOS,PG,False,ACTIVE,True
+D'Angelo Russell,Free Agent,BKN,PG,False,ACTIVE,True
+Jalen Suggs,Free Agent,ORL,PG,False,ACTIVE,True
+Brook Lopez,Free Agent,MIL,C,False,ACTIVE,True
+Klay Thompson,Free Agent,DAL,SG,False,ACTIVE,True
+Keegan Murray,Free Agent,SAC,PF,False,DAY_TO_DAY,True
+Daniel Gafford,Free Agent,DAL,C,False,ACTIVE,True
+Devin Vassell,Free Agent,SAS,SG,False,ACTIVE,True
+Jaden Ivey,Free Agent,DET,SG,False,ACTIVE,True
+Dennis Schroder,Free Agent,GSW,PG,False,ACTIVE,True
+Jonathan Kuminga,Free Agent,GSW,PF,False,ACTIVE,True
+Nic Claxton,Free Agent,BKN,C,False,ACTIVE,True
+Kyle Kuzma,Free Agent,WAS,PF,False,ACTIVE,True
+Buddy Hield,Free Agent,GSW,SG,False,ACTIVE,True
+Draymond Green,Free Agent,GSW,PF,False,ACTIVE,True
+Malik Monk,Free Agent,SAC,SG,False,ACTIVE,True
+Naz Reid,Free Agent,MIN,C,False,ACTIVE,True
+Jerami Grant,Free Agent,POR,PF,False,DAY_TO_DAY,True
+Immanuel Quickley,Free Agent,TOR,PG,True,OUT,True
+Jabari Smith Jr.,Free Agent,HOU,PF,False,ACTIVE,True
+Santi Aldama,Free Agent,MEM,PF,True,OUT,True
+Deni Avdija,Free Agent,POR,SF,False,ACTIVE,True
+Zach Edey,Free Agent,MEM,C,False,DAY_TO_DAY,True
+Terry Rozier,Free Agent,MIA,PG,False,SUSPENSION,True
+Malcolm Brogdon,Free Agent,WAS,PG,False,ACTIVE,True
+Bennedict Mathurin,Free Agent,IND,SF,False,ACTIVE,True
+Jusuf Nurkic,Free Agent,PHO,C,False,SUSPENSION,True
+Caris LeVert,Free Agent,CLE,SG,False,ACTIVE,True
+Donte DiVincenzo,Free Agent,MIN,SG,False,ACTIVE,True
+Bilal Coulibaly,Free Agent,WAS,SF,False,ACTIVE,True
+Bogdan Bogdanovic,Free Agent,ATL,SG,True,OUT,True
+Gradey Dick,Free Agent,TOR,SG,False,DAY_TO_DAY,True
+Kelly Oubre Jr.,Free Agent,PHL,SF,False,DAY_TO_DAY,True
+Shaedon Sharpe,Free Agent,POR,SG,False,ACTIVE,True
+Grayson Allen,Free Agent,PHO,SG,True,OUT,True
+Ayo Dosunmu,Free Agent,CHI,SG,True,OUT,True
+Jaime Jaquez Jr.,Free Agent,MIA,SF,False,ACTIVE,True
+Scotty Pippen Jr.,Free Agent,MEM,PG,False,ACTIVE,True
+Mike Conley,Free Agent,MIN,PG,False,ACTIVE,True
+Scoot Henderson,Free Agent,POR,PG,False,ACTIVE,True
+Rui Hachimura,Free Agent,LAL,PF,False,ACTIVE,True
+Jordan Clarkson,Free Agent,UTA,SG,False,ACTIVE,True
+Tari Eason,Free Agent,HOU,SF,True,OUT,True
+Herbert Jones,Free Agent,NOP,SF,False,ACTIVE,True
+Reed Sheppard,Free Agent,HOU,SG,False,ACTIVE,True
+Stephon Castle,Free Agent,SAS,PG,False,ACTIVE,True
+Keyonte George,Free Agent,UTA,PG,False,ACTIVE,True
+Onyeka Okongwu,Free Agent,ATL,C,False,ACTIVE,True
+Keldon Johnson,Free Agent,SAS,SF,False,ACTIVE,True
+Ausar Thompson,Free Agent,DET,SF,False,ACTIVE,True
+Jared McCain,Free Agent,PHL,SG,True,OUT,True
+Dalton Knecht,Free Agent,LAL,SG,False,ACTIVE,True
+Ochai Agbaji,Free Agent,TOR,SF,False,ACTIVE,True
+Al Horford,Free Agent,BOS,C,False,ACTIVE,True
+Brandin Podziemski,Free Agent,GSW,SG,True,OUT,True
+Ben Simmons,Free Agent,BKN,PG,False,ACTIVE,True
+Luguentz Dort,Free Agent,OKC,SG,False,ACTIVE,True
+Spencer Dinwiddie,Free Agent,DAL,PG,False,ACTIVE,True
+Andrew Nembhard,Free Agent,IND,PG,False,ACTIVE,True
+T.J. McConnell,Free Agent,IND,PG,False,ACTIVE,True
+Jaden McDaniels,Free Agent,MIN,SF,False,ACTIVE,True
+Alex Caruso,Free Agent,OKC,SG,True,OUT,True
+Zaccharie Risacher,Free Agent,ATL,SF,False,ACTIVE,True
+Justin Champagnie,Free Agent,WAS,SF,False,ACTIVE,True
+Kentavious Caldwell-Pope,Free Agent,ORL,SG,False,ACTIVE,True
+Donovan Clingan,Free Agent,POR,C,False,ACTIVE,True
+Kevin Huerter,Free Agent,SAC,SG,False,ACTIVE,True
+Royce O'Neale,Free Agent,PHO,SF,True,OUT,True
+Julian Champagnie,Free Agent,SAS,SF,False,ACTIVE,True
+Marcus Smart,Free Agent,MEM,SG,True,OUT,True
+Andre Drummond,Free Agent,PHL,C,True,OUT,True
+Nick Richards,Free Agent,CHA,C,False,ACTIVE,True
+Bronny James,Free Agent,LAL,PG,False,ACTIVE,True
+Wendell Carter Jr.,Free Agent,ORL,C,False,ACTIVE,True
+Obi Toppin,Free Agent,IND,PF,False,ACTIVE,True
+Tre Mann,Free Agent,CHA,PG,True,OUT,True
+Rob Dillingham,Free Agent,MIN,PG,False,DAY_TO_DAY,True
+Lonzo Ball,Free Agent,CHI,PG,False,ACTIVE,True
+Harrison Barnes,Free Agent,SAS,PF,False,ACTIVE,True
+Brandon Boston,Free Agent,NOP,SG,False,ACTIVE,True
+Guerschon Yabusele,Free Agent,PHL,PF,False,ACTIVE,True
+Ty Jerome,Free Agent,CLE,PG,False,ACTIVE,True
+Kelly Olynyk,Free Agent,TOR,C,False,ACTIVE,True
+Patrick Williams,Free Agent,CHI,PF,False,ACTIVE,True
+Jarred Vanderbilt,Free Agent,LAL,PF,True,OUT,True
+Quentin Grimes,Free Agent,DAL,SG,False,ACTIVE,True
+Miles McBride,Free Agent,NYK,PG,False,ACTIVE,True
+Toumani Camara,Free Agent,POR,PF,False,ACTIVE,True
+Robert Williams III,Free Agent,POR,C,False,ACTIVE,True
+Max Strus,Free Agent,CLE,SF,False,ACTIVE,True
+Dorian Finney-Smith,Free Agent,LAL,PF,False,ACTIVE,True
+Tristan da Silva,Free Agent,ORL,SF,False,ACTIVE,True
+Carlton Carrington,Free Agent,WAS,PG,False,ACTIVE,True
+Tre Jones,Free Agent,SAS,PG,False,ACTIVE,True
+Caleb Martin,Free Agent,PHL,SG,False,ACTIVE,True
+Kevin Porter Jr.,Free Agent,LAC,SG,False,ACTIVE,True
+Kris Dunn,Free Agent,LAC,PG,False,ACTIVE,True
+Derrick Jones Jr.,Free Agent,LAC,SF,False,ACTIVE,True
+Jake LaRavia,Free Agent,MEM,PF,False,DAY_TO_DAY,True
+Larry Nance Jr.,Free Agent,ATL,PF,True,OUT,True
+Chris Boucher,Free Agent,TOR,PF,False,ACTIVE,True
+Keon Johnson,Free Agent,BKN,SG,False,ACTIVE,True
+De'Anthony Melton,Free Agent,BKN,PG,True,OUT,True
+Isaiah Stewart,Free Agent,DET,C,False,ACTIVE,True
+Cason Wallace,Free Agent,OKC,SG,False,ACTIVE,True
+Duncan Robinson,Free Agent,MIA,SF,False,DAY_TO_DAY,True
+Moritz Wagner,Free Agent,ORL,C,True,OUT,True
+Jalen Smith,Free Agent,CHI,PF,False,ACTIVE,True
+Tim Hardaway Jr.,Free Agent,DET,SG,False,ACTIVE,True
+Noah Clowney,Free Agent,BKN,PF,False,ACTIVE,True
+Bojan Bogdanovic,Free Agent,BKN,PF,True,OUT,True
+Corey Kispert,Free Agent,WAS,SF,False,ACTIVE,True
+Jose Alvarado,Free Agent,NOP,PG,True,OUT,True
+Gary Trent Jr.,Free Agent,MIL,SG,False,ACTIVE,True
+Dean Wade,Free Agent,CLE,PF,False,ACTIVE,True
+Peyton Watson,Free Agent,DEN,SF,False,ACTIVE,True
+Anthony Black,Free Agent,ORL,PG,True,OUT,True
+Cole Anthony,Free Agent,ORL,PG,False,ACTIVE,True
+Nickeil Alexander-Walker,Free Agent,MIN,SG,False,ACTIVE,True
+Bruce Brown,Free Agent,TOR,SG,True,OUT,True
+Matas Buzelis,Free Agent,CHI,SF,False,ACTIVE,True
+Max Christie,Free Agent,LAL,SG,False,ACTIVE,True
+Kevon Looney,Free Agent,GSW,C,False,ACTIVE,True
+Jordan Hawkins,Free Agent,NOP,SG,False,ACTIVE,True
+Terance Mann,Free Agent,LAC,SG,True,OUT,True
+Precious Achiuwa,Free Agent,NYK,PF,False,ACTIVE,True
+Cody Martin,Free Agent,CHA,SG,True,OUT,True
+Davion Mitchell,Free Agent,TOR,PG,False,ACTIVE,True
+Naji Marshall,Free Agent,DAL,SF,False,SUSPENSION,True
+Nikola Jovic,Free Agent,MIA,PF,False,ACTIVE,True
+Paul Reed,Free Agent,DET,C,False,ACTIVE,True
+Jaylen Wells,Free Agent,MEM,SG,False,ACTIVE,True
+Kel'el Ware,Free Agent,MIA,C,False,ACTIVE,True
+Kyle Lowry,Free Agent,PHL,PG,False,ACTIVE,True
+Aaron Nesmith,Free Agent,IND,SF,True,OUT,True
+Jay Huff,Free Agent,MEM,C,False,ACTIVE,True
+Kyle Anderson,Free Agent,GSW,SF,False,DAY_TO_DAY,True
+Brandon Clarke,Free Agent,MEM,PF,False,DAY_TO_DAY,True
+Cam Whitmore,Free Agent,HOU,SF,False,ACTIVE,True
+Taurean Prince,Free Agent,MIL,SF,False,ACTIVE,True
+Mitchell Robinson,Free Agent,NYK,C,True,OUT,True
+Seth Curry,Free Agent,CHA,SG,False,ACTIVE,True
+Taylor Hendricks,Free Agent,UTA,PF,True,OUT,True
+Aaron Wiggins,Free Agent,OKC,SG,False,ACTIVE,True
+Jonathan Isaac,Free Agent,ORL,PF,False,ACTIVE,True
+Vasilije Micic,Free Agent,CHA,PG,False,ACTIVE,True
+Grant Williams,Free Agent,CHA,PF,True,OUT,True
+Kevin Love,Free Agent,MIA,PF,False,ACTIVE,True
+Ronald Holland II,Free Agent,DET,SF,False,ACTIVE,True
+Luke Kennard,Free Agent,MEM,SG,False,ACTIVE,True
+Steven Adams,Free Agent,HOU,C,False,ACTIVE,True
+Haywood Highsmith,Free Agent,MIA,SF,False,ACTIVE,True
+Garrison Mathews,Free Agent,ATL,SG,False,ACTIVE,True
+Shake Milton,Free Agent,LAL,SG,False,ACTIVE,True
+Bol Bol,Free Agent,PHO,PF,False,ACTIVE,True
+Mason Plumlee,Free Agent,PHO,C,False,ACTIVE,True
+Vince Williams Jr.,Free Agent,MEM,SG,True,OUT,True
+Luke Kornet,Free Agent,BOS,C,False,ACTIVE,True
+GG Jackson II,Free Agent,MEM,PF,True,OUT,True
+Georges Niang,Free Agent,CLE,PF,False,ACTIVE,True
+Sam Hauser,Free Agent,BOS,SF,False,ACTIVE,True
+Jalen Wilson,Free Agent,BKN,PF,False,ACTIVE,True
+Elfrid Payton,Free Agent,FA,PG,False,ACTIVE,True
+Kyshawn George,Free Agent,WAS,SG,False,ACTIVE,True
+Amir Coffey,Free Agent,LAC,SG,False,ACTIVE,True
+Dalano Banton,Free Agent,POR,PG,True,OUT,True
+Zach Collins,Free Agent,SAS,C,False,ACTIVE,True
+Alec Burks,Free Agent,MIA,SG,False,ACTIVE,True
+Moses Moody,Free Agent,GSW,SG,False,ACTIVE,True
+Cameron Payne,Free Agent,NYK,PG,False,ACTIVE,True
+John Konchar,Free Agent,MEM,SG,False,ACTIVE,True
+Josh Green,Free Agent,CHA,SG,False,ACTIVE,True
+Kyle Filipowski,Free Agent,UTA,PF,False,ACTIVE,True
+Ziaire Williams,Free Agent,BKN,SF,True,OUT,True
+Jamal Shead,Free Agent,TOR,PG,False,ACTIVE,True
+Isaac Okoro,Free Agent,CLE,SF,True,OUT,True
+Jonathan Mogbo,Free Agent,TOR,PF,False,ACTIVE,True
+Julian Strawther,Free Agent,DEN,SF,False,ACTIVE,True
+Isaiah Joe,Free Agent,OKC,SG,False,ACTIVE,True
+Cody Williams,Free Agent,UTA,SG,False,ACTIVE,True
+Keon Ellis,Free Agent,SAC,SG,False,ACTIVE,True
+Ja'Kobe Walter,Free Agent,TOR,SG,False,DAY_TO_DAY,True
+Jarace Walker,Free Agent,IND,PF,False,ACTIVE,True
+Marvin Bagley III,Free Agent,WAS,PF,True,OUT,True
+Thanasis Antetokounmpo,Free Agent,FA,SF,True,OUT,True
+Ryan Dunn,Free Agent,PHO,SF,False,ACTIVE,True
+Mo Bamba,Free Agent,LAC,C,False,ACTIVE,True
+Reggie Jackson,Free Agent,PHL,PG,False,ACTIVE,True
+Bones Hyland,Free Agent,LAC,PG,False,ACTIVE,True
+Moussa Diabate,Free Agent,CHA,PF,False,ACTIVE,True
+Neemias Queta,Free Agent,BOS,C,False,ACTIVE,True
+Rudy Gay,Free Agent,GSW,PF,False,[],True
+Saddiq Bey,Free Agent,WAS,SF,True,OUT,True
+Ajay Mitchell,Free Agent,OKC,PG,False,ACTIVE,True
+Xavier Tillman,Free Agent,BOS,PF,False,ACTIVE,True
+Eric Gordon,Free Agent,PHL,SG,True,OUT,True
+Gary Payton II,Free Agent,GSW,SG,True,OUT,True
+Tidjane Salaun,Free Agent,CHA,PF,False,ACTIVE,True
+Christian Wood,Free Agent,LAL,PF,True,OUT,True
+Jordan Walsh,Free Agent,BOS,SF,False,ACTIVE,True
+Terrence Shannon Jr.,Free Agent,MIN,SG,False,ACTIVE,True
+Jeremiah Robinson-Earl,Free Agent,NOP,PF,False,DAY_TO_DAY,True
+Jaxson Hayes,Free Agent,LAL,C,False,ACTIVE,True
+Day'Ron Sharpe,Free Agent,BKN,C,False,ACTIVE,True
+Jaylin Williams,Free Agent,OKC,C,False,ACTIVE,True
+Kenrich Williams,Free Agent,OKC,SF,False,ACTIVE,True
+Jaden Hardy,Free Agent,DAL,SG,False,ACTIVE,True
+Malaki Branham,Free Agent,SAS,SG,False,ACTIVE,True
+AJ Green,Free Agent,MIL,SG,False,ACTIVE,True
+Daniel Theis,Free Agent,NOP,C,False,ACTIVE,True
+Nicolas Batum,Free Agent,LAC,PF,False,ACTIVE,True
+Devin Carter,Free Agent,SAC,PG,True,OUT,True
+Josh Okogie,Free Agent,PHO,SF,False,ACTIVE,True
+Isaiah Collier,Free Agent,UTA,PG,False,ACTIVE,True
+Javonte Green,Free Agent,NOP,SF,False,ACTIVE,True
+Richaun Holmes,Free Agent,WAS,C,False,ACTIVE,True
+Nikola Topic,Free Agent,OKC,PG,True,OUT,True
+Derrick Rose,Free Agent,FA,PG,False,ACTIVE,True
+Matisse Thybulle,Free Agent,POR,SF,True,OUT,True
+KJ Martin,Free Agent,PHL,SF,True,OUT,True
+Josh Richardson,Free Agent,MIA,SG,True,OUT,True
+Trey Lyles,Free Agent,SAC,PF,False,ACTIVE,True
+Marcus Sasser,Free Agent,DET,PG,False,ACTIVE,True
+Isaiah Jackson,Free Agent,IND,PF,True,OUT,True
+Cam Reddish,Free Agent,LAL,SF,False,ACTIVE,True
+Sam Merrill,Free Agent,CLE,SG,False,DAY_TO_DAY,True
+Trevelin Queen,Free Agent,ORL,SG,True,OUT,True
+Monte Morris,Free Agent,PHO,PG,False,ACTIVE,True
+Jared Butler,Free Agent,WAS,SG,False,ACTIVE,True
+Yuki Kawamura,Free Agent,MEM,PG,False,DAY_TO_DAY,True
+Gabe Vincent,Free Agent,LAL,PG,False,DAY_TO_DAY,True
+Tyler Kolek,Free Agent,NYK,PG,False,ACTIVE,True
+Talen Horton-Tucker,Free Agent,CHI,SG,False,ACTIVE,True
+David Roddy,Free Agent,ATL,PF,False,ACTIVE,True
+Simone Fontecchio,Free Agent,DET,SF,True,OUT,True
+Jericho Sims,Free Agent,NYK,C,False,ACTIVE,True
+Brice Sensabaugh,Free Agent,UTA,SF,False,ACTIVE,True
+Lindy Waters III,Free Agent,GSW,SG,False,ACTIVE,True
+James Wiseman,Free Agent,IND,C,True,OUT,True
+Pat Connaughton,Free Agent,MIL,SG,False,ACTIVE,True
+Joe Ingles,Free Agent,MIN,SF,False,ACTIVE,True
+Maxi Kleber,Free Agent,DAL,PF,False,ACTIVE,True
+Charles Bassey,Free Agent,SAS,C,False,ACTIVE,True
+Kris Murray,Free Agent,POR,PF,False,ACTIVE,True
+Delon Wright,Free Agent,MIL,PG,False,ACTIVE,True
+Gary Harris,Free Agent,ORL,SG,False,ACTIVE,True
+Patrick Beverley,Free Agent,FA,PG,False,ACTIVE,True
+Thomas Bryant,Free Agent,IND,C,False,ACTIVE,True
+Drew Eubanks,Free Agent,UTA,C,False,ACTIVE,True
+Svi Mykhailiuk,Free Agent,UTA,SG,False,ACTIVE,True
+Kobe Bufkin,Free Agent,ATL,PG,True,OUT,True
+Lonnie Walker IV,Free Agent,FA,SG,False,ACTIVE,True
+Tacko Fall,Free Agent,CLE,C,False,[],True
+Andre Jackson Jr.,Free Agent,MIL,SG,False,ACTIVE,True
+DeAndre Jordan,Free Agent,DEN,C,False,ACTIVE,True
+Dru Smith,Free Agent,MIA,PG,True,OUT,True
+Dwight Powell,Free Agent,DAL,C,False,ACTIVE,True
+Dario Saric,Free Agent,DEN,PF,False,ACTIVE,True
+Markelle Fultz,Free Agent,FA,PG,False,ACTIVE,True
+Ben Sheppard,Free Agent,IND,SG,False,ACTIVE,True
+Johnny Juzang,Free Agent,UTA,SG,False,ACTIVE,True
+Killian Hayes,Free Agent,FA,PG,False,ACTIVE,True
+Baylor Scheierman,Free Agent,BOS,SG,False,ACTIVE,True
+Blake Griffin,Free Agent,BOS,PF,False,[],True
+Pacome Dadiet,Free Agent,NYK,SF,False,ACTIVE,True
+Tristan Thompson,Free Agent,CLE,C,False,ACTIVE,True
+Oso Ighodaro,Free Agent,PHO,PF,False,ACTIVE,True
+Ryan Rollins,Free Agent,MIL,SG,False,ACTIVE,True
+Ricky Council IV,Free Agent,PHL,SG,False,ACTIVE,True
+Luka Garza,Free Agent,MIN,C,True,OUT,True
+Torrey Craig,Free Agent,CHI,PF,True,OUT,True
+Jaylon Tyson,Free Agent,CLE,SG,False,ACTIVE,True
+Tyrese Martin,Free Agent,BKN,SF,False,ACTIVE,True
+Andre Iguodala,Free Agent,GSW,SF,False,[],True
+Micah Potter,Free Agent,UTA,C,False,ACTIVE,True
+Jaden Springer,Free Agent,BOS,SG,False,ACTIVE,True
+John Wall,Free Agent,HOU,PG,False,[],True
+Leonard Miller,Free Agent,MIN,SF,False,ACTIVE,True
+Thaddeus Young,Free Agent,FA,PF,False,ACTIVE,True
+Ousmane Dieng,Free Agent,OKC,SF,False,ACTIVE,True
+DaQuan Jeffries,Free Agent,CHA,SG,False,ACTIVE,True
+DaRon Holmes II,Free Agent,DEN,PF,True,OUT,True
+Justin Holiday,Free Agent,FA,SG,False,ACTIVE,True
+Jalen Hood-Schifino,Free Agent,LAL,SG,True,OUT,True
+Johnny Furphy,Free Agent,IND,SG,False,ACTIVE,True
+Jae Crowder,Free Agent,SAC,PF,False,DAY_TO_DAY,True
+Jett Howard,Free Agent,ORL,SF,False,ACTIVE,True
+Dante Exum,Free Agent,DAL,SG,True,OUT,True
+Dillon Jones,Free Agent,OKC,SF,False,ACTIVE,True
+Trendon Watford,Free Agent,BKN,PF,True,OUT,True
+Aaron Holiday,Free Agent,HOU,PG,False,ACTIVE,True
+Victor Oladipo,Free Agent,FA,SG,False,ACTIVE,True
+Emoni Bates,Free Agent,CLE,SF,False,ACTIVE,True
+Will Barton,Free Agent,TOR,SF,False,[],True
+Ariel Hukporti,Free Agent,NYK,C,False,ACTIVE,True
+Josh Minott,Free Agent,MIN,SF,False,ACTIVE,True
+Gordon Hayward,Free Agent,FA,SF,False,ACTIVE,True
+Leaky Black,Free Agent,FA,SF,False,ACTIVE,True
+Dariq Whitehead,Free Agent,BKN,SF,False,ACTIVE,True
+Jeff Green,Free Agent,HOU,PF,False,ACTIVE,True
+P.J. Tucker,Free Agent,LAC,PF,True,OUT,True
+Kai Jones,Free Agent,LAC,PF,False,ACTIVE,True
+Jae'Sean Tate,Free Agent,HOU,SF,False,ACTIVE,True
+Danilo Gallinari,Free Agent,FA,PF,False,ACTIVE,True
+Boban Marjanovic,Free Agent,FA,C,False,ACTIVE,True
+AJ Johnson,Free Agent,MIL,SG,False,ACTIVE,True
+Patty Mills,Free Agent,UTA,PG,False,ACTIVE,True
+Jalen Pickett,Free Agent,DEN,SG,False,ACTIVE,True
+Julian Phillips,Free Agent,CHI,SF,False,ACTIVE,True
+Jevon Carter,Free Agent,CHI,PG,False,ACTIVE,True
+Pelle Larsson,Free Agent,MIA,SG,False,ACTIVE,True
+Isaiah Thomas,Free Agent,FA,PG,False,ACTIVE,True
+Olivier-Maxence Prosper,Free Agent,DAL,PF,False,ACTIVE,True
+Antonio Reeves,Free Agent,NOP,SG,False,ACTIVE,True
+Isaiah Wong,Free Agent,CHA,PG,False,ACTIVE,True
+Tyler Smith,Free Agent,MIL,SF,False,ACTIVE,True
+Mac McClung,Free Agent,ORL,SG,False,ACTIVE,True
+Johnny Davis,Free Agent,WAS,SG,False,ACTIVE,True
+Craig Porter Jr.,Free Agent,CLE,SG,False,ACTIVE,True
+Kobe Brown,Free Agent,LAC,PF,False,ACTIVE,True
+Tristan Vukcevic,Free Agent,WAS,PF,False,ACTIVE,True
+Vit Krejci,Free Agent,ATL,PG,False,ACTIVE,True
+Jalen McDaniels,Free Agent,FA,PF,False,ACTIVE,True
+Wang Zhelin,Free Agent,MEM,C,False,[],True
+Adem Bona,Free Agent,PHL,C,False,ACTIVE,True
+JD Davison,Free Agent,BOS,PG,False,ACTIVE,True
+Cody Zeller,Free Agent,ATL,C,True,OUT,True
+Landry Shamet,Free Agent,NYK,SG,False,ACTIVE,True
+Serge Ibaka,Free Agent,IND,C,False,[],True
+MarJon Beauchamp,Free Agent,MIL,SG,False,ACTIVE,True
+Dalen Terry,Free Agent,CHI,SF,False,ACTIVE,True
+Christian Koloko,Free Agent,LAL,C,False,ACTIVE,True
+JaVale McGee,Free Agent,FA,C,False,ACTIVE,True
+JaMychal Green,Free Agent,GSW,PF,False,[],True
+PJ Dozier,Free Agent,FA,PG,False,ACTIVE,True
+Hunter Tyson,Free Agent,DEN,SF,False,ACTIVE,True
+Paul Zipser,Free Agent,CHI,SF,False,[],True
+Damion Lee,Free Agent,PHO,SF,False,ACTIVE,True
+Nick Smith Jr.,Free Agent,CHA,SG,False,ACTIVE,True
+Jaylen Nowell,Free Agent,FA,SG,False,ACTIVE,True
+Jordan Miller,Free Agent,LAC,SF,False,ACTIVE,True
+Bobi Klintman,Free Agent,DET,PF,False,ACTIVE,True
+Kemba Walker,Free Agent,FA,PG,False,ACTIVE,True
+Maxwell Lewis,Free Agent,BKN,SF,False,ACTIVE,True
+Jabari Walker,Free Agent,POR,PF,False,ACTIVE,True
+James Johnson,Free Agent,IND,PF,False,ACTIVE,True
+Doug McDermott,Free Agent,SAC,SF,False,ACTIVE,True
+Alex Len,Free Agent,SAC,C,False,ACTIVE,True
+Jordan McLaughlin,Free Agent,SAC,PG,False,ACTIVE,True
+Montrezl Harrell,Free Agent,PHL,C,False,[],True
+Joe Young,Free Agent,IND,PG,False,[],True
+Marcus Zegarowski,Free Agent,BKN,PG,False,[],True
+Chris Duarte,Free Agent,CHI,SG,False,ACTIVE,True
+Danny Green,Free Agent,PHL,SF,False,[],True
+Davis Bertans,Free Agent,FA,PF,False,ACTIVE,True
+Mouhamed Gueye,Free Agent,ATL,PF,True,OUT,True
+Devonte' Graham,Free Agent,FA,PG,False,ACTIVE,True
+Jamal Cain,Free Agent,NOP,SF,False,ACTIVE,True
+Oscar Tshiebwe,Free Agent,UTA,C,False,ACTIVE,True
+Colby Jones,Free Agent,SAC,SG,False,ACTIVE,True
+Robin Lopez,Free Agent,FA,C,False,ACTIVE,True
+JT Thor,Free Agent,CLE,PF,False,ACTIVE,True
+Wendell Moore Jr.,Free Agent,DET,SF,False,ACTIVE,True
+Reggie Bullock Jr.,Free Agent,FA,SF,False,ACTIVE,True
+Rade Zagorac,Free Agent,MEM,SG,False,[],True
+Moses Wright,Free Agent,DAL,PF,False,[],True
+Udonis Haslem,Free Agent,MIA,PF,False,[],True
+Patric Young,Free Agent,NOP,C,False,[],True
+Aleksej Pokusevski,Free Agent,FA,PF,False,ACTIVE,True
+Anton Watson,Free Agent,BOS,PF,False,ACTIVE,True
+Tristen Newton,Free Agent,IND,PG,False,ACTIVE,True
+Zeke Nnaji,Free Agent,DEN,PF,False,ACTIVE,True
+Josh Christopher,Free Agent,MIA,SG,False,ACTIVE,True
+Chris Livingston,Free Agent,MIL,SF,False,ACTIVE,True
+Austin Rivers,Free Agent,MIN,SG,False,[],True
+Bismack Biyombo,Free Agent,FA,C,False,ACTIVE,True
+Cam Spencer,Free Agent,MEM,SG,False,ACTIVE,True
+Zhou Qi,Free Agent,HOU,C,False,[],True
+Sandro Mamukelashvili,Free Agent,SAS,PF,False,ACTIVE,True
+Kessler Edwards,Free Agent,DAL,SF,False,ACTIVE,True
+Taj Gibson,Free Agent,CHA,PF,False,ACTIVE,True
+McKinley Wright IV,Free Agent,DAL,PG,False,[],True
+Kevin McCullar Jr.,Free Agent,NYK,SF,True,OUT,True
+Harrison Ingram,Free Agent,SAS,SF,False,ACTIVE,True
+Jock Landale,Free Agent,HOU,C,False,ACTIVE,True
+AJ Griffin,Free Agent,FA,SF,False,ACTIVE,True
+Goran Dragic,Free Agent,MIL,PG,False,[],True
+TyTy Washington Jr.,Free Agent,PHO,PG,False,ACTIVE,True
+Robert Covington,Free Agent,FA,PF,False,DAY_TO_DAY,True
+Quinten Post,Free Agent,GSW,C,False,ACTIVE,True
+Jamison Battle,Free Agent,TOR,SF,False,ACTIVE,True
+Marcus Morris Sr.,Free Agent,FA,PF,False,ACTIVE,True
+Oshae Brissett,Free Agent,FA,PF,False,ACTIVE,True
+Isaiah Roby,Free Agent,NYK,PF,False,[],True
+Karlo Matkovic,Free Agent,NOP,PF,True,OUT,True
+Terrence Ross,Free Agent,PHO,SG,False,[],True
+Anthony Lamb,Free Agent,GSW,SF,False,[],True
+Joshua Primo,Free Agent,FA,SG,False,ACTIVE,True
+Ish Smith,Free Agent,FA,PG,False,ACTIVE,True
+Nate Wolters,Free Agent,UTA,PG,False,[],True
+Enrique Freeman,Free Agent,IND,PF,False,ACTIVE,True
+Gui Santos,Free Agent,GSW,SF,False,ACTIVE,True
+Robert Woodard II,Free Agent,OKC,SF,False,[],True
+Mike Muscala,Free Agent,OKC,C,False,ACTIVE,True
+Ricky Rubio,Free Agent,CLE,PG,False,[],True
+Nigel Hayes,Free Agent,SAC,SF,False,[],True
+Cassius Winston,Free Agent,WAS,PG,False,[],True
+Malachi Flynn,Free Agent,FA,PG,False,ACTIVE,True
+James Bouknight,Free Agent,FA,SG,False,ACTIVE,True
+KJ Simpson,Free Agent,CHA,PG,False,ACTIVE,True
+Nassir Little,Free Agent,FA,SF,False,ACTIVE,True
+Isaac Jones,Free Agent,SAC,PF,False,ACTIVE,True
+George Hill,Free Agent,IND,PG,False,[],True
+Rayan Rupert,Free Agent,POR,SG,False,ACTIVE,True
+James Nnaji,Free Agent,CHA,C,False,[],True
+Bruno Fernando,Free Agent,TOR,C,False,ACTIVE,True
+Colin Castleton,Free Agent,MEM,C,False,ACTIVE,True
+Duop Reath,Free Agent,POR,C,False,ACTIVE,True
+Matt Ryan,Free Agent,NYK,SF,False,ACTIVE,True
+Cory Joseph,Free Agent,ORL,PG,False,ACTIVE,True
+Blake Wesley,Free Agent,SAS,SG,False,ACTIVE,True
+Moses Brown,Free Agent,FA,C,False,ACTIVE,True
+Sharife Cooper,Free Agent,FA,PG,False,ACTIVE,True
+Kendrick Nunn,Free Agent,WAS,SG,False,[],True
+Facundo Campazzo,Free Agent,DAL,PG,False,[],True
+Dennis Smith Jr.,Free Agent,BKN,PG,False,ACTIVE,True
+Frank Kaminsky,Free Agent,FA,C,False,ACTIVE,True
+James Michael McAdoo,Free Agent,PHL,PF,False,[],True
+Sidy Cissoko,Free Agent,SAS,SG,False,ACTIVE,True
+Vlatko Cancar,Free Agent,DEN,SF,True,OUT,True
+Markieff Morris,Free Agent,DAL,PF,False,ACTIVE,True
+Evan Fournier,Free Agent,FA,SG,False,ACTIVE,True
+Caleb Houstan,Free Agent,ORL,SF,False,ACTIVE,True
+Sterling Brown,Free Agent,LAL,SG,False,[],True
+Jaylen Clark,Free Agent,MIN,SG,False,ACTIVE,True
+Kenneth Lofton Jr.,Free Agent,FA,PF,False,ACTIVE,True
+Joe Harris,Free Agent,FA,SF,False,ACTIVE,True
+Juancho Hernangomez,Free Agent,TOR,PF,False,[],True
+Raul Neto,Free Agent,CLE,PG,False,[],True
+Terence Davis,Free Agent,MIL,SG,False,DAY_TO_DAY,True
+Garrett Temple,Free Agent,TOR,SG,False,ACTIVE,True
+Mike James,Free Agent,BKN,PG,False,[],True
+Kevin Knox II,Free Agent,FA,SF,False,ACTIVE,True
+Drew Peterson,Free Agent,BOS,SF,False,ACTIVE,True
+Patrick Baldwin Jr.,Free Agent,WAS,SF,False,ACTIVE,True
+Jordan Goodwin,Free Agent,FA,PG,False,ACTIVE,True
+Cam Christie,Free Agent,LAC,SG,False,ACTIVE,True
+Hamidou Diallo,Free Agent,FA,SG,False,ACTIVE,True
+Brandon Williams,Free Agent,DAL,PG,False,ACTIVE,True
+Chuma Okeke,Free Agent,FA,PF,False,ACTIVE,True
+Satnam Singh Bhamara,Free Agent,DAL,C,False,[],True
+Ulrich Chomche,Free Agent,TOR,C,False,ACTIVE,True
+Kira Lewis Jr.,Free Agent,FA,PG,False,ACTIVE,True
+Michael Carter-Williams,Free Agent,ORL,PG,False,[],True
+T.J. Warren,Free Agent,FA,SF,False,ACTIVE,True
+Quenton Jackson,Free Agent,IND,PG,False,ACTIVE,True
+Matthew Dellavedova,Free Agent,SAC,PG,False,[],True
+Jack White,Free Agent,FA,SF,False,ACTIVE,True
+Isaiah Mobley,Free Agent,FA,PF,False,ACTIVE,True
+Seth Lundy,Free Agent,FA,SG,True,OUT,True
+Jeff Dowtin Jr.,Free Agent,PHL,PG,False,ACTIVE,True
+Keaton Wallace,Free Agent,ATL,PG,False,ACTIVE,True
+Dominick Barlow,Free Agent,ATL,PF,False,ACTIVE,True
+Nerlens Noel,Free Agent,FA,C,False,ACTIVE,True
+Cedi Osman,Free Agent,FA,SF,False,DAY_TO_DAY,True
+Amari Bailey,Free Agent,FA,SG,False,ACTIVE,True
+James Webb III,Free Agent,BKN,PF,False,[],True
+Jalen Slawson,Free Agent,FA,SF,False,ACTIVE,True
+Rakeem Christmas,Free Agent,IND,PF,False,[],True
+Adama Sanogo,Free Agent,CHI,C,False,ACTIVE,True
+Dylan Windler,Free Agent,FA,SF,False,ACTIVE,True
+D.J. Wilson,Free Agent,FA,PF,False,ACTIVE,True
+Anthony Gill,Free Agent,WAS,PF,False,ACTIVE,True
+Gorgui Dieng,Free Agent,SAS,C,False,[],True
+Cat Barber,Free Agent,ATL,PG,False,[],True
+Darius Bazley,Free Agent,FA,PF,False,ACTIVE,True
+Mindaugas Kuzminskas,Free Agent,NYK,PF,False,[],True
+Jarron Cumberland,Free Agent,POR,SG,False,[],True
+Jabari Brown,Free Agent,MIL,SG,False,[],True
+Trey Jemison III,Free Agent,NOP,C,False,ACTIVE,True
+Usman Garuba,Free Agent,FA,PF,False,ACTIVE,True
+Anthony Brown,Free Agent,PHL,SF,False,[],True
+David Nwaba,Free Agent,OKC,SG,False,[],True
+Stanley Johnson,Free Agent,SAS,SF,False,[],True
+Malik Williams,Free Agent,MIA,C,False,ACTIVE,True
+Sasha Vezenkov,Free Agent,FA,PF,False,ACTIVE,True
+Collin Gillespie,Free Agent,PHO,PG,True,OUT,True
+Justin Jackson,Free Agent,FA,SF,False,ACTIVE,True
+DJ Stephens,Free Agent,MEM,SG,False,[],True
+Willy Hernangomez,Free Agent,NOP,C,False,[],True
+Keyontae Johnson,Free Agent,FA,SF,False,ACTIVE,True
+Orlando Robinson,Free Agent,SAC,C,True,OUT,True
+Chimezie Metu,Free Agent,FA,PF,False,ACTIVE,True
+Meyers Leonard,Free Agent,MIL,C,False,[],True
+Shaquille Harrison,Free Agent,MEM,SG,False,[],True
+Keita Bates-Diop,Free Agent,FA,SF,False,ACTIVE,True
+Saben Lee,Free Agent,FA,PG,False,ACTIVE,True
+Cleanthony Early,Free Agent,NYK,SF,False,[],True
+Walt Lemon Jr.,Free Agent,IND,PG,False,[],True
+Troy Williams,Free Agent,SAC,SF,False,[],True
+J.J. Barea,Free Agent,DAL,PG,False,[],True
+Daishen Nix,Free Agent,MIN,PG,False,ACTIVE,True
+Ron Baker,Free Agent,WAS,SG,False,[],True
+Bryn Forbes,Free Agent,MIN,SG,False,[],True
+James Nunnally,Free Agent,NOP,SG,False,[],True
+Mason Jones,Free Agent,SAC,SG,False,ACTIVE,True
+Anthony Tolliver,Free Agent,NOP,PF,False,[],True
+Lester Quinones,Free Agent,FA,SG,False,ACTIVE,True
+Damian Jones,Free Agent,FA,C,False,ACTIVE,True
+Shabazz Muhammad,Free Agent,MIL,SF,False,[],True
+Quinn Cook,Free Agent,SAC,PG,False,[],True
+Jamil Wilson,Free Agent,LAC,PF,False,[],True
+DeVaughn Akoon-Purcell,Free Agent,OKC,SG,False,[],True
+Pat Spencer,Free Agent,GSW,PG,False,ACTIVE,True
+Javon Freeman-Liberty,Free Agent,FA,PG,False,DAY_TO_DAY,True
+Andrew White III,Free Agent,NYK,SG,False,[],True
+Diamond Stone,Free Agent,CHI,C,False,[],True
+Furkan Korkmaz,Free Agent,FA,SG,False,ACTIVE,True
+Frank Ntilikina,Free Agent,FA,PG,False,ACTIVE,True
+Wenyen Gabriel,Free Agent,FA,SF,False,ACTIVE,True
+David Stockton,Free Agent,FA,PG,False,ACTIVE,True
+Luka Samanic,Free Agent,FA,PF,False,ACTIVE,True
+C.J. Williams,Free Agent,BKN,SF,False,[],True
+Shane Larkin,Free Agent,BOS,PG,False,[],True
+Jarrett Culver,Free Agent,FA,SG,False,ACTIVE,True
+Olivier Sarr,Free Agent,FA,C,True,OUT,True
+Dewayne Dedmon,Free Agent,PHL,C,False,[],True
+Brad Wanamaker,Free Agent,WAS,PG,False,[],True
+Luke Travers,Free Agent,CLE,SG,True,OUT,True
+Cristiano Felicio,Free Agent,CHI,C,False,[],True
+Alec Brown,Free Agent,FA,C,False,[],True
+Udoka Azubuike,Free Agent,FA,C,False,ACTIVE,True
+Stanley Umude,Free Agent,MIL,SG,False,ACTIVE,True
+Okaro White,Free Agent,WAS,PF,False,[],True
+Carlik Jones,Free Agent,CHI,PG,False,[],True
+Shawn Long,Free Agent,HOU,PF,False,[],True
+Johnathan Williams,Free Agent,WAS,C,False,[],True
+Georgios Papagiannis,Free Agent,POR,C,False,[],True
+Dee Bost,Free Agent,FA,PG,False,[],True
+R.J. Hampton,Free Agent,FA,PG,False,ACTIVE,True
+Ish Wainright,Free Agent,FA,PF,False,ACTIVE,True
+Sim Bhullar,Free Agent,SAC,C,False,[],True
+Jalen Bridges,Free Agent,PHO,SF,False,ACTIVE,True
+Juan Toscano-Anderson,Free Agent,FA,SF,True,OUT,True
+Lorenzo Brown,Free Agent,TOR,SG,False,[],True
+Zoran Dragic,Free Agent,BOS,SG,False,[],True
+Mojave King,Free Agent,IND,SG,False,[],True
+Edmond Sumner,Free Agent,CHA,SG,False,[],True
+Will Cherry,Free Agent,GSW,SG,False,[],True
+Tony Bradley,Free Agent,FA,C,False,ACTIVE,True
+Yogi Ferrell,Free Agent,LAC,SG,False,[],True
+E.J. Liddell,Free Agent,CHI,PF,False,ACTIVE,True
+Danuel House Jr.,Free Agent,FA,SF,False,ACTIVE,True
+Kendall Brown,Free Agent,FA,SF,False,ACTIVE,True
+Jay Scrubb,Free Agent,FA,SG,False,ACTIVE,True
+Monta Ellis,Free Agent,IND,SG,False,[],True
+Vander Blue,Free Agent,LAL,SG,False,[],True
+Alan Williams,Free Agent,BKN,PF,False,[],True
+Xavier Sneed,Free Agent,CHA,SF,False,[],True
+Tarik Biberovic,Free Agent,MEM,PF,False,[],True
+David Johnson,Free Agent,MEM,PG,False,[],True
+Zylan Cheatham,Free Agent,FA,SF,False,ACTIVE,True
+Troy Brown Jr.,Free Agent,FA,SF,False,ACTIVE,True
+Greg Brown III,Free Agent,FA,PF,False,ACTIVE,True
+Aaron White,Free Agent,WAS,SF,False,[],True
+Joel Bolomboy,Free Agent,MIL,PF,False,[],True
+Bryce Cotton,Free Agent,MEM,SG,False,[],True
+Antonio Blakeney,Free Agent,CHI,SG,False,[],True
+Allonzo Trier,Free Agent,NYK,SG,False,[],True
+Michael Cobbins,Free Agent,OKC,PF,False,[],True
+Lucas Nogueira,Free Agent,TOR,C,False,[],True
+David Duke Jr.,Free Agent,SAS,SG,False,DAY_TO_DAY,True
+Noah Vonleh,Free Agent,SAS,PF,False,[],True
+Ibou Badji,Free Agent,POR,C,False,ACTIVE,True
+Lamar Stevens,Free Agent,FA,SF,False,ACTIVE,True
+Harry Giles III,Free Agent,FA,PF,False,ACTIVE,True
+Juan Nunez,Free Agent,FA,PG,False,ACTIVE,True
+Omer Yurtseven,Free Agent,FA,C,False,ACTIVE,True
+Matt Williams Jr.,Free Agent,MIA,SG,False,[],True
+Luka Mitrovic,Free Agent,PHL,SF,False,[],True
+Lance Thomas,Free Agent,BKN,PF,False,[],True
+Mangok Mathiang,Free Agent,CHA,PF,False,[],True
+Coty Clarke,Free Agent,BOS,PF,False,[],True
+Alpha Kaba,Free Agent,ATL,PF,False,[],True
+Joe Wieskamp,Free Agent,DAL,SF,False,[],True
+Jemerrio Jones,Free Agent,LAL,SF,False,[],True
+Jameel Warney,Free Agent,DAL,PF,False,[],True
+Derrick Walton Jr.,Free Agent,DET,PG,False,[],True
+Nikola Radicevic,Free Agent,DEN,PG,False,[],True
+Skylar Mays,Free Agent,MIN,SG,False,ACTIVE,True
+Alec Peters,Free Agent,PHO,PF,False,[],True
+Kennedy Chandler,Free Agent,FA,PG,False,ACTIVE,True
+Jacob Wiley,Free Agent,BKN,SF,False,[],True
+Justise Winslow,Free Agent,TOR,SF,False,[],True
+BJ Johnson,Free Agent,ORL,SF,False,[],True
+Greg Whittington,Free Agent,DEN,SF,False,[],True
+Tim Frazier,Free Agent,CLE,PG,False,[],True
+Julian Washburn,Free Agent,GSW,SF,False,[],True
+Alex Poythress,Free Agent,ATL,PF,False,[],True
+Davon Reed,Free Agent,LAL,SG,False,[],True
+Richard Solomon,Free Agent,OKC,PF,False,[],True
+Jaylen Hoard,Free Agent,OKC,SF,False,[],True
+Tyler Johnson,Free Agent,SAS,PG,False,[],True
+Tyler Ennis,Free Agent,LAL,PG,False,[],True
+Tyler Davis,Free Agent,OKC,C,False,[],True
+Killian Tillie,Free Agent,MEM,C,False,[],True
+Melvin Ajinca,Free Agent,FA,SG,False,ACTIVE,True
+Wesley Matthews,Free Agent,FA,SF,False,ACTIVE,True
+Zavier Simpson,Free Agent,FA,PG,False,ACTIVE,True
+Jacob Gilyard,Free Agent,FA,PG,False,ACTIVE,True
+Naz Mitrou-Long,Free Agent,IND,SG,False,[],True
+Jalen Jones,Free Agent,WAS,SF,False,[],True
+Jordan Adams,Free Agent,MEM,SG,False,[],True
+Marshall Plumlee,Free Agent,MIL,C,False,[],True
+Josh Gray,Free Agent,BKN,PG,False,[],True
+Semaj Christon,Free Agent,OKC,PG,False,[],True
+Russ Smith,Free Agent,MEM,PG,False,[],True
+Eric Atkins,Free Agent,UTA,PG,False,[],True
+Tyler Cook,Free Agent,CHI,PF,False,[],True
+Ben Moore,Free Agent,SAS,PF,False,[],True
+Dakari Johnson,Free Agent,MEM,C,False,[],True
+Mitchell Watt,Free Agent,FA,PF,False,[],True
+Kobi Simmons,Free Agent,FA,PG,False,ACTIVE,True
+MarShon Brooks,Free Agent,CHI,SG,False,[],True
+Chris Johnson,Free Agent,HOU,SF,False,[],True
+Chaundee Brown Jr.,Free Agent,ATL,SG,False,[],True
+Dwight Buycks,Free Agent,DET,PG,False,[],True
+Brice Johnson,Free Agent,DET,PF,False,[],True
+Aron Baynes,Free Agent,TOR,C,False,[],True
+Juhann Begarin,Free Agent,BOS,SG,False,[],True
+Cameron Bairstow,Free Agent,DET,PF,False,[],True
+Xavier Rathan-Mayes,Free Agent,NYK,PG,False,[],True
+Brandon Goodwin,Free Agent,CLE,PG,False,[],True
+Edy Tavares,Free Agent,CLE,C,False,[],True
+Vincent Poirier,Free Agent,NYK,C,False,[],True
+Jaylen Adams,Free Agent,MIL,PG,False,[],True
+Jarrod Uthoff,Free Agent,NOP,PF,False,[],True
+London Perrantes,Free Agent,POR,PG,False,[],True
+Nikola Milutinov,Free Agent,SAS,C,False,[],True
+Quincy Olivari,Free Agent,LAL,PG,False,ACTIVE,True
+DeAndre Daniels,Free Agent,FA,SF,False,[],True
+Louis Labeyrie,Free Agent,FA,PF,False,[],True
+Jordan Nwora,Free Agent,FA,SF,False,ACTIVE,True
+Chasson Randle,Free Agent,FA,PG,False,ACTIVE,True
+Admiral Schofield,Free Agent,FA,SF,False,ACTIVE,True
+Jahmi'us Ramsey,Free Agent,FA,SG,False,ACTIVE,True
+Jamaree Bouyea,Free Agent,FA,PG,False,DAY_TO_DAY,True
+Tosan Evbuomwan,Free Agent,BKN,SF,False,ACTIVE,True
+Willie Reed,Free Agent,CHI,C,False,[],True
+Billy Garrett Jr.,Free Agent,NYK,SG,False,[],True
+Devin Robinson,Free Agent,TOR,SF,False,[],True
+Hollis Thompson,Free Agent,SAC,SF,False,[],True
+Michael Gbinije,Free Agent,GSW,SG,False,[],True
+Jordan Schakel,Free Agent,WAS,SF,False,[],True
+Daniel Ochefu,Free Agent,WAS,PF,False,[],True
+Alex Kirk,Free Agent,CLE,C,False,[],True
+Phil Pressey,Free Agent,GSW,PG,False,[],True
+Freddie Gillespie,Free Agent,ORL,PF,False,[],True
+Rokas Jokubaitis,Free Agent,NYK,PG,False,[],True
+Romeo Langford,Free Agent,UTA,SG,False,[],True
+Daniel Oturu,Free Agent,TOR,C,False,[],True
+Joe Chealey,Free Agent,CHA,PG,False,[],True
+Jordan Mickey,Free Agent,MIA,PF,False,[],True
+Bonzie Colson,Free Agent,MIL,PF,False,[],True
+Marcelo Huertas,Free Agent,HOU,PG,False,[],True
+Jorge Gutierrez,Free Agent,DEN,PG,False,[],True
+Yam Madar,Free Agent,BOS,PG,False,[],True
+Nico Mannion,Free Agent,GSW,PG,False,[],True
+Jamorko Pickett,Free Agent,DEN,PF,False,[],True
+Georgios Kalaitzakis,Free Agent,OKC,PG,False,[],True
+Ryan Arcidiacono,Free Agent,FA,PG,False,ACTIVE,True
+Larry Drew II,Free Agent,DET,SG,False,[],True
+Ryan Broekhoff,Free Agent,PHL,SG,False,[],True
+Zach Lofton,Free Agent,DET,SG,False,[],True
+Kent Bazemore,Free Agent,SAC,SG,False,[],True
+Shayne Whittington,Free Agent,IND,C,False,[],True
+Drew Gordon,Free Agent,PHL,PF,False,[],True
+Troy Daniels,Free Agent,DEN,SG,False,[],True
+Terry Taylor,Free Agent,FA,PF,False,ACTIVE,True
+Isaiah Taylor,Free Agent,TOR,PG,False,[],True
+Pierre Deshawn Jackson,Free Agent,DAL,PG,False,[],True
+Keshad Johnson,Free Agent,MIA,PF,False,ACTIVE,True
+Theo Pinson,Free Agent,DAL,SG,False,[],True
+Jacob Toppin,Free Agent,NYK,SF,False,ACTIVE,True
+D.J. Carton,Free Agent,TOR,PG,True,OUT,True
+Kay Felder,Free Agent,TOR,PG,False,[],True
+Cliff Alexander,Free Agent,NOP,PF,False,[],True
+Joel Berry II,Free Agent,LAL,PG,False,[],True
+Ben Bentil,Free Agent,DAL,PF,False,[],True
+RaiQuan Gray,Free Agent,FA,PF,False,ACTIVE,True
+Onuralp Bitim,Free Agent,FA,SF,False,ACTIVE,True
+Lamar Patterson,Free Agent,ATL,SG,False,[],True
+Treveon Graham,Free Agent,MIL,SF,False,[],True
+Damjan Rudez,Free Agent,ORL,SF,False,[],True
+Duane Washington Jr.,Free Agent,FA,PG,False,ACTIVE,True
+Amile Jefferson,Free Agent,BOS,PF,False,[],True
+Mike Tobey,Free Agent,CHA,C,False,[],True
+Isaiah Cousins,Free Agent,UTA,SG,False,[],True
+Kyle Collinsworth,Free Agent,UTA,SG,False,[],True
+Deng Adel,Free Agent,BKN,SF,False,[],True
+Michael Frazier,Free Agent,HOU,SG,False,[],True
+Rayjon Tucker,Free Agent,MIL,SF,False,[],True
+Jamel Artis,Free Agent,LAC,SG,False,[],True
+Ognjen Jaramaz,Free Agent,NYK,PG,False,[],True
+Nathan Knight,Free Agent,BOS,C,False,[],True
+Gian Clavell,Free Agent,DAL,SG,False,[],True
+Mfiondu Kabengele,Free Agent,BOS,PF,False,[],True
+Yannick Nzosa,Free Agent,WAS,C,False,[],True
+Chinanu Onuaku,Free Agent,POR,PF,False,[],True
+Tyrell Terry,Free Agent,MEM,PG,False,[],True
+Bryce McGowens,Free Agent,POR,SG,False,ACTIVE,True
+Alfonzo McKinnie,Free Agent,CHI,SF,False,[],True
+Jonathon Simmons,Free Agent,WAS,SF,False,[],True
+Kevin Pangos,Free Agent,CLE,PG,False,[],True
+Damien Inglis,Free Agent,NYK,SF,False,[],True
+Adreian Payne,Free Agent,ORL,PF,False,[],True
+Darrun Hilliard,Free Agent,SAS,SF,False,[],True
+Marcus Paige,Free Agent,CHA,PG,False,[],True
+Briante Weber,Free Agent,MIA,PG,False,[],True
+Yongxi Cui,Free Agent,BKN,SG,True,OUT,True
+Khem Birch,Free Agent,SAS,C,False,[],True
+Daniss Jenkins,Free Agent,DET,PG,False,ACTIVE,True
+Marko Simonovic,Free Agent,CHI,C,False,[],True
+Rashad Vaughn,Free Agent,DAL,SF,False,[],True
+Donte Grantham,Free Agent,LAC,SF,False,[],True
+Paul Watson,Free Agent,OKC,SG,False,[],True
+Liam Robbins,Free Agent,MIL,C,False,ACTIVE,True
+Antonius Cleveland,Free Agent,OKC,SG,False,[],True
+Balsa Koprivica,Free Agent,DET,C,False,[],True
+Trevon Bluiett,Free Agent,UTA,SG,False,[],True
+Alex Ducas,Free Agent,OKC,SG,True,OUT,True
+Chris Clemons,Free Agent,ATL,PG,False,[],True
+Matt Costello,Free Agent,SAS,PF,False,[],True
+Adam Mokoka,Free Agent,OKC,SG,False,[],True
+Vince Shamar Hunter,Free Agent,MEM,PF,False,[],True
+Alize Johnson,Free Agent,SAS,PF,False,[],True
+Devontae Cacok,Free Agent,POR,C,False,[],True
+Gary Clark,Free Agent,NOP,PF,False,[],True
+Jared Harper,Free Agent,NOP,PG,False,[],True
+PJ Hall,Free Agent,DEN,PF,False,ACTIVE,True
+JaQuori McLaughlin,Free Agent,DAL,PG,False,[],True
+Xavier Moon,Free Agent,FA,PG,False,ACTIVE,True
+Xavier Munford,Free Agent,MIL,SG,False,[],True
+Milton Doyle,Free Agent,CHI,SG,False,[],True
+Malcolm Miller,Free Agent,TOR,SF,False,[],True
+Marcus Thornton,Free Agent,CLE,SG,False,[],True
+Brandon Sampson,Free Agent,CHI,SG,False,[],True
+Axel Toupane,Free Agent,MIL,SG,False,[],True
+Matt Mooney,Free Agent,NYK,SG,False,[],True
+Devin Cannady,Free Agent,ORL,PG,False,[],True
+Tim Quarterman,Free Agent,HOU,SG,False,[],True
+Isaiah Livers,Free Agent,WAS,PF,False,[],True
+Joel Ayayi,Free Agent,WAS,PG,False,[],True
+CJ Elleby,Free Agent,MIN,SG,False,[],True
+Louis King,Free Agent,PHL,PF,False,[],True
+Chris Chiozza,Free Agent,BKN,PG,False,[],True
+Jared Terrell,Free Agent,MIN,SG,False,[],True
+Juwan Morgan,Free Agent,LAC,SF,False,[],True
+Isaac Humphries,Free Agent,ORL,C,False,[],True
+Keljin Blevins,Free Agent,POR,SF,False,[],True
+Issuf Sanon,Free Agent,WAS,PG,False,[],True
+Cameron McGriff,Free Agent,POR,SF,False,[],True
+Elijah Hughes,Free Agent,POR,SG,False,[],True
+Trey Alexander,Free Agent,DEN,SG,False,ACTIVE,True
+Chris McCullough,Free Agent,DET,PF,False,[],True
+Leandro Bolmaro,Free Agent,UTA,SG,False,[],True
+Jazian Gortman,Free Agent,DAL,PG,False,ACTIVE,True
+Jason Preston,Free Agent,UTA,PG,True,OUT,True
+Jon Teske,Free Agent,MEM,C,False,[],True
+Theo Maledon,Free Agent,PHO,PG,False,[],True
+Mamadi Diakite,Free Agent,FA,PF,False,ACTIVE,True
+Eugene Omoruyi,Free Agent,FA,SF,False,ACTIVE,True
+A.J. Lawson,Free Agent,TOR,SG,False,ACTIVE,True
+Aaron Craft,Free Agent,FA,SG,False,[],True
+Jerome Robinson,Free Agent,FA,SG,False,ACTIVE,True
+Nathan Mensah,Free Agent,FA,C,False,ACTIVE,True
+Matt Thomas,Free Agent,CHI,SG,False,[],True
+Scotty Hopson,Free Agent,OKC,SG,False,[],True
+Cassius Stanley,Free Agent,DET,SG,False,[],True
+Jared Rhoden,Free Agent,CHA,SG,True,OUT,True
+J.P. Macura,Free Agent,CLE,SG,False,[],True
+Eric Griffin,Free Agent,UTA,SF,False,[],True
+Zach Norvell Jr.,Free Agent,CHI,SG,False,[],True
+Jaime Echenique,Free Agent,WAS,C,False,[],True
+Deonte Burton,Free Agent,SAC,SG,False,[],True
+Eric Moreland,Free Agent,OKC,PF,False,[],True
+Jalen Lecque,Free Agent,MIL,PG,False,[],True
+Ty-Shon Alexander,Free Agent,PHO,SG,False,[],True
+Khalifa Diop,Free Agent,CLE,C,False,[],True
+Salah Mejri,Free Agent,DAL,C,False,[],True
+Hassani Gravett,Free Agent,ORL,PG,False,[],True
+Grant Jerrett,Free Agent,POR,PF,False,[],True
+Duje Dukan,Free Agent,SAC,PF,False,[],True
+Justin Robinson,Free Agent,DET,PG,False,[],True
+Boo Buie,Free Agent,FA,PG,False,ACTIVE,True
+Armoni Brooks,Free Agent,BKN,PG,False,[],True
+Josh Hall,Free Agent,OKC,SF,False,[],True
+Chris Silva,Free Agent,ATL,PF,False,[],True
+Eric Mika,Free Agent,SAC,C,False,[],True
+Dereon Seabron,Free Agent,FA,SG,False,ACTIVE,True
+Matteo Spagnolo,Free Agent,MIN,PG,False,[],True
+Amida Brimah,Free Agent,DEN,C,False,[],True
+Ashton Hagans,Free Agent,FA,PG,False,ACTIVE,True
+Branden Carlson,Free Agent,OKC,C,False,ACTIVE,True
+DeJon Jarreau,Free Agent,FA,PG,False,ACTIVE,True
+Keifer Sykes,Free Agent,IND,SG,False,[],True
+Marcus Georges-Hunt,Free Agent,BOS,SG,False,[],True
+Erik McCree,Free Agent,UTA,SF,False,[],True
+Josh Huestis,Free Agent,SAS,SF,False,[],True
+KJ McDaniels,Free Agent,OKC,SF,False,[],True
+Jordan Loyd,Free Agent,TOR,PG,False,[],True
+Nicolas Laprovittola,Free Agent,SAS,SG,False,[],True
+Justin Jackson,Free Agent,ORL,SF,False,[],True
+Archie Goodwin,Free Agent,POR,SG,False,[],True
+Dakota Mathias,Free Agent,MEM,SG,False,[],True
+Feron Hunt,Free Agent,NYK,PF,False,[],True
+Cameron Reynolds,Free Agent,HOU,SG,False,[],True
+Jarnell Stokes,Free Agent,MEM,PF,False,[],True
+David Michineau,Free Agent,LAC,SG,False,[],True
+Tyler Dorsey,Free Agent,DAL,SG,False,[],True
+Donta Hall,Free Agent,ORL,PF,False,[],True
+Devon Dotson,Free Agent,WAS,PG,False,[],True
+Daniel Diez,Free Agent,POR,SG,False,[],True
+Kelan Martin,Free Agent,NOP,SG,False,[],True
+Tyler Cavanaugh,Free Agent,UTA,PF,False,[],True
+Armel Traore,Free Agent,LAL,SF,False,ACTIVE,True
+Isaiah Hicks,Free Agent,NYK,PF,False,[],True
+Hugo Besson,Free Agent,IND,PG,False,[],True
+Trevon Duval,Free Agent,HOU,PG,False,[],True
+Chance Comanche,Free Agent,SAC,C,False,[],True
+Dimitrios Agravanis,Free Agent,SAC,PF,False,[],True
+Frank Jackson,Free Agent,UTA,PG,False,[],True
+Ky Bowman,Free Agent,LAC,PG,False,[],True
+Will Magnay,Free Agent,NOP,PF,False,[],True
+Angel Delgado,Free Agent,LAC,C,False,[],True
+Emanuel Terry,Free Agent,PHO,PF,False,[],True
+Marques Bolden,Free Agent,FA,C,False,ACTIVE,True
+Charles Cooke,Free Agent,MIA,SG,False,[],True
+J.P. Tokoto,Free Agent,NYK,SG,False,[],True
+Branden Dawson,Free Agent,ORL,SF,False,[],True
+Nate Hinton,Free Agent,FA,SG,False,ACTIVE,True
+Wayne Selden,Free Agent,CHI,SG,False,[],True
+Jalen Harris,Free Agent,NYK,SG,False,[],True
+Aaron Henry,Free Agent,PHL,SF,False,[],True
+Trent Forrest,Free Agent,ATL,SG,False,ACTIVE,True
+Rodney McGruder,Free Agent,GSW,SG,False,[],True
+Malcolm Delaney,Free Agent,ATL,PG,False,[],True
+Myke Henry,Free Agent,OKC,SF,False,[],True
+Scottie Lewis,Free Agent,CHA,SG,False,[],True
+AJ Hammons,Free Agent,MIA,C,False,[],True
+Marko Guduric,Free Agent,MEM,SG,False,[],True
+Cady Lalanne,Free Agent,SAS,C,False,[],True
+Cole Swider,Free Agent,DET,PF,False,ACTIVE,True
+KZ Okpala,Free Agent,SAC,SF,False,[],True
+Nicolo Melli,Free Agent,DAL,PF,False,[],True
+Olivier Hanlan,Free Agent,SAS,PG,False,[],True
+Grant Riller,Free Agent,PHL,PG,False,[],True
+Yante Maten,Free Agent,BOS,PF,False,[],True
+Aaron Harrison,Free Agent,DAL,SG,False,[],True
+Mitchell Creek,Free Agent,MIN,SF,False,[],True
+Gabriel Deck,Free Agent,OKC,SF,False,[],True
+Justinian Jessup,Free Agent,GSW,SG,False,[],True
+Reggie Perry,Free Agent,POR,C,False,[],True
+Ismael Kamagate,Free Agent,POR,C,False,[],True
+Isaiah Todd,Free Agent,MEM,PF,False,[],True
+Malcolm Cazalon,Free Agent,FA,SG,False,ACTIVE,True
+Marcus Garrett,Free Agent,FA,SG,False,ACTIVE,True
+Tahjere McCall,Free Agent,ATL,SG,False,[],True
+Jordan Sibert,Free Agent,ATL,SG,False,[],True
+J.J. O'Brien,Free Agent,MIL,SF,False,[],True
+Langston Galloway,Free Agent,IND,SG,False,[],True
+Trey McKinney-Jones,Free Agent,IND,SG,False,[],True
+Isaia Cordinier,Free Agent,ATL,SG,False,[],True
+Nate Darling,Free Agent,FA,SG,False,DAY_TO_DAY,True
+JaKarr Sampson,Free Agent,IND,PF,False,[],True
+Tyler Harvey,Free Agent,MEM,SG,False,[],True
+Brodric Thomas,Free Agent,FA,SG,False,ACTIVE,True
+Maurice Ndour,Free Agent,NYK,SF,False,[],True
+Marcus Derrickson,Free Agent,ATL,SF,False,[],True
+Marcus Eriksson,Free Agent,ATL,SG,False,[],True
+Nicolas Brussino,Free Agent,ATL,SG,False,[],True
+MJ Walker,Free Agent,PHO,SG,False,[],True
+Arturas Gudaitis,Free Agent,CLE,C,False,[],True
+Mychal Mulder,Free Agent,MEM,SG,False,[],True
+Javin DeLaurier,Free Agent,MIL,C,False,[],True
+Troy Caupain,Free Agent,POR,SG,False,[],True
+Trevor Keels,Free Agent,MIN,SG,False,[],True
+Mitch McGary,Free Agent,OKC,PF,False,[],True
+Jesse Edwards,Free Agent,MIN,C,False,ACTIVE,True
+Markus Howard,Free Agent,DEN,PG,False,[],True
+Jarrell Brantley,Free Agent,UTA,PF,False,[],True
+N'Faly Dante,Free Agent,HOU,C,False,ACTIVE,True
+Sheldon Mac,Free Agent,CLE,SG,False,[],True
+Malik Newman,Free Agent,CLE,SG,False,[],True
+Keenan Evans,Free Agent,DET,SG,False,[],True
+Justin Edwards,Free Agent,PHL,SF,False,ACTIVE,True
+Gabriele Procida,Free Agent,DET,SG,False,[],True
+Josh Magette,Free Agent,ORL,PG,False,[],True
+Jaylen Morris,Free Agent,SAS,SG,False,[],True
+Vernon Carey Jr.,Free Agent,WAS,C,False,[],True
+Isaiah Briscoe,Free Agent,ORL,PG,False,[],True
+Cody Demps,Free Agent,SAC,PG,False,[],True
+Cameron Oliver,Free Agent,ATL,PF,False,[],True
+Joffrey Lauvergne,Free Agent,SAS,C,False,[],True
+Adam Flagler,Free Agent,OKC,SG,True,OUT,True
+Sean McDermott,Free Agent,MEM,SG,False,[],True
+Johnathan Motley,Free Agent,PHO,PF,False,[],True
+Tyler Bey,Free Agent,HOU,PF,False,[],True
+Reece Beekman,Free Agent,BKN,PG,False,ACTIVE,True
+Rodney Purvis,Free Agent,MIA,SG,False,[],True
+Ian Clark,Free Agent,NOP,SG,False,[],True
+Keith Appling,Free Agent,ORL,PG,False,[],True
+P.J. Hairston,Free Agent,HOU,SG,False,[],True
+Luis Montero,Free Agent,DET,SG,False,[],True
+Alondes Williams,Free Agent,DET,SG,False,ACTIVE,True
+Karim Mane,Free Agent,ORL,SG,False,[],True
+Dusty Hannahs,Free Agent,MEM,SG,False,[],True
+Brian Bowen II,Free Agent,MIN,SG,False,[],True
+Yves Pons,Free Agent,MEM,SG,False,[],True
+Trentyn Flowers,Free Agent,LAC,SF,False,DAY_TO_DAY,True
+Rawle Alkins,Free Agent,NOP,SG,False,[],True
+Sean Kilpatrick,Free Agent,CHI,SG,False,[],True
+Sergey Karasev,Free Agent,BKN,SG,False,[],True
+Daryl Macon,Free Agent,MIA,SG,False,[],True
+Spencer Jones,Free Agent,DEN,SF,False,ACTIVE,True
+Jack McVeigh,Free Agent,HOU,PF,False,ACTIVE,True
+RJ Nembhard Jr.,Free Agent,CLE,SG,False,[],True
+David Jones Garcia,Free Agent,UTA,SF,False,ACTIVE,True
+Jaylen Martin,Free Agent,BKN,SF,False,ACTIVE,True
+Justin Minaya,Free Agent,POR,SF,False,ACTIVE,True
+Riley Minix,Free Agent,SAS,SF,False,ACTIVE,True
+Nate Williams,Free Agent,HOU,SG,False,ACTIVE,True
+DJ Steward,Free Agent,FA,PG,False,ACTIVE,True
+Isaiah Crawford,Free Agent,SAC,SF,False,ACTIVE,True
+Taze Moore,Free Agent,POR,SG,False,ACTIVE,True

@@ -1200,3 +1200,387 @@ NameError: name 'positions' is not defined
 2024-12-22 22:53:34,170 - INFO - Saving processed data
 2024-12-22 22:53:34,384 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
 2024-12-22 22:53:34,387 - INFO - Daily collection completed successfully
+2024-12-23 18:48:21,308 - INFO - Starting daily collection for 2024-12-23
+2024-12-23 18:48:21,317 - INFO - Created backup: fantasybball/backups/20241223_184821/gamelogs2024.csv
+2024-12-23 18:48:21,319 - INFO - Created backup: fantasybball/backups/20241223_184821/games2024.csv
+2024-12-23 18:48:21,319 - INFO - Starting game data collection
+2024-12-23 18:48:21,407 - INFO - Loaded 51811 existing records
+2024-12-23 18:48:21,903 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-23 18:48:21,904 - INFO - Sample recent IDs: ['0022400388', '0022400389', '0022400390', '0022400379', '0022400378']
+2024-12-23 18:48:21,939 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-23 18:48:21,939 - INFO - Sample formatted recent IDs: ['0022400388', '0022400389', '0022400390', '0022400379', '0022400378']
+2024-12-23 18:48:21,940 - INFO - Found 0 new games out of 494 total games
+2024-12-23 18:48:21,940 - INFO - No new games to collect
+2024-12-23 18:48:21,942 - INFO - Starting data processing
+2024-12-23 18:48:22,016 - INFO - Successfully read in files
+2024-12-23 18:48:22,016 - INFO - Initial number of records: 51811
+2024-12-23 18:48:22,026 - INFO - Removed 37810 duplicate records
+2024-12-23 18:48:22,026 - INFO - Final number of records: 14001
+2024-12-23 18:48:22,036 - INFO - Merging gamelogs with games data
+2024-12-23 18:48:22,043 - INFO - Calculating statistical metrics
+2024-12-23 18:48:22,204 - INFO - Calculating rolling statistics
+2024-12-23 18:48:23,327 - INFO - Adding league player data
+2024-12-23 18:48:23,328 - INFO - Collecting league players data
+2024-12-23 18:48:26,655 - INFO - Collected data for 1047 players (938 free agents)
+2024-12-23 18:48:26,669 - INFO - Saving processed data
+2024-12-23 18:48:26,877 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-23 18:48:26,880 - INFO - Daily collection completed successfully
+2024-12-24 00:26:40,327 - INFO - Starting daily collection for 2024-12-24
+2024-12-24 00:26:40,335 - INFO - Created backup: fantasybball/backups/20241224_002640/gamelogs2024.csv
+2024-12-24 00:26:40,338 - INFO - Created backup: fantasybball/backups/20241224_002640/games2024.csv
+2024-12-24 00:26:40,338 - INFO - Starting game data collection...
+2024-12-24 00:26:40,426 - INFO - Loaded 51811 existing records
+2024-12-24 00:26:40,921 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-24 00:26:40,921 - INFO - Sample recent IDs: ['0022400402', '0022400398', '0022400397', '0022400400', '0022400403']
+2024-12-24 00:26:40,948 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-24 00:26:40,948 - INFO - Sample formatted recent IDs: ['0022400402', '0022400398', '0022400397', '0022400400', '0022400403']
+2024-12-24 00:26:40,949 - INFO - Found 14 new games out of 508 total games
+2024-12-24 00:26:40,949 - INFO - Collecting game 0022400402
+2024-12-24 00:26:41,734 - INFO - Collecting game 0022400398
+2024-12-24 00:26:42,555 - INFO - Collecting game 0022400397
+2024-12-24 00:26:43,409 - INFO - Collecting game 0022400400
+2024-12-24 00:26:44,306 - INFO - Collecting game 0022400403
+2024-12-24 00:26:45,186 - INFO - Collecting game 0022400404
+2024-12-24 00:26:45,938 - INFO - Collecting game 0022400396
+2024-12-24 00:26:46,759 - INFO - Collecting game 0022400392
+2024-12-24 00:26:47,520 - INFO - Collecting game 0022400393
+2024-12-24 00:26:48,481 - INFO - Collecting game 0022400395
+2024-12-24 00:26:49,382 - INFO - Collecting game 0022400399
+2024-12-24 00:26:50,170 - INFO - Collecting game 0022400394
+2024-12-24 00:26:51,072 - INFO - Collecting game 0022400401
+2024-12-24 00:26:51,827 - INFO - Collecting game 0022400391
+2024-12-24 00:26:52,899 - INFO - Successfully collected 386 new records
+2024-12-24 00:26:52,907 - INFO - Starting data processing...
+2024-12-24 00:26:52,980 - INFO - Successfully read in files
+2024-12-24 00:26:52,980 - INFO - Initial number of records: 52197
+2024-12-24 00:26:52,989 - INFO - Removed 37810 duplicate records
+2024-12-24 00:26:52,989 - INFO - Final number of records: 14387
+2024-12-24 00:26:52,997 - INFO - Merging gamelogs with games data...
+2024-12-24 00:26:53,003 - INFO - Calculating statistical metrics...
+2024-12-24 00:26:53,165 - INFO - Calculating rolling statistics
+2024-12-24 00:26:54,183 - INFO - Adding league player data
+2024-12-24 00:26:54,183 - INFO - Collecting league players data
+2024-12-24 00:26:57,346 - INFO - Collected data for 1047 players (939 free agents)
+2024-12-24 00:26:57,347 - INFO - Saving player info...
+2024-12-24 00:26:57,364 - INFO - Saving processed data
+2024-12-24 00:26:57,574 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-24 00:26:57,576 - INFO - Daily collection completed successfully
+2024-12-26 14:58:45,648 - INFO - Starting daily collection for 2024-12-26
+2024-12-26 14:58:45,659 - INFO - Created backup: fantasybball/backups/20241226_145845/gamelogs2024.csv
+2024-12-26 14:58:45,663 - INFO - Created backup: fantasybball/backups/20241226_145845/games2024.csv
+2024-12-26 14:58:45,663 - INFO - Starting game data collection...
+2024-12-26 14:58:45,786 - INFO - Loaded 52197 existing records
+2024-12-26 14:58:46,193 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-26 14:58:46,193 - INFO - Sample recent IDs: ['0022400408', '0022400405', '0022400406', '0022400409', '0022400407']
+2024-12-26 14:58:46,232 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-26 14:58:46,232 - INFO - Sample formatted recent IDs: ['0022400408', '0022400405', '0022400406', '0022400409', '0022400407']
+2024-12-26 14:58:46,233 - INFO - Found 5 new games out of 513 total games
+2024-12-26 14:58:46,233 - INFO - Collecting game 0022400408
+2024-12-26 14:58:47,141 - INFO - Collecting game 0022400405
+2024-12-26 14:58:47,880 - INFO - Collecting game 0022400406
+2024-12-26 14:58:48,686 - INFO - Collecting game 0022400409
+2024-12-26 14:58:49,621 - INFO - Collecting game 0022400407
+2024-12-26 14:58:50,678 - INFO - Successfully collected 144 new records
+2024-12-26 14:58:50,683 - INFO - Starting data processing...
+2024-12-26 14:58:50,755 - INFO - Successfully read in files
+2024-12-26 14:58:50,755 - INFO - Initial number of records: 52341
+2024-12-26 14:58:50,763 - INFO - Removed 37810 duplicate records
+2024-12-26 14:58:50,763 - INFO - Final number of records: 14531
+2024-12-26 14:58:50,772 - INFO - Merging gamelogs with games data...
+2024-12-26 14:58:50,780 - INFO - Calculating statistical metrics...
+2024-12-26 14:58:50,967 - INFO - Calculating rolling statistics
+2024-12-26 14:58:52,234 - INFO - Adding league player data
+2024-12-26 14:58:52,235 - INFO - Collecting league players data
+2024-12-26 14:58:55,968 - INFO - Collected data for 1047 players (939 free agents)
+2024-12-26 14:58:55,968 - INFO - Saving player info...
+2024-12-26 14:58:55,984 - INFO - Saving processed data
+2024-12-26 14:58:56,201 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-26 14:58:56,203 - INFO - Daily collection completed successfully
+2024-12-27 12:35:57,383 - INFO - Starting daily collection for 2024-12-27
+2024-12-27 12:35:57,393 - INFO - Created backup: fantasybball/backups/20241227_123557/gamelogs2024.csv
+2024-12-27 12:35:57,399 - INFO - Created backup: fantasybball/backups/20241227_123557/games2024.csv
+2024-12-27 12:35:57,400 - INFO - Starting game data collection...
+2024-12-27 12:35:57,523 - INFO - Loaded 52341 existing records
+2024-12-27 12:35:57,812 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-27 12:35:57,813 - INFO - Sample recent IDs: ['0022400410', '0022400412', '0022400417', '0022400418', '0022400414']
+2024-12-27 12:35:57,848 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-27 12:35:57,848 - INFO - Sample formatted recent IDs: ['0022400410', '0022400412', '0022400417', '0022400418', '0022400414']
+2024-12-27 12:35:57,849 - INFO - Found 9 new games out of 522 total games
+2024-12-27 12:35:57,849 - INFO - Collecting game 0022400410
+2024-12-27 12:35:58,568 - INFO - Collecting game 0022400412
+2024-12-27 12:35:59,299 - INFO - Collecting game 0022400417
+2024-12-27 12:36:00,046 - INFO - Collecting game 0022400418
+2024-12-27 12:36:00,760 - INFO - Collecting game 0022400414
+2024-12-27 12:36:01,512 - INFO - Collecting game 0022400413
+2024-12-27 12:36:02,239 - INFO - Collecting game 0022400411
+2024-12-27 12:36:02,976 - INFO - Collecting game 0022400416
+2024-12-27 12:36:03,700 - INFO - Collecting game 0022400415
+2024-12-27 12:36:04,757 - INFO - Successfully collected 238 new records
+2024-12-27 12:36:04,761 - INFO - Starting data processing...
+2024-12-27 12:36:04,831 - INFO - Successfully read in files
+2024-12-27 12:36:04,831 - INFO - Initial number of records: 52579
+2024-12-27 12:36:04,840 - INFO - Removed 37810 duplicate records
+2024-12-27 12:36:04,840 - INFO - Final number of records: 14769
+2024-12-27 12:36:04,847 - INFO - Merging gamelogs with games data...
+2024-12-27 12:36:04,854 - INFO - Calculating statistical metrics...
+2024-12-27 12:36:05,031 - INFO - Calculating rolling statistics
+2024-12-27 12:36:06,168 - INFO - Adding league player data
+2024-12-27 12:36:06,169 - INFO - Collecting league players data
+2024-12-27 12:36:08,204 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-27 12:36:08,204 - INFO - Saving player info...
+2024-12-27 12:36:08,220 - INFO - Saving processed data
+2024-12-27 12:36:08,438 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-27 12:36:08,439 - INFO - Daily collection completed successfully
+2024-12-27 12:37:41,266 - INFO - Starting daily collection for 2024-12-27
+2024-12-27 12:37:41,273 - INFO - Created backup: fantasybball/backups/20241227_123741/gamelogs2024.csv
+2024-12-27 12:37:41,274 - INFO - Created backup: fantasybball/backups/20241227_123741/games2024.csv
+2024-12-27 12:37:41,274 - INFO - Starting game data collection...
+2024-12-27 12:37:41,353 - INFO - Loaded 52579 existing records
+2024-12-27 12:37:41,598 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-27 12:37:41,599 - INFO - Sample recent IDs: ['0022400416', '0022400413', '0022400412', '0022400410', '0022400411']
+2024-12-27 12:37:41,625 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-27 12:37:41,626 - INFO - Sample formatted recent IDs: ['0022400416', '0022400413', '0022400412', '0022400410', '0022400411']
+2024-12-27 12:37:41,626 - INFO - Found 0 new games out of 522 total games
+2024-12-27 12:37:41,626 - INFO - No new games to collect
+2024-12-27 12:37:41,628 - INFO - Starting data processing...
+2024-12-27 12:37:41,717 - INFO - Successfully read in files
+2024-12-27 12:37:41,718 - INFO - Initial number of records: 52579
+2024-12-27 12:37:41,723 - INFO - Removed 37810 duplicate records
+2024-12-27 12:37:41,724 - INFO - Final number of records: 14769
+2024-12-27 12:37:41,732 - INFO - Merging gamelogs with games data...
+2024-12-27 12:37:41,737 - INFO - Calculating statistical metrics...
+2024-12-27 12:37:41,903 - ERROR - Error processing data: 'min'
+2024-12-27 12:37:41,904 - ERROR - Error details: 
+Traceback (most recent call last):
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'min'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthew/Documents/basketball/fantasybball/gamelog_pipeline.py", line 289, in process_data
+    gamelogs['ppm'] = gamelogs.apply(lambda row: row['fan_pts'] / row['min'] if row['min'] != 0 else 0, axis=1)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py", line 9423, in apply
+    return op.apply().__finalize__(self, method="apply")
+           ^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/apply.py", line 678, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/apply.py", line 798, in apply_standard
+    results, res_index = self.apply_series_generator()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/apply.py", line 814, in apply_series_generator
+    results[i] = self.f(v)
+                 ^^^^^^^^^
+  File "/Users/matthew/Documents/basketball/fantasybball/gamelog_pipeline.py", line 289, in <lambda>
+    gamelogs['ppm'] = gamelogs.apply(lambda row: row['fan_pts'] / row['min'] if row['min'] != 0 else 0, axis=1)
+                                                                                ~~~^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/series.py", line 1007, in __getitem__
+    return self._get_value(key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/series.py", line 1116, in _get_value
+    loc = self.index.get_loc(label)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/matthew/anaconda3/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'min'
+2024-12-27 12:37:41,909 - ERROR - Data processing failed
+2024-12-27 12:38:49,252 - INFO - Starting daily collection for 2024-12-27
+2024-12-27 12:38:49,259 - INFO - Created backup: fantasybball/backups/20241227_123849/gamelogs2024.csv
+2024-12-27 12:38:49,262 - INFO - Created backup: fantasybball/backups/20241227_123849/games2024.csv
+2024-12-27 12:38:49,263 - INFO - Starting game data collection...
+2024-12-27 12:38:49,336 - INFO - Loaded 52579 existing records
+2024-12-27 12:38:49,646 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-27 12:38:49,646 - INFO - Sample recent IDs: ['0022400416', '0022400413', '0022400412', '0022400410', '0022400411']
+2024-12-27 12:38:49,678 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-27 12:38:49,678 - INFO - Sample formatted recent IDs: ['0022400416', '0022400413', '0022400412', '0022400410', '0022400411']
+2024-12-27 12:38:49,678 - INFO - Found 0 new games out of 522 total games
+2024-12-27 12:38:49,679 - INFO - No new games to collect
+2024-12-27 12:38:49,681 - INFO - Starting data processing...
+2024-12-27 12:38:49,762 - INFO - Successfully read in files
+2024-12-27 12:38:49,763 - INFO - Initial number of records: 52579
+2024-12-27 12:38:49,768 - INFO - Removed 37810 duplicate records
+2024-12-27 12:38:49,768 - INFO - Final number of records: 14769
+2024-12-27 12:38:49,776 - INFO - Merging gamelogs with games data...
+2024-12-27 12:38:49,780 - INFO - Calculating statistical metrics...
+2024-12-27 12:38:49,993 - INFO - Calculating rolling statistics
+2024-12-27 12:38:51,198 - INFO - Adding league player data
+2024-12-27 12:38:51,198 - INFO - Collecting league players data
+2024-12-27 12:38:53,094 - INFO - Collected data for 1047 players (937 free agents)
+2024-12-27 12:38:53,094 - INFO - Saving player info...
+2024-12-27 12:38:53,111 - INFO - Saving processed data
+2024-12-27 12:38:53,361 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-27 12:38:53,363 - INFO - Daily collection completed successfully
+2024-12-28 00:55:23,125 - INFO - Starting daily collection for 2024-12-28
+2024-12-28 00:55:23,141 - INFO - Created backup: fantasybball/backups/20241228_005523/gamelogs2024.csv
+2024-12-28 00:55:23,150 - INFO - Created backup: fantasybball/backups/20241228_005523/games2024.csv
+2024-12-28 00:55:23,152 - INFO - Starting game data collection...
+2024-12-28 00:55:23,344 - INFO - Loaded 52579 existing records
+2024-12-28 00:55:23,704 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-28 00:55:23,705 - INFO - Sample recent IDs: ['0022400421', '0022400422', '0022400419', '0022400424', '0022400425']
+2024-12-28 00:55:23,748 - INFO - Sample formatted existing IDs: ['0022400291', '0022400023', '0012400009', '0022400047', '0022400367']
+2024-12-28 00:55:23,748 - INFO - Sample formatted recent IDs: ['0022400421', '0022400422', '0022400419', '0022400424', '0022400425']
+2024-12-28 00:55:23,748 - INFO - Found 8 new games out of 530 total games
+2024-12-28 00:55:23,749 - INFO - Collecting game 0022400421
+2024-12-28 00:55:24,502 - INFO - Collecting game 0022400422
+2024-12-28 00:55:25,222 - INFO - Collecting game 0022400419
+2024-12-28 00:55:25,956 - INFO - Collecting game 0022400424
+2024-12-28 00:55:26,683 - INFO - Collecting game 0022400425
+2024-12-28 00:55:27,422 - INFO - Collecting game 0022400423
+2024-12-28 00:55:28,148 - INFO - Collecting game 0022400420
+2024-12-28 00:55:29,039 - INFO - Collecting game 0022400426
+2024-12-28 00:55:30,008 - INFO - Successfully collected 208 new records
+2024-12-28 00:55:30,018 - INFO - Starting data processing...
+2024-12-28 00:55:30,089 - INFO - Successfully read in files
+2024-12-28 00:55:30,089 - INFO - Initial number of records: 52787
+2024-12-28 00:55:30,097 - INFO - Removed 37810 duplicate records
+2024-12-28 00:55:30,097 - INFO - Final number of records: 14977
+2024-12-28 00:55:30,105 - INFO - Merging gamelogs with games data...
+2024-12-28 00:55:30,113 - INFO - Calculating statistical metrics...
+2024-12-28 00:55:30,334 - INFO - Calculating rolling statistics
+2024-12-28 00:55:31,672 - INFO - Adding league player data
+2024-12-28 00:55:31,672 - INFO - Collecting league players data
+2024-12-28 00:55:34,174 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-28 00:55:34,175 - INFO - Saving player info...
+2024-12-28 00:55:34,191 - INFO - Saving processed data
+2024-12-28 00:55:34,439 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-28 00:55:34,441 - INFO - Daily collection completed successfully
+2024-12-29 00:58:40,371 - INFO - Starting daily collection for 2024-12-29
+2024-12-29 00:58:40,380 - INFO - Created backup: fantasybball/backups/20241229_005840/gamelogs2024.csv
+2024-12-29 00:58:40,386 - INFO - Created backup: fantasybball/backups/20241229_005840/games2024.csv
+2024-12-29 00:58:40,386 - INFO - Starting game data collection...
+2024-12-29 00:58:40,504 - INFO - Loaded 52787 existing records
+2024-12-29 00:58:40,822 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-29 00:58:40,822 - INFO - Sample recent IDs: ['0022400430', '0022400428', '0022400435', '0022400427', '0022400431']
+2024-12-29 00:58:40,856 - INFO - Sample formatted existing IDs: ['0022400424', '0022400291', '0022400023', '0012400009', '0022400047']
+2024-12-29 00:58:40,856 - INFO - Sample formatted recent IDs: ['0022400430', '0022400428', '0022400435', '0022400427', '0022400431']
+2024-12-29 00:58:40,856 - INFO - Found 9 new games out of 539 total games
+2024-12-29 00:58:40,857 - INFO - Collecting game 0022400430
+2024-12-29 00:58:41,580 - INFO - Collecting game 0022400428
+2024-12-29 00:58:42,308 - INFO - Collecting game 0022400435
+2024-12-29 00:58:43,152 - INFO - Collecting game 0022400427
+2024-12-29 00:58:43,877 - INFO - Collecting game 0022400431
+2024-12-29 00:58:44,607 - INFO - Collecting game 0022400432
+2024-12-29 00:58:45,328 - INFO - Collecting game 0022400429
+2024-12-29 00:58:46,049 - INFO - Collecting game 0022400434
+2024-12-29 00:58:46,774 - INFO - Collecting game 0022400433
+2024-12-29 00:58:47,758 - INFO - Successfully collected 241 new records
+2024-12-29 00:58:47,769 - INFO - Starting data processing...
+2024-12-29 00:58:47,850 - INFO - Successfully read in files
+2024-12-29 00:58:47,851 - INFO - Initial number of records: 53028
+2024-12-29 00:58:47,858 - INFO - Removed 37810 duplicate records
+2024-12-29 00:58:47,859 - INFO - Final number of records: 15218
+2024-12-29 00:58:47,867 - INFO - Merging gamelogs with games data...
+2024-12-29 00:58:47,874 - INFO - Calculating statistical metrics...
+2024-12-29 00:58:48,097 - INFO - Calculating rolling statistics
+2024-12-29 00:58:49,477 - INFO - Adding league player data
+2024-12-29 00:58:49,477 - INFO - Collecting league players data
+2024-12-29 00:58:51,880 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-29 00:58:51,881 - INFO - Saving player info...
+2024-12-29 00:58:51,901 - INFO - Saving processed data
+2024-12-29 00:58:52,156 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-29 00:58:52,158 - INFO - Daily collection completed successfully
+2024-12-30 12:28:51,125 - INFO - Starting daily collection for 2024-12-30
+2024-12-30 12:28:51,133 - INFO - Created backup: fantasybball/backups/20241230_122851/gamelogs2024.csv
+2024-12-30 12:28:51,137 - INFO - Created backup: fantasybball/backups/20241230_122851/games2024.csv
+2024-12-30 12:28:51,137 - INFO - Starting game data collection...
+2024-12-30 12:28:51,245 - INFO - Loaded 53028 existing records
+2024-12-30 12:28:51,738 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-30 12:28:51,739 - INFO - Sample recent IDs: ['0022400437', '0022400439', '0022400441', '0022400436', '0022400440']
+2024-12-30 12:28:51,766 - INFO - Sample formatted existing IDs: ['0022400424', '0022400291', '0022400023', '0012400009', '0022400047']
+2024-12-30 12:28:51,766 - INFO - Sample formatted recent IDs: ['0022400437', '0022400439', '0022400441', '0022400436', '0022400440']
+2024-12-30 12:28:51,766 - INFO - Found 6 new games out of 545 total games
+2024-12-30 12:28:51,767 - INFO - Collecting game 0022400437
+2024-12-30 12:28:52,627 - INFO - Collecting game 0022400439
+2024-12-30 12:28:53,337 - INFO - Collecting game 0022400441
+2024-12-30 12:28:54,071 - INFO - Collecting game 0022400436
+2024-12-30 12:28:54,817 - INFO - Collecting game 0022400440
+2024-12-30 12:28:55,544 - INFO - Collecting game 0022400438
+2024-12-30 12:28:56,669 - INFO - Successfully collected 156 new records
+2024-12-30 12:28:56,676 - INFO - Starting data processing...
+2024-12-30 12:28:56,753 - INFO - Successfully read in files
+2024-12-30 12:28:56,754 - INFO - Initial number of records: 53184
+2024-12-30 12:28:56,764 - INFO - Removed 37810 duplicate records
+2024-12-30 12:28:56,764 - INFO - Final number of records: 15374
+2024-12-30 12:28:56,772 - INFO - Merging gamelogs with games data...
+2024-12-30 12:28:56,779 - INFO - Calculating statistical metrics...
+2024-12-30 12:28:57,012 - INFO - Calculating rolling statistics
+2024-12-30 12:28:58,556 - INFO - Adding league player data
+2024-12-30 12:28:58,556 - INFO - Collecting league players data
+2024-12-30 12:29:00,991 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-30 12:29:00,991 - INFO - Saving player info...
+2024-12-30 12:29:01,012 - INFO - Saving processed data
+2024-12-30 12:29:01,272 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-30 12:29:01,274 - INFO - Daily collection completed successfully
+2024-12-31 18:52:07,331 - INFO - Starting daily collection for 2024-12-31
+2024-12-31 18:52:07,342 - INFO - Created backup: fantasybball/backups/20241231_185207/gamelogs2024.csv
+2024-12-31 18:52:07,343 - INFO - Created backup: fantasybball/backups/20241231_185207/games2024.csv
+2024-12-31 18:52:07,344 - INFO - Starting game data collection...
+2024-12-31 18:52:07,455 - INFO - Loaded 53184 existing records
+2024-12-31 18:52:07,922 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2024-12-31 18:52:07,922 - INFO - Sample recent IDs: ['0022400450', '0022400449', '0022400443', '0022400447', '0022400448']
+2024-12-31 18:52:07,959 - INFO - Sample formatted existing IDs: ['0022400424', '0022400291', '0022400023', '0012400009', '0022400047']
+2024-12-31 18:52:07,959 - INFO - Sample formatted recent IDs: ['0022400450', '0022400449', '0022400443', '0022400447', '0022400448']
+2024-12-31 18:52:07,959 - INFO - Found 9 new games out of 554 total games
+2024-12-31 18:52:07,960 - INFO - Collecting game 0022400450
+2024-12-31 18:52:08,754 - INFO - Collecting game 0022400449
+2024-12-31 18:52:09,580 - INFO - Collecting game 0022400443
+2024-12-31 18:52:10,409 - INFO - Collecting game 0022400447
+2024-12-31 18:52:11,199 - INFO - Collecting game 0022400448
+2024-12-31 18:52:12,045 - INFO - Collecting game 0022400445
+2024-12-31 18:52:12,841 - INFO - Collecting game 0022400442
+2024-12-31 18:52:13,662 - INFO - Collecting game 0022400446
+2024-12-31 18:52:14,466 - INFO - Collecting game 0022400444
+2024-12-31 18:52:15,641 - INFO - Successfully collected 246 new records
+2024-12-31 18:52:15,645 - INFO - Starting data processing...
+2024-12-31 18:52:15,719 - INFO - Successfully read in files
+2024-12-31 18:52:15,719 - INFO - Initial number of records: 53430
+2024-12-31 18:52:15,730 - INFO - Removed 37810 duplicate records
+2024-12-31 18:52:15,730 - INFO - Final number of records: 15620
+2024-12-31 18:52:15,738 - INFO - Merging gamelogs with games data...
+2024-12-31 18:52:15,747 - INFO - Calculating statistical metrics...
+2024-12-31 18:52:15,987 - INFO - Calculating rolling statistics
+2024-12-31 18:52:17,625 - INFO - Adding league player data
+2024-12-31 18:52:17,626 - INFO - Collecting league players data
+2024-12-31 18:52:21,456 - INFO - Collected data for 1047 players (936 free agents)
+2024-12-31 18:52:21,457 - INFO - Saving player info...
+2024-12-31 18:52:21,492 - INFO - Saving processed data
+2024-12-31 18:52:21,790 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2024-12-31 18:52:21,792 - INFO - Daily collection completed successfully
+2025-01-01 17:57:13,906 - INFO - Starting daily collection for 2025-01-01
+2025-01-01 17:57:13,914 - INFO - Created backup: fantasybball/backups/20250101_175713/gamelogs2024.csv
+2025-01-01 17:57:13,915 - INFO - Created backup: fantasybball/backups/20250101_175713/games2024.csv
+2025-01-01 17:57:13,915 - INFO - Starting game data collection...
+2025-01-01 17:57:14,000 - INFO - Loaded 53430 existing records
+2025-01-01 17:57:15,031 - INFO - Sample existing IDs: ['22401207', '22401207', '22401207', '22401207', '22401207']
+2025-01-01 17:57:15,032 - INFO - Sample recent IDs: ['0022400452', '0022400453', '0022400449', '0022400450', '0022400451']
+2025-01-01 17:57:15,053 - INFO - Sample formatted existing IDs: ['0022400424', '0022400291', '0022400023', '0012400009', '0022400047']
+2025-01-01 17:57:15,053 - INFO - Sample formatted recent IDs: ['0022400452', '0022400453', '0022400449', '0022400450', '0022400451']
+2025-01-01 17:57:15,054 - INFO - Found 4 new games out of 558 total games
+2025-01-01 17:57:15,054 - INFO - Collecting game 0022400452
+2025-01-01 17:57:16,676 - INFO - Collecting game 0022400453
+2025-01-01 17:57:18,245 - INFO - Collecting game 0022400451
+2025-01-01 17:57:19,382 - INFO - Collecting game 0022400454
+2025-01-01 17:57:21,262 - INFO - Successfully collected 104 new records
+2025-01-01 17:57:21,266 - INFO - Starting data processing...
+2025-01-01 17:57:21,337 - INFO - Successfully read in files
+2025-01-01 17:57:21,338 - INFO - Initial number of records: 53534
+2025-01-01 17:57:21,345 - INFO - Removed 37810 duplicate records
+2025-01-01 17:57:21,345 - INFO - Final number of records: 15724
+2025-01-01 17:57:21,353 - INFO - Merging gamelogs with games data...
+2025-01-01 17:57:21,361 - INFO - Calculating statistical metrics...
+2025-01-01 17:57:21,592 - INFO - Calculating rolling statistics
+2025-01-01 17:57:22,826 - INFO - Adding league player data
+2025-01-01 17:57:22,826 - INFO - Collecting league players data
+2025-01-01 17:57:28,373 - INFO - Collected data for 1047 players (936 free agents)
+2025-01-01 17:57:28,373 - INFO - Saving player info...
+2025-01-01 17:57:28,389 - INFO - Saving processed data
+2025-01-01 17:57:28,657 - INFO - Successfully saved processed data to fantasybball/daily_app_data.csv
+2025-01-01 17:57:28,660 - INFO - Daily collection completed successfully

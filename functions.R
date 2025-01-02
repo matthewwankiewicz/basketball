@@ -301,8 +301,8 @@ make_predictions <- \(table){
 }
 
 #### get schedule #####
-data <- fread("fantasybball/fantasybball/daily_app_data.csv") # formatted gamelogs file
-schedule <- fread("~/Documents/basketball/fantasybball/nba_final_schedule.csv") # formatted schedule
+# data <- fread("fantasybball/fantasybball/daily_app_data.csv") # formatted gamelogs file
+# schedule <- fread("~/Documents/basketball/fantasybball/nba_final_schedule.csv") # formatted schedule
 
 ## create function to pull player's schedule for a given week
 get_schedule <- function(player, start_date = Sys.Date()-7, end_date = Sys.Date(),
@@ -325,5 +325,177 @@ get_schedule <- function(player, start_date = Sys.Date()-7, end_date = Sys.Date(
   return(team_schedule)
 }
 
-get_schedule("Scottie Barnes")
+#get_schedule("Scottie Barnes")
 
+#### without function -----------
+analyze_performance_without_player <- function(player) {
+  # pull player's team
+  gamelogs %>% filter(player_name == !!player) %>% 
+    arrange(desc(game_date)) %>% 
+    pull(team) %>% .[1] ->> team
+  
+  # Identify the games where the specific player participated
+  games_with_player <- gamelogs %>%
+    filter(team == team, player_name == !!player) %>%
+    select(game_id) %>%
+    distinct()
+  
+  # Filter the dataset for games where the specific player did not participate
+  teammates_stats_without_player <- gamelogs %>%
+    filter(team == !!team, !game_id %in% games_with_player$game_id)
+  
+  # Analyze the statistics of these players
+  teammates_summary <- teammates_stats_without_player %>%
+    filter(team == !!team) %>% 
+    group_by(player_name) %>%
+    summarise(min = mean(min),
+              pts = mean(pts),
+              ast = mean(ast),
+              reb = mean(reb),
+              dfs_points = mean(dfs_points),
+              ppm = dfs_points/min,
+              games = n())
+  
+  return(teammates_summary)
+}
+
+# Usage example
+# Replace 'c("stat1", "stat2", ...)' with the actual stat columns you're interested in.
+# analyze_performance_without_player(
+#   "Joel Embiid"
+# )
+
+
+
+#### simulate stats -------
+
+simulate_stat <- \(player, opponent_rolling_stat, stat_name, stat_line, date_filter = Sys.Date(), stat_output = "prob"){
+  ## filter for player's game logs
+  player_logs <- gamelogs_ref %>% 
+    filter(player_name == player, 
+           game_date < date_filter) %>% 
+    arrange(desc(game_date)) ## arange game dates to have most recent list first
+  
+  player_pos <- player_logs$pos[1]
+  
+  
+  ## slice for last 3, 5, and 10 games
+  last3_slice <- player_logs %>% 
+    slice(1:3)
+  
+  
+  last5_slice <- player_logs %>% 
+    slice(1:5)
+  
+  
+  
+  last10_slice <- player_logs %>% 
+    slice(1:7)
+  
+  
+  
+  ## get averages & sd for 3, 5, 10 game log
+  last3_avg <- last3_slice[[stat_name]] %>% mean()
+  last5_avg <- last5_slice[[stat_name]] %>% mean()
+  last10_avg <- last10_slice[[stat_name]] %>% mean()
+  
+  last3_sd <- last3_slice[[stat_name]] %>% sd()
+  last5_sd <- last5_slice[[stat_name]] %>% sd()
+  last10_sd <- last10_slice[[stat_name]] %>% sd()
+  
+  
+  
+  ## run the simulations
+  simmed <- c()
+  simmed2 <- c()
+  simmed3 <- c()
+  set.seed(21)
+  for(i in 1:10000){
+    simmed[i] <- qnorm(runif(1), mean = last3_avg, sd = last3_sd) +
+      qnorm(runif(1), mean = last3_avg, sd = last3_sd)*team_adj
+    simmed2[i] <- qnorm(runif(1), mean = last5_avg, sd = last5_sd) +
+      qnorm(runif(1), mean = last5_avg, sd = last5_sd)*team_adj
+    simmed3[i] <- qnorm(runif(1), mean = last10_avg, sd = last10_sd) +
+      qnorm(runif(1), mean = last10_avg, sd = last10_sd)*team_adj
+  }
+  combined <-  simmed
+  
+  ## return estimated point
+  if(stat_output != "prob"){
+    return(mean(combined))
+  } else{
+    return((sum(combined > stat_line))/10000) 
+  }
+}
+
+
+### pull weekly schedules --------
+
+pull_weekly_schedule <- function(schedule, positions, start, end, teams = NULL){
+  ## select date, home, away
+  nba_schedule <- schedule %>% 
+    select("game_date" = GameDate, "opponent_team" = "Visitor",
+           "team" = "Home")
+  
+  ## flip home and away rbind
+  nba_schedule_final <- rbind(nba_schedule, 
+                              nba_schedule %>% 
+                                rename("team" = "opponent_team",
+                                       "opponent_team" = "team"))
+  
+  matchups <- nba_schedule_final %>% 
+    filter(game_date>=start & game_date <= end) %>% 
+    merge(positions, by.x = "team", by.y = "pro_team", allow.cartesian = T)
+  
+  if(!is.null(teams)){
+    matchups %>% 
+      filter(fantasy_team %in% teams) %>% 
+      return()
+  }
+  
+  else{
+    return(matchups)
+  }
+  
+}
+
+## example
+# pull_weekly_schedule(schedule, position_data, start = Sys.Date(), end = "2025-01-05",
+#                      teams = c("Team Wankiewicz"))
+
+
+### get weekly stat function -----------
+### returns a table with a column for each team and row for each date, followed
+### by the total (will only be used for points and minutes now)
+calculate_weekly_totals <- function(data, value_col) {
+  # Convert value_col to symbol for tidy evaluation
+  value_col_sym <- rlang::sym(value_col)
+  
+  # Calculate weekly totals
+  weekly_totals <- data %>% 
+    group_by(game_date, fantasy_team) %>% 
+    summarise(total = sum(!!value_col_sym, na.rm=T)) %>% 
+    pivot_wider(
+      names_from = fantasy_team,
+      values_from = total
+    ) %>% 
+    mutate(game_date = as.character(game_date))
+  
+  # Calculate grand totals
+  total_projected <- data %>% 
+    group_by(fantasy_team) %>% 
+    summarise(total = sum(!!value_col_sym, na.rm=T)) %>% 
+    pivot_wider(
+      names_from = fantasy_team,
+      values_from = total
+    ) %>% 
+    mutate(game_date = "Total")
+  
+  # Combine results
+  final_output <- rbind(weekly_totals, total_projected)
+  
+  return(final_output)
+}
+
+## example
+#calculate_weekly_totals(schedule, "rolling_min")

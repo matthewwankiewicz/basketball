@@ -1,0 +1,90 @@
+---
+title: "Weekly Report"
+output: html_document
+date: "2025-01-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+
+### libraries
+library(tidyverse)
+library(lme4)
+library(data.table)
+library(janitor)
+library(DT)
+
+### source functions
+source("functions.R")
+
+
+## load in data, model
+data <- fread("fantasybball/fantasybball/daily_app_data.csv")
+games <- fread("fantasybball/fantasybball/games2024.csv") %>% 
+  clean_names() %>% 
+  filter(grepl('vs.', matchup)) %>% 
+  separate(matchup, into = c("home", "away"), sep = " vs. ") %>% 
+  data.table()
+  
+  
+data <- data %>% merge(games[, .(game_id, home, away)]) %>% 
+  mutate(opponent_team = ifelse(home == team_abbreviation, away, home)) %>%
+  group_by(player_name) %>% 
+  filter(sum(min >= 15, na.rm=T) >= 1) %>%
+  ungroup() %>% 
+  filter(!is.na(position)) %>% 
+  mutate(ppm = fan_pts / min) %>%
+  mutate(fan_pts = pmax(fan_pts, 0), 
+         ppm = pmax(ppm, 0))
+
+
+data$scaled_min <- scale(data$rolling_min)
+
+## rolling minutes stats
+rolling_mins_stats <- data %>% 
+  group_by(player_name) %>% 
+  filter(game_date == max(game_date)) %>% 
+  select(player_name, rolling_min)
+
+## model
+model <- readRDS("fantasybball/fantasy_points_model.rds")
+
+### load in position data
+position_data <- fread("~/Documents/basketball/fantasybball/fantasybball/player_info.csv")
+
+position_data <- position_data %>% 
+  merge(rolling_mins_stats, by = "player_name")
+
+## schedule
+schedule <- fread("~/Documents/basketball/fantasybball/filtered_schedule.csv")
+
+### get filtered schedule
+### use pull weekly schedule function to help set up report
+matchup_schedule <-
+  pull_weekly_schedule(
+    schedule,
+    position_data,
+    start = "2024-12-30",
+    end = "2025-01-05",
+    teams = c("Team Wankiewicz", "Toronto Purebloods")
+  )
+
+## add estimates
+matchup_schedule$estimate <- predict(model, newdata = matchup_schedule, 
+                                     type = "response")
+```
+
+## Weekly Minutes Projections
+```{r weekly-minutes, message=FALSE}
+calculate_weekly_totals(matchup_schedule, "rolling_min") %>% 
+  DT::datatable()
+```
+
+
+
+
+## Weekly Points Projections
+```{r weekly-points, message=FALSE}
+calculate_weekly_totals(matchup_schedule, "estimate") %>% 
+  DT::datatable()
+```
